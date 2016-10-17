@@ -1,0 +1,1 @@
+﻿# Microsoft Teams SDK - Orientation
