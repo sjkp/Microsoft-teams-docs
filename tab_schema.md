@@ -57,7 +57,7 @@ needsIdentity
 	```true``` if the tab requests access to user context information. For more information, see [Get user context, locale, or theme information for use in your Microsoft Team tab](../getusercontext.md). 
 	**TODO: reviewers** This is optional, right? Default is false?
 validDomains
-	A list of valid domains from which the tab expects to communicate with Microsoft Teams.
+	A list of valid domains from which the tab expects to communicate with Microsoft Teams. Domain listings can include wildcards.
 
 ## Example schema
 TODO: Go through and clean this up
