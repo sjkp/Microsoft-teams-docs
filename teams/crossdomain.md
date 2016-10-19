@@ -4,5 +4,5 @@ There are cases where your app might need to redirect the configuration or conte
 
 To redirect across domains within a Microsoft Teams tab:
 
-* Make sure the URL falls within the domain(s) you've included in the ```validDomains``` list in the tab app manifest. For more information, see [Microsoft Teams tab package schema reference](tab-schema.md).
+* Make sure the URL falls within the domain(s) you've included in the ```validDomains``` list in the tab app manifest. For more information, see [Microsoft Teams tab package schema reference](tab_schema.md).
 * Call ```microsoftTeams.navigateCrossDomain(yourNewUrl)``` to have Microsoft Teams redirect to the specified URL.

@@ -11,7 +11,9 @@
 ## [Microsoft Teams bots](bots.md)
 ## [Microsoft Teams connectors](connectors.md)
 ## [Orientation](orientation.md)
+### [Design a great tab app](design.md)
 ### [Tabs manifest schema reference](tab_schema.md)
 
 # [Samples](samples.md)
+# [FAQ](faq.md)
 # [Submit your questions, bugs, feature requests, and contributions](feedback.md)
