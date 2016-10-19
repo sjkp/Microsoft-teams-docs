@@ -2,7 +2,7 @@
 
 The configuration UI enables you to present options and gather information from the user, so they can specify and customize the content and experience you present in the tab for your app. For example, selecting existing app resources to display, such as files, or specifying the attributes of new app resources.
 
-!["Screenshot of the configuration UI for an Excel spreadsheet tab"](../images/tab_configui.png)
+!["Screenshot of the configuration UI for an Excel spreadsheet tab"](/images/tab_configui.png)
 
 The configuration UI is hosted within an IFrame in the dialog box Microsoft Teams displays when the user chooses to add your tab to their team or chat. It communicates to the main Microsoft Teams UI through the [Microsoft Teams Tab library](https://teamspacewusprodms.blob.core.windows.net/tabframework/0.2/MicrosoftTeams.js).
 
@@ -36,7 +36,7 @@ Microsoft Teams calls the save event handler you registered when the user select
 
 Use ```microsoftTeams.settings.setSettings({contentUrl, suggestedTabName, websiteUrl, removeUrl})``` to specify the URL of the content Microsoft Teams should host in the tab. Things to keep in mind:
 
-* If ```contentUrl``` resides in a different domain from the configuration UI, make sure you have added that domain to the ```validDomains``` element in the tab manifest file. For more information, see [Microsoft Teams tab schema](../tab_schema.md).
+* If ```contentUrl``` resides in a different domain from the configuration UI, make sure you have added that domain to the ```validDomains``` element in the tab manifest file. For more information, see [Microsoft Teams tab schema](tab_schema.md).
 *  You can use the other parameters to further customize how your content appears in Microsoft Teams:
 	*  The ```suggestedTabName``` parameter sets the initial tab name. Users can rename the tab.
 	*  The ```websiteUrl``` parameter sets where the user is taken if they select **Go to website**. Typically, this is a link to the same content as displayed on the tab, but within your app with its regular chrome and navigation.
