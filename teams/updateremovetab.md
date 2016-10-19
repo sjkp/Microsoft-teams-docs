@@ -22,14 +22,8 @@ You can create a page to enable users to select what happens to content when a t
 To include a tab removal page in your app, specify the ```removeUrl``` attribute in your tab manifest. For more information, see [Microsoft Teams tab package schema reference](tab_schema.md).
 
 ### Prerequisites for your tab removal page 
-
-A tab removal page has the same prerequisites as a tab configuration page:
  
-* Make sure that the UI can be hosted in an IFrame
-* Include the [Microsoft Teams Tab library](https://teamspacewusprodms.blob.core.windows.net/tabframework/0.2/MicrosoftTeams.js) as a script source.
-* Call ```microsoftTeams.initialize()``` to display your UI.
-
-For more information, see [Create the configuration UI for your Microsoft Team tab app](createtabconfigui.md).
+For your tab removal page to display within Microsoft Teams, make sure it meets the [requirements for tab app UI](gettingstarted.md#prerequisites-for-your-tabs-app-ui).
 
 ### Presenting the user with content options upon tab removal
 

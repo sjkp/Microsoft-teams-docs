@@ -8,25 +8,13 @@ The configuration UI is hosted within an IFrame in the dialog box Microsoft Team
 
 ## Prerequisites for your configuration UI
 
-For your configuration UI to work with Microsoft Teams, be sure to do the following:
-
-* Make sure that the UI can be hosted in an IFrame
-	
-	* Set the Content-security-policy header. This is supported in most modern browsers.
-		
-		Include child-src policy
-
-		Return *.teams.microsoft.com  and *.skype.com in list of safe domains
-	* Set X-Frame-Options = ALLOW-FROM *.teams.microsoft.com.
-
-* Include the [Microsoft Teams Tab library](https://teamspacewusprodms.blob.core.windows.net/tabframework/0.2/MicrosoftTeams.js) as a script source.
-* Call ```microsoftTeams.initialize()``` to display your UI.
+For your configuration UI to display within  Microsoft Teams, make sure it meets the [requirements for tab app UI](gettingstarted.md#prerequisites-for-your-tabs-app-ui).
 
 ## Collecting user information 
 
-TODO: need intro here
+Your configuration UI needs to perform the following steps:  
 
-### Specify when the user has specified all required information
+### Determine when the user has specified all required information
  
 By default, the **Save** button on the configuration dialog box is disabled. When the user has selected or entered all the required information for your app, you can enable the **Save** button by calling ```microsoftTeams.settings.registerOnSaveHandler(function(saveEvent){})``` and setting ```microsoftTeams.settings.setValidityState(true)```.   
 
@@ -36,10 +24,12 @@ Microsoft Teams calls the save event handler you registered when the user select
 
 Use ```microsoftTeams.settings.setSettings({contentUrl, suggestedTabName, websiteUrl, removeUrl})``` to specify the URL of the content Microsoft Teams should host in the tab. Things to keep in mind:
 
-* If ```contentUrl``` resides in a different domain from the configuration UI, make sure you have added that domain to the ```validDomains``` element in the tab manifest file. For more information, see [Microsoft Teams tab schema](tab_schema.md).
+* If ```contentUrl``` resides in a different domain from the configuration UI, make sure you have added that domain to the ```validDomains``` element in the tab manifest file. For more information, see [Microsoft Teams tab schema](tab_schema.md) and [Redirecting across domains within a Microsoft Teams tab](crossdomain.md).
 *  You can use the other parameters to further customize how your content appears in Microsoft Teams:
 	*  The ```suggestedTabName``` parameter sets the initial tab name. Users can rename the tab.
 	*  The ```websiteUrl``` parameter sets where the user is taken if they select **Go to website**. Typically, this is a link to the same content as displayed on the tab, but within your app with its regular chrome and navigation.
+
+### Return success or failure result
 
 Finally, call ```saveEvent.notifySuccess()``` or ```saveEvent.notifyFailure()``` to notify Microsoft Teams on the outcome of the configuration.
 

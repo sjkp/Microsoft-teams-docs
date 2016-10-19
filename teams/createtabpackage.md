@@ -11,17 +11,13 @@ In order for your app to be listed as a tab that can be added within Microsoft T
 
 ## Creating a manifest for your app 
 
-The manifest you create for your app must adhere to the manifest schema:
-
-[TODO: either create a reference topic that contains the schema, or point to it if it already resides somewhere]
+The manifest you create for your app must adhere to the manifest schema. For more information, see [Microsoft Teams tab manifest schema](tab_schema.md).
 
 > **Tip** Specify the schema in your manifest to enable IntelliSense or similar support from your code editor:
 > 
 > {
     "$schema": "https://teamspacewusprodms.blob.core.windows.net/tabframework/0.2/tab-manifest-schema.json",
 	...}
-
-[TODO: update the schema link if/when it changes for production]
 
 ## Uploading your tab package to Microsoft Teams
 
@@ -38,5 +34,5 @@ From here, users can select your app to add it as a tab to the selected Team or 
 ## Next steps
 
 * [Create tab configuration UI](createtabconfigui.md)
-* [Create the content UI for your Microsoft Teams tab](createtabcontent.md)
+* [Create the tab content UI](createtabcontent.md)
 
