@@ -6,10 +6,10 @@ When you create your Microsoft tab app, you can decide whether you want users to
 
 You enable users to update or reconfigure a tab they have already added to a Microsoft Team. When you do so, Microsoft Teams adds a **Settings** selection to the right-click menu for your tab. Selecting this option displays **Update Tab**, which hosts your configuration page.
 
-!["Screenshot of a tab with the right-click menu open to show the Settings menu option."](../images/tab_settings.png)
+!["Screenshot of a tab with the right-click menu open to show the Settings menu option."](images/tab_settings.png)
 TODO: redo screenshot prior to publication (contains 'Skype Teams' branding)
 
-To enable your tab to be updated, set the ```canUpdateConfig``` attribute in your tab manifest to ```true```. For more information, see [Microsoft Teams tab package schema reference](../tab-schema.md).
+To enable your tab to be updated, set the ```canUpdateConfig``` attribute in your tab manifest to ```true```. For more information, see [Microsoft Teams tab package schema reference](tab-schema.md).
 
 To support user updates, in your configuration page code call ```microsoftTeams.settings.getSettings(<callback>)``` after initialization. Once you receive the callback, you can inspect to see if there are existing settings or if this is a new tab.  You can then enable your configuration page and continue loading your content in the tab. 
 
@@ -19,7 +19,7 @@ To support user updates, in your configuration page code call ```microsoftTeams.
 
 You can create a page to enable users to select what happens to content when a tab is removed from a Microsoft Team. For example, you might want to give them the option to download, archive, or delete the tab content. This removal page UI is optional.
 
-To include a tab removal page in your app, specify the ```removeUrl``` attribute in your tab manifest. For more information, see [Microsoft Teams tab package schema reference](../tab_schema.md).
+To include a tab removal page in your app, specify the ```removeUrl``` attribute in your tab manifest. For more information, see [Microsoft Teams tab package schema reference](tab_schema.md).
 
 ### Prerequisites for your tab removal page 
 
@@ -29,7 +29,7 @@ A tab removal page has the same prerequisites as a tab configuration page:
 * Include the [Microsoft Teams Tab library](https://teamspacewusprodms.blob.core.windows.net/tabframework/0.2/MicrosoftTeams.js) as a script source.
 * Call ```microsoftTeams.initialize()``` to display your UI.
 
-For more information, see [Create the configuration UI for your Microsoft Team tab app](../createtabconfigui.md).
+For more information, see [Create the configuration UI for your Microsoft Team tab app](createtabconfigui.md).
 
 ### Presenting the user with content options upon tab removal
 
@@ -44,7 +44,7 @@ Upon page load, enable the **Remove** button immediately by calling ```microsoft
 
 Because your tab should enable the **Remove** button immediately, make sure that all the options in your tab removal page have a default selection. 
 
-If your tab removal page requires user context, see [Get user context, locale, or theme information](../getusercontext.md). If your app needs to authenticate the user, see [Authenticating your Microsoft Teams tab](../auth.md).
+If your tab removal page requires user context, see [Get user context, locale, or theme information](getusercontext.md). If your app needs to authenticate the user, see [Authenticating your Microsoft Teams tab](auth.md).
 
 ### Processing the content prior to tab removal
 

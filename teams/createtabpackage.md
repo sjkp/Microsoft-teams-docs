@@ -37,6 +37,6 @@ From here, users can select your app to add it as a tab to the selected Team or 
 
 ## Next steps
 
-* [Create tab configuration UI](../createtabconfigui.md)
-* [Create the content UI for your Microsoft Teams tab](../createtabcontent.md)
+* [Create tab configuration UI](createtabconfigui.md)
+* [Create the content UI for your Microsoft Teams tab](createtabcontent.md)
 

@@ -2,7 +2,7 @@
 
 The tab package manifest file specifies attributes of your app, and points to required resources, such as the app icons to use in the Microsoft Teams UI and the location of your app configuration page. The manifest must adhered to the tab package schema, detailed below. 
 
-For more information, see [Create the package for your Microsoft Team tab app](../createtabpackage.md).
+For more information, see [Create the package for your Microsoft Team tab app](createtabpackage.md).
 
 manifestVersion
 	

@@ -4,7 +4,7 @@ Your tab app can use Azure Azure Active Directory (Azure AD) or any identity pro
 
 ## Silent authentication using Azure AD and user context
 
-If your app uses Azure AD as its identity provider, you can retrieve user context information and use it to determine if you can authenticate the user silently. Retrieve the username and tenant ID, as described in [Get user context, locale, or theme information for use in your Microsoft Team tab](../getusercontext.md). If these, along with any existing Azure AD session cookies, are sufficient for you to silently authenticate the user, you can log the user into your service without having to prompt them. 
+If your app uses Azure AD as its identity provider, you can retrieve user context information and use it to determine if you can authenticate the user silently. Retrieve the username and tenant ID, as described in [Get user context, locale, or theme information for use in your Microsoft Team tab](getusercontext.md). If these, along with any existing Azure AD session cookies, are sufficient for you to silently authenticate the user, you can log the user into your service without having to prompt them. 
 
 If not--for example, if your app requires two-factor authentication, or user consent--you'll need to have the user explicitly authenticate using the flow described below.
 

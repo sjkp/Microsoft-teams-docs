@@ -2,7 +2,7 @@
 
 The configuration UI enables you to present options and gather information from the user, so they can specify and customize the content and experience you present in the tab for your app. For example, selecting existing app resources to display, such as files, or specifying the attributes of new app resources.
 
-!["Screenshot of the configuration UI for an Excel spreadsheet tab"](/images/tab_configui.png)
+!["Screenshot of the configuration UI for an Excel spreadsheet tab"](images/tab_configui.png)
 
 The configuration UI is hosted within an IFrame in the dialog box Microsoft Teams displays when the user chooses to add your tab to their team or chat. It communicates to the main Microsoft Teams UI through the [Microsoft Teams Tab library](https://teamspacewusprodms.blob.core.windows.net/tabframework/0.2/MicrosoftTeams.js).
 
@@ -75,5 +75,5 @@ function onClick() {
 
 ## Next Steps
 
-* [Create the content UI for your Microsoft Teams tab](../createtabcontent.md)
+* [Create the content UI for your Microsoft Teams tab](createtabcontent.md)
 
