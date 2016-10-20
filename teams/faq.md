@@ -1,17 +1,42 @@
 ﻿# Frequently asked questions
 
-## Custom tabs
+Below are some of the most frequently asked questions concerning Microsoft Teams extensibility.
 
-**Q: Can I use custom tabs in a mobile Microsoft Teams app?**
-A: Currently, custom tabs are only supported in Microsoft Teams desktop and web applications.
+## Tabs
 
-**Q: Can I use custom tabs in multiparty chats?**
-A: Currently, custom tabs are only supported in channels and 1:1 chats.
+**Can I use custom tabs in a mobile Microsoft Teams app?**
 
+Currently, custom tabs are only supported in Microsoft Teams desktop and web applications.
 
+**Can I use custom tabs in multiparty chats?**
+
+Currently, custom tabs are only supported in channels and 1:1 chats.
 
 ## Bots
 
+**Can I build a bot that works in Microsoft Teams channels?**
+
+No, at this time bots are only supported in 1:1 chats. 
+
+**Do Microsoft Team bots support basic outgoing webhooks and slash command integrations?**
+
+Currently, no. 
+
+**Can I access REST APIs to fetch user profile or conversation messages?**
+
+No, at this time we do not expose Microsoft Teams REST APIs for those operations. 
+
+**Why can't I search for my Bot Framework bot in Skype Teams?**
+
+Currently, People search is not enabled to find bots written in the Bot Framework. 
+
+**Can I access audio/video or add my bot to a call?**
+
+Currently we do not support audio/video or meetings scenarios for bots in Microsoft Teams.
+
 ## Connectors
 
+**Can I add an 'Connect to Office 365' button to my app?**
 
+Currently, we don't support this method of setting up and configuring an Office 365 Connector.
+ 

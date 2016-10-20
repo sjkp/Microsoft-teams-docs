@@ -9,7 +9,7 @@ You enable users to update or reconfigure a tab they have already added to a Mic
 !["Screenshot of a tab with the right-click menu open to show the Settings menu option."](images/tab_settings.png)
 TODO: redo screenshot prior to publication (contains 'Skype Teams' branding)
 
-To enable your tab to be updated, set the ```canUpdateConfig``` attribute in your tab manifest to ```true```. For more information, see [Microsoft Teams tab package schema reference](tab-schema.md).
+To enable your tab to be updated, set the ```canUpdateConfig``` attribute in your tab manifest to ```true```. For more information, see [Microsoft Teams tab package schema reference](tab_schema.md).
 
 To support user updates, in your configuration page code call ```microsoftTeams.settings.getSettings(<callback>)``` after initialization. Once you receive the callback, you can inspect to see if there are existing settings or if this is a new tab.  You can then enable your configuration page and continue loading your content in the tab. 
 

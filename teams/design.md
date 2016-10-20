@@ -13,15 +13,11 @@ With that in mind, consider the following when designing your tab app:
 
 ## Select relevant app functionality
 
-Find the concept(s) in your app that best fit the contexts listed above.  Users will be more likely want to pin these as a tab.  
-
-For example, the OneNote tab for a channel contains a section of the team's notebook. The Power BI tab maps to a specific report.
+Find the concept(s) in your app that best fit the contexts listed above.  Users will be more likely want to pin these as a tab. For example, the OneNote tab for a channel contains a section of the team's notebook. The Power BI tab maps to a specific report.
 
 ## Scope and focus the user experience
 
-Once configured, your tab should drill down to the relevant context and not let the user navigate outside of it within the tab.  
-
-Again using OneNote as an example, the OneNote tab puts the user in a specific section of the team notebook, and then doesn't let them navigate to another section.
+Once configured, your tab should drill down to the relevant context and not let the user navigate outside of it within the tab. Again using OneNote as an example, the OneNote tab puts the user in a specific section of the team notebook, and then doesn't let them navigate to another section.
 
 ## Integrate with the Microsoft Teams user experience
 
@@ -29,9 +25,7 @@ Your tab experience should feel integrated into Microsoft Teams. If you are adap
 
 ## Provide access to your web app's full functionality
 
-If you are adapting an existing web app, your tab should provide a way for users to launch the full web app experience outside Microsoft Teams.
-
-For example, the OneNote tab includes an **Open in OneNote** option that launches the OneNote web app in a separate window.
+If you are adapting an existing web app, your tab should provide a way for users to launch the full web app experience outside Microsoft Teams. For example, the OneNote tab includes an **Open in OneNote** option that launches the OneNote web app in a separate window.
 
 ## Streamline access 
 

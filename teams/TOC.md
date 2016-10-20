@@ -8,11 +8,12 @@
 ### [Get user context](getusercontext.md)
 ### [Authenticating within a tab](auth.md)
 ### [Redirecting across domains](crossdomain.md)
-## [Microsoft Teams bots](bots.md)
-## [Microsoft Teams connectors](connectors.md)
+
 ## [Orientation](orientation.md)
 ### [Design a great tab app](design.md)
 ### [Tabs manifest schema reference](tab_schema.md)
+## [Getting started with bots](bots.md)
+## [Getting started with connectors](connectors.md)
 
 # [Samples](samples.md)
 # [FAQ](faq.md)
