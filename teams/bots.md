@@ -4,7 +4,7 @@
 
 Build and connect intelligent bots to interact with Microsoft Teams users naturally through 1:1 chat.
 
-> **Note:** At this time, Microsoft Teams bots support 1:1 chat, but do not support channels or group chats.
+> **Note:** At this time, Microsoft Teams bots support 1:1 chat. They do not yet support channels or group chats.
 
 ## Creating a Microsoft Teams bot
 
@@ -18,11 +18,11 @@ See the [Microsoft Bot Framework Overview](https://docs.botframework.com/en-us/)
 
 2. Test it using the [Bot Framework Emulator](https://docs.botframework.com/en-us/tools/bot-framework-emulator/)
 3. Deploy the bot to a cloud service, such as [Microsoft Azure](https://azure.microsoft.com/)
-4. Register the bot with the Microsoft Bot Framework, and make sure you add Microsoft Teams as a channel. When you first register a bot it will be in Preview, which means it can be added by up to 100 users using [an add button or URL](#add-button-or-URL). To remove the limit you can easily publish it in Microsoft Teams using the Microsoft Bot Framework.
+4. Register the bot with the Microsoft Bot Framework, and make sure you add Microsoft Teams as a channel. When you first register a bot it will be in Preview, which means it can be added by up to 100 users using an add button or URL. To remove the limit you can easily publish it in Microsoft Teams using the Microsoft Bot Framework.
 	
 	**TODO reviewers:** Is the rest of this info about preview correct as well?
 
-5. [Add the bot](#adding-a-bot) to a Microsoft Teams 1:1 chat, and test.
+5. [Add the bot](#testing-your-bot-in-microsoft-teams) to a Microsoft Teams 1:1 chat, and test.
 
 ## Publishing
 

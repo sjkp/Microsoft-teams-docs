@@ -1,7 +1,7 @@
 ﻿
 # Submit your questions, bugs, feature requests, and contributions
 
-<!--TODO: still some Skype-specific links that need to be updated with Teams equivalents-->
+**TODO reviewers:** Many of teh feeedback channels listed in this topic are still Skype-specific links> so I need to know whether to keep them as is or what the updated, MS Teams-specific links would be. Thanks.
 
 The Microsoft Team product team responds to the developer community across several channels. Please tell us about your:
 

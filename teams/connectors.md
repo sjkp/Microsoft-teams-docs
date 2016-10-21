@@ -1,4 +1,4 @@
-﻿# Getting started with connectors for Microsoft Teams
+﻿# Getting started with Office 365 Connectors for Microsoft Teams
 
 Office 365 Connectors are a great way to get useful information and content into Microsoft Teams. Any user can connect their group to services like Trello, Bing News, Twitter, etc., and get notified of the team's activity in that service. From tracking a team's progress in Trello, to following important hashtags in Twitter, Office 365 Connectors make it easier for your team to stay in sync and get more done.
 
@@ -8,15 +8,15 @@ Office 365 Connectors also provide a compelling extensibility solution for devel
 
 ## Accessing Office 365 Connectors from Microsoft Teams
 
-From within a Microsoft Teams channel, select **...(more options)** next to the channel name and then select **Connectors**.
+From within a Microsoft Teams channel, select **... (more options)** next to the channel name and then select **Connectors**.
 
 ![Screenshot of the right-click menu next to the channel name, with the Connectors option selected.](images/connector_select.png)
 
-And then select connectors from the list:
+And then select a connector from the list and select **Add**:
 
 ![Screenshot of a dialog box showing a list of available connectors, with buttons for adding each one.](images/connector_list.png)
 
-## Creating messages through Office 365 Connector with Microsoft Teams
+## Creating messages through Office 365 Connectors with Microsoft Teams
 
 Office 365 Connectors use webhooks to create Connector Card messages within Microsoft Teams. Developers can create these cards by sending an HTTP request with a simple JSON payload to a Microsoft Teams webhook address. 
 
@@ -26,11 +26,8 @@ Follow the steps below to see how to send a simple card to a connector.
 
 1. From within a Microsoft Teams channel, select **...(more options)** next to the channel name and then select **Connectors**.
 2. Scroll through the list of connectors to **Incoming Webhook**, and click **Add**.
-3. Enter a new for the webhook, upload an image to associate with data from the webhook, and select **Create**.
-4. Copy the webhook to the clipboard and save it. 
-	
-	You'll need the webhook URL for sending information to Microsoft Teams.
-
+3. Enter a name for the webhook, upload an image to associate with data from the webhook, and select **Create**.
+4. Copy the webhook to the clipboard and save it. You'll need the webhook URL for sending information to Microsoft Teams.
 5. Click **Done**.
 
 ### Post a simple message to the webhook
@@ -41,7 +38,7 @@ For this part of the exercise, you'll need [cURL](https://curl.haxx.se/). It's a
 
 	`curl -H "Content-Type: application/json" -d "{\"text\": \"Hello World!\"}" <YOUR WEBHOOK URL>`
 
-2.	If the `POST` succeeds, you should see a simple 1 output by cURL.
+2.	If the POST succeeds, you should see a simple 1 output by cURL.
 
 3.	Check the Microsoft Team. You should see the new card posted to the team.
 

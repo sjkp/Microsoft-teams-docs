@@ -4,11 +4,11 @@ Below are some of the most frequently asked questions concerning Microsoft Teams
 
 ## Tabs
 
-**Can I use custom tabs in a mobile Microsoft Teams app?**
+**Can I use tab apps in a mobile Microsoft Teams app?**
 
-Currently, custom tabs are only supported in Microsoft Teams desktop and web applications.
+Currently, tabs are only supported in Microsoft Teams desktop and web applications.
 
-**Can I use custom tabs in multiparty chats?**
+**Can I use tab apps in multiparty chats?**
 
 Currently, custom tabs are only supported in channels and 1:1 chats.
 

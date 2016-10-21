@@ -1,8 +1,8 @@
 ﻿# Microsoft Teams tab package schema reference
 
-The tab package manifest file specifies attributes of your app, and points to required resources, such as the app icons to use in the Microsoft Teams UI and the location of your app configuration page. The manifest must adhered to the tab package schema, detailed below. 
+The tab package manifest file specifies attributes of your app, and points to required resources, such as the app icons to use in the Microsoft Teams UI and the location of your app configuration page. The manifest must adhere to the tab package schema, detailed below. 
 
-For more information, see [Create the package for your Microsoft Team tab app](createtabpackage.md).
+For more information on including the manifest in your app package, see [Create the package for your Microsoft Team tab app](createtabpackage.md).
 
 * manifestVersion
 	
@@ -64,8 +64,10 @@ For more information, see [Create the package for your Microsoft Team tab app](c
 	* 88
 	
 		Required. Name of the larger icon for the tab extension, sized to 88 x 88 pixels.
-		
-	For additional information on format requirements for icon images, and including them in your tab package, see [Create the package for your Microsoft Team tab app](createtabpackage.md).
+	
+	Each icon image file must be a transparent PNG, with a white or light-colored background.	
+	
+	For information on including icons in your tab package, see [Create the package for your Microsoft Team tab app](createtabpackage.md).
 	
 * accentColor
 	
@@ -79,13 +81,13 @@ For more information, see [Create the package for your Microsoft Team tab app](c
 
 * canUpdateConfig
 
-	```true``` if a tab instance configuration can be updated by the user after creation. For more information, see [Update or remove a Microsoft Teams tab](updateremovetab.md).	
+	`true` if a tab instance configuration can be updated by the user after creation. For more information, see [Update or remove a Microsoft Teams tab](updateremovetab.md).	
 
 	**TODO: reviewers** This is optional, right? Default is false?
 
 * needsIdentity
 
-	```true``` if the tab requests access to user context information. For more information, see [Get user context, locale, or theme information for use in your Microsoft Team tab](getusercontext.md). 
+	`true` if the tab requests access to user context information. For more information, see [Get user context, locale, or theme information for use in your Microsoft Team tab](getusercontext.md). 
 
 	**TODO: reviewers** This is optional, right? Default is false?
 
@@ -94,13 +96,11 @@ For more information, see [Create the package for your Microsoft Team tab app](c
 	A list of valid domains from which the tab expects to communicate with Microsoft Teams. Domain listings can include wildcards.
 
 ## Example schema
-TODO: Go through and clean this up
 
 ```JSON
 
 {
-    "$schema": "https://teamspacewusprodms.blob.core.windows.net/
-	tabframework/0.2/tab-manifest-schema.json",
+    "$schema": "https://statics.teams.microsoft.com/sdk/v0.2/manifest/MicrosoftTeams.schema.json",
     "manifestVersion": "0.2",
     "id": "com.example.microsoftteamstabs.maps",
     "version": "0.2",
@@ -113,7 +113,8 @@ TODO: Go through and clean this up
     },
     "description" : {
             "short": "Host a map as a tab.",
-            "full": "Host a map as a tab.  Give your tab a name, select Bing Maps or Google Maps, and click save."
+            "full": "Host a map as a tab.  Give your tab a name, 
+					select Bing Maps or Google Maps, and click save."
     },
     "icons": {
             "44": "maps44.png",

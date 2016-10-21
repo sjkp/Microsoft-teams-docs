@@ -2,7 +2,7 @@
 
 There may be cases where your app needs basic information about the user, team, or company. This can be especially useful when:
 
-* You need to create or associate resources in your app with the specified user or team
+* You need to create or associate resources in your app with the specified user or team.
 * You want to initiate an authentication flow against Azure AD or other identity provider, and you don't want to require the user to enter their username again. (For more information on authenticating within your Microsoft Teams tab, see [Authenticating your Microsoft Teams tab](auth.md).)
 
 > **Important:** While this user information is useful for a smooth user experience, it is not guaranteed secure and therefore should **not** be used as proof of identity. 
@@ -16,9 +16,7 @@ There are two ways to access user context information:
 
 ## Getting user information through inserting URL placeholder values
 
-First, set the ```needsIdentity``` element in your tab manifest to ```true```. Doing so will prompt the user for their consent when they select your tab.
-
-TODO: get consent screenshot?
+First, set the `needsIdentity` element in your tab manifest to `true`. Doing so will prompt the user for their consent when they select your tab.
 
 Next, use placeholders in your configuration or content URLs. Microsoft Teams replaces the placeholders with the relevant values when determining the actual configuration or content URL to navigate to. The available placeholders include:
 
@@ -27,11 +25,12 @@ Next, use placeholders in your configuration or content URLs. Microsoft Teams re
 * {tid}: The company ID, i.e., tenant ID
 * {mkt}: Display theme, such as 'default' or 'dark'
 	
-	TODO--is {mkt} actually theme? or is that a mistake?
+	**TODO reviewers:** Is {mkt} actually theme? or is that a mistake?
 * {locale}: The user locale, such as 'en-us'
 
-For example, suppose in your tab manifest you set the ```configURL``` attribute to:
-```"https://tasks.office.com/config?auth_upn={upn}&auth_tenant={tid}&group={groupId}"```
+For example, suppose in your tab manifest you set the `configURL` attribute to:
+
+`"https://tasks.office.com/config?auth_upn={upn}&auth_tenant={tid}&group={groupId}"`
 
 And the signed-in user has the following attributes:
 
@@ -40,14 +39,15 @@ And the signed-in user has the following attributes:
 * They are a member of the Office 365 group named 'test' 
 
 When they select your tab, they will be navigated to:
-```https://tasks.office.com/config?auth_upn=user@example.com&auth_tenant=e2653c-etc&group=test```
+
+`https://tasks.office.com/config?auth_upn=user@example.com&auth_tenant=e2653c-etc&group=test`
 
 
 ## Getting user information through using the Microsoft Teams Tab library
 
-You can also retrieve the information listed above using the [Microsoft Teams Tab library](https://teamspacewusprodms.blob.core.windows.net/tabframework/0.2/MicrosoftTeams.js), by calling ```microsoftTeams.getContext()```.
+You can also retrieve the information listed above using the [Microsoft Teams Tab library](https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js), by calling `microsoftTeams.getContext()`.
 
-In addition, you can also register your app to be told if the theme changes by calling ```microsoftTeams.registerOnThemeChangeHandler()```.
+In addition, you can also register your app to be told if the theme changes by calling `microsoftTeams.registerOnThemeChangeHandler()`.
 
 
 

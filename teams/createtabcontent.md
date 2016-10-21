@@ -6,8 +6,9 @@ Once you have determined the URL of the content the user wants, based on user co
 
 For your content to display within a Microsoft Teams tab, make sure it meets the [requirements for tab app UI](gettingstarted.md#prerequisites-for-your-tabs-app-ui).
 
-In addition, make sure your content conforms to the [TODO: design guidelines]() for Microsoft Teams tabs.
+In addition, make sure your content conforms to the [design recommendations](design) for Microsoft Teams tabs.
 
 ## Next steps
 
-* [TODO: check out our code samples on GitHub]()
+* Check out our [code samples](samples.md) on GitHub
+* Optionally, you can also specify how users can [update or remove a Microsoft Teams tab](updateremovetab.md)

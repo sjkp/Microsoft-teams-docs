@@ -1,10 +1,10 @@
 ﻿# Create the configuration UI for your Microsoft Team tab app
 
-The configuration UI enables you to present options and gather information from the user, so they can specify and customize the content and experience you present in the tab for your app. For example, selecting existing app resources to display, such as files, or specifying the attributes of new app resources.
+The configuration UI is an HTML page that you host. It enables you to present options and gather information from the user, so they can specify and customize the content and experience you present in your tab app. For example, selecting existing app resources to display, such as files or task lists, or specifying the attributes of new app resources.
 
 !["Screenshot of the configuration UI for an Excel spreadsheet tab"](images/tab_configui.png)
 
-The configuration UI is hosted within an IFrame in the dialog box Microsoft Teams displays when the user chooses to add your tab to their team or chat. It communicates to the main Microsoft Teams UI through the [Microsoft Teams Tab library](https://teamspacewusprodms.blob.core.windows.net/tabframework/0.2/MicrosoftTeams.js).
+When the user chooses to add your tab to their team or chat, Microsoft Teams displays your configuration page, hosted within an IFrame in a dialog box. The configuration page communicates with Microsoft Teams through the [Microsoft Teams Tab library](https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js).
 
 ## Prerequisites for your configuration UI
 
@@ -20,7 +20,7 @@ By default, the **Save** button on the configuration dialog box is disabled. Whe
 
 ### Determine the content to display in the tab
 
-Microsoft Teams calls the save event handler you registered when the user selects **Save**. At this point, you'll need to determine the URL of the content Microsoft Teams should host in the tab. If the user has selected a resource that already exists, such as an existing file, you can return the URL immediately. However, if the user has requested a new resource, you can can return the URL asynchronously, after you've created the resource.  If so, store `saveEvent` for later.  You have 30 seconds to return the URL, before the operation is terminated and an error displayed.
+When the user selects **Save**, Microsoft Teams calls the save event handler you registered. At this point, you'll need to determine the URL of the content Microsoft Teams should host in the tab. If the user has selected a resource that already exists, such as an existing file or task list, you can return the URL immediately. However, if the user has requested a new resource, you can can return the URL asynchronously, after you've created the resource.  If you need to do so, store `saveEvent` for later. If you do not return the URL within 30 seconds, Microsoft Teams terminates the operation is terminated and displays an error.
 
 Use `microsoftTeams.settings.setSettings({contentUrl, suggestedTabName, websiteUrl, removeUrl})` to specify the URL of the content Microsoft Teams should host in the tab. Things to keep in mind:
 
@@ -46,10 +46,18 @@ microsoftTeams.settings.registerOnSaveHandler(function(saveEvent){
  	  
     var radios = document.getElementsByName('resourcetype');
   	if (radios[0].checked) {
-       microsoftTeams.settings.setSettings({contentUrl: "https://www.example.com/resource1/embed", suggestedTabName: "Resource One", websiteUrl: "https://www.example.com/resources", removeUrl: "https://localhost/maps/tabremove.htm"});
+       microsoftTeams.settings.setSettings(
+		{contentUrl: "https://www.example.com/resource1/embed", 
+		suggestedTabName: "Resource One", 
+		websiteUrl: "https://www.example.com/resources", 
+		removeUrl: "https://www.example.com/tabremove.htm"});
   	}
     else {
-       microsoftTeams.settings.setSettings({contentUrl: "https://www.example.com/resource2/embed", suggestedTabName: "Resource Two", websiteUrl: "https://www.example.com/resources", removeUrl: "https://localhost/maps/tabremove.htm"});
+       microsoftTeams.settings.setSettings(
+		{contentUrl: "https://www.example.com/resource2/embed", 
+		suggestedTabName: "Resource Two", 
+		websiteUrl: "https://www.example.com/resources", 
+		removeUrl: "https://www.example.com/tabremove.htm"});
     }
     
     saveEvent.notifySuccess();
