@@ -18,7 +18,7 @@ And then select connectors from the list:
 
 ## Creating messages through Office 365 Connector with Microsoft Teams
 
-Connectors use webhooks to create Connector Card messages within Microsoft Teams. Developers can create these cards by sending an HTTP request with a simple JSON payload to a Microsoft Teams webhook address. 
+Office 365 Connectors use webhooks to create Connector Card messages within Microsoft Teams. Developers can create these cards by sending an HTTP request with a simple JSON payload to a Microsoft Teams webhook address. 
 
 ### Create the webhook
 
@@ -39,9 +39,9 @@ For this part of the exercise, you'll need [cURL](https://curl.haxx.se/). It's a
 
 1.	From the command line, enter the following cURL command:
 
-	curl -H "Content-Type: application/json" -d "{\"text\": \"Hello World!\"}" <YOUR WEBHOOK URL>
+	`curl -H "Content-Type: application/json" -d "{\"text\": \"Hello World!\"}" <YOUR WEBHOOK URL>`
 
-2.	If the POST succeeds, you should see a simple 1 output by cURL.
+2.	If the `POST` succeeds, you should see a simple 1 output by cURL.
 
 3.	Check the Microsoft Team. You should see the new card posted to the team.
 
@@ -51,7 +51,7 @@ To see how to send more complex messages, see **Posting more complex cards** in 
 
 For full details on the available options on cards, see [Office 365 Connectors API Reference](https://dev.outlook.com/Connectors/Reference).
 
-To learn how you can register your connector so that it shows up in the Microsoft Teams connector catalog, see [Connectors Developer Dashboard Beta Guide](https://dev.outlook.com/Connectors/ConnectButton).
+To learn how you can register your Office 365 Connector so that it shows up in the Microsoft Teams connector catalog, see [Connectors Developer Dashboard Beta Guide](https://dev.outlook.com/Connectors/ConnectButton).
 
 **TODO: reviewers** Is this correct? Can developers register their connectors, or do we not support that developer portal yet? (I know we don't support the 'Connect to Office 365' button, but what about the rest of it? Thanks!)
 
