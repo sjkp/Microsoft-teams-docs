@@ -26,7 +26,7 @@ Currently, no.
 
 No, at this time we do not expose Microsoft Teams REST APIs for those operations. 
 
-**Why can't I search for my Bot Framework bot in Skype Teams?**
+**Why can't I search for my Bot Framework bot in Microsoft Teams?**
 
 Currently, People search is not enabled to find bots written in the Bot Framework. 
 

@@ -7,7 +7,7 @@ This section shows how to get started building a Microsoft Teams tab app, either
 Building a new tab app, or adapting an existing web app so that it can be hosted on a Microsoft Teams tab, consists of the following general steps:
 
 *  [Creating an tab app package:](createtabpackage.md) This package contains the tab app manifest, which specifies attributes of the tab app, as well as the icon files used to represent your app within the Microsoft Teams UI.
-*  [Creating the configuration UI:](createtabconfigui.d) This HTML page, which you host and Microsoft Teams displays within an IFrame, displays when the user select to add your tab. It enables you to present options and gather information from the user, so they can specify and customize the content and experience you present in the tab app.
+*  [Creating the configuration UI:](createtabconfigui.md) This HTML page, which you host and Microsoft Teams displays within an IFrame, displays when the user select to add your tab. It enables you to present options and gather information from the user, so they can specify and customize the content and experience you present in the tab app.
 *  [Creating the content UI:](createtabcontent.md) This HTML page, which you host and Microsoft Teams displays within an IFrame, presents the user with the content for your tab app, based on their configuration choices.
 
 Optionally, you can also [enable users to update a tab](updateremovetab.md#updating-an-existing-tab-instance) after they add it, or provide UI for users to specify [what happens to content when they remove a tab](updateremovetab.md#removing-a-tab).

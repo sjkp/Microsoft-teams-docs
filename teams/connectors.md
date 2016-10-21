@@ -37,13 +37,13 @@ Follow the steps below to see how to send a simple card to a connector.
 
 For this part of the exercise, you'll need [cURL](https://curl.haxx.se/). It's assumed that you have this installed and are familiar with basic usage.
 
-1.From the command line, enter the following cURL command:
+1.	From the command line, enter the following cURL command:
 
 	curl -H "Content-Type: application/json" -d "{\"text\": \"Hello World!\"}" <YOUR WEBHOOK URL>
 
-2.If the POST succeeds, you should see a simple 1 output by cURL.
+2.	If the POST succeeds, you should see a simple 1 output by cURL.
 
-3.Check the Microsoft Team. You should see the new card posted to the team.
+3.	Check the Microsoft Team. You should see the new card posted to the team.
 
 ## Next steps
 

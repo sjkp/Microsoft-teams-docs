@@ -16,30 +16,28 @@ Your configuration UI needs to perform the following steps:
 
 ### Determine when the user has specified all required information
  
-By default, the **Save** button on the configuration dialog box is disabled. When the user has selected or entered all the required information for your app, you can enable the **Save** button by calling ```microsoftTeams.settings.registerOnSaveHandler(function(saveEvent){})``` and setting ```microsoftTeams.settings.setValidityState(true)```.   
+By default, the **Save** button on the configuration dialog box is disabled. When the user has selected or entered all the required information for your app, you can enable the **Save** button by calling `microsoftTeams.settings.registerOnSaveHandler(function(saveEvent){})` and setting `microsoftTeams.settings.setValidityState(true)`.   
 
 ### Determine the content to display in the tab
 
-Microsoft Teams calls the save event handler you registered when the user selects **Save**. At this point, you'll need to determine the URL of the content Microsoft Teams should host in the tab. If the user has selected a resource that already exists, such as an existing file, you can return the URL immediately. However, if the user has requested a new resource, you can can return the URL asynchronously, after you've created the resource.  If so, store ```saveEvent``` for later.  You have 30 seconds to return the URL, before the operation is terminated and an error displayed.
+Microsoft Teams calls the save event handler you registered when the user selects **Save**. At this point, you'll need to determine the URL of the content Microsoft Teams should host in the tab. If the user has selected a resource that already exists, such as an existing file, you can return the URL immediately. However, if the user has requested a new resource, you can can return the URL asynchronously, after you've created the resource.  If so, store `saveEvent` for later.  You have 30 seconds to return the URL, before the operation is terminated and an error displayed.
 
-Use ```microsoftTeams.settings.setSettings({contentUrl, suggestedTabName, websiteUrl, removeUrl})``` to specify the URL of the content Microsoft Teams should host in the tab. Things to keep in mind:
+Use `microsoftTeams.settings.setSettings({contentUrl, suggestedTabName, websiteUrl, removeUrl})` to specify the URL of the content Microsoft Teams should host in the tab. Things to keep in mind:
 
-* If ```contentUrl``` resides in a different domain from the configuration UI, make sure you have added that domain to the ```validDomains``` element in the tab manifest file. For more information, see [Microsoft Teams tab schema](tab_schema.md) and [Redirecting across domains within a Microsoft Teams tab](crossdomain.md).
+* If `contentUrl` resides in a different domain from the configuration UI, make sure you have added that domain to the `validDomains` element in the tab manifest file. For more information, see [Microsoft Teams tab schema](tab_schema.md) and [Redirecting across domains within a Microsoft Teams tab](crossdomain.md).
 *  You can use the other parameters to further customize how your content appears in Microsoft Teams:
-	*  The ```suggestedTabName``` parameter sets the initial tab name. Users can rename the tab.
-	*  The ```websiteUrl``` parameter sets where the user is taken if they select **Go to website**. Typically, this is a link to the same content as displayed on the tab, but within your app with its regular chrome and navigation.
+	*  The `suggestedTabName` parameter sets the initial tab name. Users can rename the tab.
+	*  The `websiteUrl` parameter sets where the user is taken if they select **Go to website**. Typically, this is a link to the same content as displayed on the tab, but within your app with its regular chrome and navigation.
 
 ### Return success or failure result
 
-Finally, call ```saveEvent.notifySuccess()``` or ```saveEvent.notifyFailure()``` to notify Microsoft Teams on the outcome of the configuration.
+Finally, call `saveEvent.notifySuccess()` or `saveEvent.notifyFailure()` to notify Microsoft Teams on the outcome of the configuration.
 
-## Example
+## Configuration UI example
 
-TODO: Do we want this example here? If not, delete.
+The excerpt below shows a simple example of code that might be included in a configuration page. In this case, the user is presented with two radio buttons, which represent a choice of two different resources. Selecting either radio button fires `onClick()`, which sets `microsoftTeams.settings.setValidityState(true)`, enabling the **Save** button.
 
-The code below shows a simple example of code that might be included in a configuration page. In this case, the user is presented with two radio buttons, which represent a choice of two different resources. Selecting either radio button fires onClick(), which sets ```microsoftTeams.settings.setValidityState(true)```, enabling the **Save** button.
-
-On save, the code determines which radio button was checked, and sets the various parameters of ```microsoftTeams.settings.setSettings``` accordingly. Finally, it sets ```saveEvent.notifySuccess()``` to specify that the content URL has successfully been determined.
+On save, the code determines which radio button was checked, and sets the various parameters of `microsoftTeams.settings.setSettings` accordingly. Finally, it sets `saveEvent.notifySuccess()` to specify that the content URL has successfully been determined.
 
 ```
 
