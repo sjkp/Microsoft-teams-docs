@@ -15,6 +15,6 @@
 ## [Getting started with bots](bots.md)
 ## [Getting started with connectors](connectors.md)
 
-# [Samples](samples.md)
-# [FAQ](faq.md)
-# [Submit your questions, bugs, feature requests, and contributions](feedback.md)
+## [Samples](samples.md)
+## [FAQ](faq.md)
+## [Submit your questions, bugs, feature requests, and contributions](feedback.md)
