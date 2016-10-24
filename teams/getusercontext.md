@@ -3,7 +3,7 @@
 There may be cases where your app needs basic information about the user, team, or company. This can be especially useful when:
 
 * You need to create or associate resources in your app with the specified user or team.
-* You want to initiate an authentication flow against Azure AD or other identity provider, and you don't want to require the user to enter their username again. (For more information on authenticating within your Microsoft Teams tab, see [Authenticating your Microsoft Teams tab](auth.md).)
+* You want to initiate an authentication flow against Azure Active Directory or other identity provider, and you don't want to require the user to enter their username again. (For more information on authenticating within your Microsoft Teams tab, see [Authenticating your Microsoft Teams tab](auth.md).)
 
 > **Important:** While this user information is useful for a smooth user experience, it is not guaranteed secure and therefore should **not** be used as proof of identity. 
 
@@ -24,9 +24,7 @@ Next, use placeholders in your configuration or content URLs. Microsoft Teams re
 * {groupId}: The ID of an Office 365 group
 * {tid}: The company ID, i.e., tenant ID
 * {theme}: Display theme, such as 'default' or 'dark'
-	
-	**TODO reviewers:** Is {mkt} actually theme? or is that a mistake?
-* {mkt}: The user locale, such as 'en-us'
+* {locale}: The user locale, such as 'en-us'
 
 For example, suppose in your tab app manifest you set the `configURL` attribute to:
 
@@ -34,7 +32,7 @@ For example, suppose in your tab app manifest you set the `configURL` attribute 
 
 And the signed-in user has the following attributes:
 
-* Their username is  'user@example.com'
+* Their username is 'user@example.com'
 * Their company tenancy ID is 'e2653c-etc'
 * They are a member of the Office 365 group named 'test' 
 
@@ -45,9 +43,9 @@ When they select your tab, they will be navigated to:
 
 ## Getting user information through using the Microsoft Teams Tab library
 
-You can also retrieve the information listed above using the [Microsoft Teams Tab library](https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js), by calling `microsoftTeams.getContext()`.
+You can also retrieve the information listed above using the [Microsoft Teams Tab library](https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js), by calling `microsoftTeams.getContext(function(context) { /* ... */ })`.
 
-In addition, you can also register your app to be told if the theme changes by calling `microsoftTeams.registerOnThemeChangeHandler()`.
+In addition, you can also register your app to be told if the theme changes by calling `microsoftTeams.registerOnThemeChangeHandler(function(theme) { /* ... */ })`.
 
 
 

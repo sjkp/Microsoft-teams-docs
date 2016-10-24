@@ -1,12 +1,12 @@
 ﻿# Create the configuration page for your Microsoft Teams tab
 
-The configuration page is an HTML page that you host. Microsoft Teams displays it inside the **Add Tab** dialog when a user chooses to add your tab. This page enables you to present options and gather information from the user, so they can specify and customize the content and experience you present in your tab app. For example, selecting existing app resources to display, such as files or task lists, or specifying the attributes of new app resources.
+The configuration page is an HTML page that you host. Microsoft Teams displays it inside the **Add Tab** dialog when a user chooses to add your tab. This page enables you to present options and gather information from the user so they can specify and customize the content and experience you present in your tab app. For example, selecting existing app resources to display, such as files or task lists, or specifying the attributes of new app resources.
 
 !["Screenshot of the configuration page for a simple example app, giving the user the option of which map type to select."](images/tab_configui.png)
 
 **TODO. ritaylor comment**  Excel not a great example (will explain why).  Let's use the basic Maps tab example we are working through here.  And maybe also a screenshot from VSTS or maybe ToDO list (more realistic).  Let's also highlight the iframed area within this dialog.
 
-When the user chooses to add your tab to their team or chat, Microsoft Teams displays your configuration page, hosted within an iframe in a dialog box. The configuration page communicates with Microsoft Teams through the [Microsoft Teams Tab library](https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js).
+When the user chooses to add your tab to their team, Microsoft Teams displays your configuration page, hosted within an iframe in a dialog box. The configuration page communicates with Microsoft Teams through the [Microsoft Teams Tab library](https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js).
 
 ## Prerequisites for your configuration UI
 
@@ -22,24 +22,31 @@ If your page requires user context, see [Get user context, locale, or theme info
 
 ### Determine when the user has specified all required information
  
-By default, the **Save** button on the configuration dialog box is disabled. When the user has selected or entered all the required information for your app, you can enable the **Save** button by calling `microsoftTeams.settings.registerOnSaveHandler(function(saveEvent){})` and setting `microsoftTeams.settings.setValidityState(true)`.   
+By default, the **Save** button on the configuration dialog box is disabled. When the user has selected or entered all the required information for your app, you can enable the **Save** button by calling `microsoftTeams.settings.setValidityState(true)`.
 
 ### Determine the content to display in the tab
 
-When the user selects **Save**, Microsoft Teams calls the save event handler you registered. At this point, you'll need to determine the URL of the content Microsoft Teams should host in the tab. You'll often by able to return the URL immediately if, for example, the user has selected a resource that already exists such as an existing file or task list. However, you can return the URL asynchronously if, for example, the user has requested a new resource which will take time for you to create. If you need to do so, store `saveEvent` for later. If you do not return the URL within 30 seconds, Microsoft Teams terminates the operation and displays an error.
+Use `microsoftTeams.settings.setSettings({contentUrl, suggestedTabName, websiteUrl, removeUrl, customSettings})` to specify the URL of the content Microsoft Teams should host in the tab. Things to keep in mind:
 
-Use `microsoftTeams.settings.setSettings({contentUrl, suggestedTabName, websiteUrl, removeUrl})` to specify the URL of the content Microsoft Teams should host in the tab. Things to keep in mind:
-
+* This call may be made at any time the configuration UI is displayed, including before or after the user selects the **Save** button.
+* The `contentUrl` is a required field which specifies the URL of the content Microsoft Teams should host in the tab.
 * If `contentUrl` resides in a different domain from the configuration UI, make sure you have added that domain to the `validDomains` element in the tab manifest file. For more information, see [Microsoft Teams tab schema](tab_schema.md) and [Redirecting across domains within a Microsoft Teams tab](crossdomain.md).
-*  The other parameters  further customize how your content appears in Microsoft Teams:
-	*  The mandatory `suggestedTabName` parameter sets the initial tab name. Users can rename the tab.
+*  The other parameters further customize how your content appears in Microsoft Teams:
+	*  The optional `suggestedTabName` parameter sets the initial tab name. Users can rename the tab. The default value is the display name for the tab as specified in the manifest.
 	*  The optional `websiteUrl` parameter sets where the user is taken if they select **Go to website**. Typically, this is a link to the same content as displayed on the tab, but within your main web app with its regular chrome and navigation.
+	*  The optional `removeUrl` parameter sets the url to iframe when the user [removes a tab](updateremovetab.md#removing-a-tab).
+	* The optional `customSettings` parameter can be used to store additional context about the settings. This field is retrievable only on the configuration UI and is intended to help hydrate the previous values when [updating a tab](updateremovetab.md#updating-an-existing-tab-instance).
 
-**TODO. ritaylor comment**  Mention removeUrl, reference to later topic.  Mention 'customSettings' too (add it to above code snippet)
+### Determine when the user has clicked the Save button
+
+Often you may not be able to determine the `contentUrl` above or need create a new resource only once the user selects **Save**. To be notified when the user selects **Save**, you must call
+`microsoftTeams.settings.registerOnSaveHandler(function(saveEvent) { /* ... */ })`. Once this is done, when the user selects **Save**, Microsoft Teams calls the save event handler you registered.
+
+At this point, you'll have the opportunity to determine `contentUrl` and call `microsoftTeams.settings.setSettings` if you haven't already and commit to creating any resources required for this tab. You'll often be able to return the `contentUrl` and other settings immediately if, for example, the user has selected a resource that already exists such as an existing file or task list. However, you may need to return the settings asynchronously if, for example, the user has requested a new resource which will take time for you to create. If you need to do so, store `saveEvent` for later. If you do not notify the outcome within 30 seconds, Microsoft Teams terminates the operation and displays an error.
 
 ### Return success or failure result
 
-Finally, call `saveEvent.notifySuccess()` or `saveEvent.notifyFailure()` to notify Microsoft Teams on the outcome of the configuration.
+Finally, in your save handler registered previously, call `saveEvent.notifySuccess()` or `saveEvent.notifyFailure()` to notify Microsoft Teams on the outcome of the configuration. If you have no save handler registered, the outcome will immediately and implicitly be success.
 
 ## Configuration page example
 
@@ -52,29 +59,28 @@ On save, the code determines which radio button was checked, and sets the variou
 ```
 
 microsoftTeams.initialize();
-microsoftTeams.settings.registerOnSaveHandler(function(saveEvent){
- 	  
-    var radios = document.getElementsByName('resourcetype');
-  	if (radios[0].checked) {
-       microsoftTeams.settings.setSettings(
-		{contentUrl: "https://www.example.com/resource1/embed", 
-		suggestedTabName: "Resource One", 
-		websiteUrl: "https://www.example.com/resources", 
-		removeUrl: "https://www.example.com/tabremove.htm"});
-  	}
-    else {
-       microsoftTeams.settings.setSettings(
-		{contentUrl: "https://www.example.com/resource2/embed", 
-		suggestedTabName: "Resource Two", 
-		websiteUrl: "https://www.example.com/resources", 
-		removeUrl: "https://www.example.com/tabremove.htm"});
-    }
-    
-    saveEvent.notifySuccess();
+microsoftTeams.settings.registerOnSaveHandler(function(saveEvent) {
+
+  var radios = document.getElementsByName('resourcetype');
+  if (radios[0].checked) {
+    microsoftTeams.settings.setSettings({
+      contentUrl: "https://www.example.com/resource1/embed",
+      suggestedTabName: "Resource One",
+      websiteUrl: "https://www.example.com/resource1",
+      removeUrl: "https://www.example.com/resource1/delete"});
+  } else {
+     microsoftTeams.settings.setSettings({
+      contentUrl: "https://www.example.com/resource2/embed", 
+      suggestedTabName: "Resource Two",
+      websiteUrl: "https://www.example.com/resource2",
+      removeUrl: "https://www.example.com/resource2/delete"});
+  }
+
+  saveEvent.notifySuccess();
 });
  
 function onClick() {
-    microsoftTeams.settings.setValidityState(true);
+  microsoftTeams.settings.setValidityState(true);
 }
 
 ```

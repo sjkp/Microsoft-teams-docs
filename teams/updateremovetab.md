@@ -33,19 +33,14 @@ Call microsoftTeams.settings.getSettings(<callback>).  Once you receive the call
 	Note that when a tab is added, you can set 'customSettings' inside Settings and use this to help you re-hydrate your context when the tab is removed.  This is a string, but you can of course store multiple settings here by serializing or 'stringifying' an object.
 -->
 
-Upon page load, enable the **Remove** button immediately by calling `microsoftTeams.settings.registerOnRemoveHandler(function(removeEvent){})` and setting `microsoftTeams.settings.setValidityState(true)`. Microsoft Teams will enable the **Remove** button after five seconds if your tab does not.
+Upon page load, enable the **Remove** button immediately by calling `microsoftTeams.settings.setValidityState(true)`. Microsoft Teams will enable the **Remove** button after five seconds if your tab does not.
 
-Because your tab should enable the **Remove** button immediately, make sure that all the options in your tab removal page have a default selection. 
+Because your tab should enable the **Remove** button immediately, make sure that all the options in your tab removal page have a default selection.
 
 If your tab removal page requires user context, see [Get user context, locale, or theme information](getusercontext.md). If your app needs to authenticate the user, see [Authenticating your Microsoft Teams tab app](auth.md).
 
 ### Processing the content prior to tab removal
 
-Microsoft Teams calls the remove event handler you registered when the user selects **Remove**. At this point, your app should take whatever action(s) the user selected; for example, deleting or archiving content. If you need to perform these actions asynchronously, store `removeEvent`. Microsoft Teams removes the tab after 30 seconds, regardless of your actions.
+Similar to the save handler, Microsoft Teams also allows you to register a remove handler by calling `microsoftTeams.settings.registerOnRemoveHandler(function(removeEvent){})` for when the user selects **Remove**. At this point, your app should take whatever action(s) the user selected; for example, deleting or archiving content. If you need to perform these actions asynchronously, store `removeEvent`. Microsoft Teams removes the tab after 30 seconds, regardless of your actions.
 
 Finally, call `removeEvent.notifySuccess()` or `removeEvent.notifyFailure()` to notify Microsoft Teams on the outcome of the removal.
-
-
-
-
-	

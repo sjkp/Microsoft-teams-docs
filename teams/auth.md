@@ -8,13 +8,13 @@ If your app uses Azure AD as its identity provider, you can retrieve user contex
 
 If not--for example, if your app requires two-factor authentication, or user consent--you'll need to have the user explicitly authenticate using the flow described below.
 
-> **Important:** While this user information is useful for a smooth user experience, it is not guaranteed secure and therefore should **not** be used as proof of identity. 
+> **Important:** While this user information provided by Microsoft Teams is useful for a smooth user experience, it is not guaranteed secure and therefore should **not** be used as proof of identity. 
 
 ## Authentication using a pop-up window
 
 If your app cannot silently authenticate the user against Azure AD, or if your app uses a identity provider other than Azure AD, the user will need to explicitly authenticate using their credentials. 
 
-Hosting an authentication flow within an IFrame is not considered secure, and most identity providers do not allow it. Instead, initiate an authentication flow for your tab by calling into  the [Microsoft Teams Tab library](https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js). Microsoft Teams then generates a pop-up window in which the user can sign in.
+Hosting an authentication flow within an iframe is not considered secure, and most identity providers do not allow it. Instead, initiate an authentication flow for your tab by calling into the [Microsoft Teams Tab library](https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js). Microsoft Teams then generates a pop-up window in which the user can sign in.
 
 To launch the pop-up window and authenticate the user, follow these steps:
 
