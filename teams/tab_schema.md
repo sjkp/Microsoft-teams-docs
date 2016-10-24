@@ -1,6 +1,6 @@
 ﻿# Microsoft Teams tab package schema reference
 
-The tab package manifest file specifies attributes of your app, and points to required resources, such as the app icons to use in the Microsoft Teams UI and the location of your app configuration page. The manifest must adhere to the tab package schema, detailed below. 
+The tab package manifest file specifies attributes of your app and points to required resources such as the app icons to use in the Microsoft Teams UI and the location of your app configuration page. The manifest must adhere to the tab package schema, detailed below. 
 
 For more information on including the manifest in your app package, see [Create the package for your Microsoft Team tab app](createtabpackage.md).
 
@@ -71,9 +71,7 @@ For more information on including the manifest in your app package, see [Create 
 	
 * accentColor
 	
-	Required. A color to use in conjunction with the tab extension's icons.
-
-	**TODO: reviewers**, any particular formats you need to specify the color in? hex? rgb? named colors?
+	Required. A color to use in conjunction with the tab extension's icons. The value must be a valid HTML color code starting with '#', for example `#4464ee`.
 
 * configUrl
 
@@ -81,19 +79,15 @@ For more information on including the manifest in your app package, see [Create 
 
 * canUpdateConfig
 
-	`true` if a tab instance configuration can be updated by the user after creation. For more information, see [Update or remove a Microsoft Teams tab](updateremovetab.md).	
-
-	**TODO: reviewers** This is optional, right? Default is false?
+	Optional, default value `true`. Indicates whether a tab instance configuration can be updated by the user after creation. For more information, see [Update or remove a Microsoft Teams tab](updateremovetab.md).
 
 * needsIdentity
 
-	`true` if the tab requests access to user context information. For more information, see [Get user context, locale, or theme information for use in your Microsoft Team tab](getusercontext.md). 
-
-	**TODO: reviewers** This is optional, right? Default is false?
+	Optional, default value `false`. Indicates whether the tab requests access to user context information. For more information, see [Get user context, locale, or theme information for use in your Microsoft Team tab](getusercontext.md). 
 
 * validDomains
 
-	A list of valid domains from which the tab expects to communicate with Microsoft Teams. Domain listings can include wildcards.
+	Optional. A list of valid domains from which the tab expects Microsoft Teams to load or communicate with. Domain listings can include wildcards, for example `*.example.com`. If your tab configuration or content UI needs to navigate to any other domain besides the one use for tab configuration, that domain must be specified here.
 
 ## Example manifest
 
