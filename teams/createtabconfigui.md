@@ -2,7 +2,7 @@
 
 The configuration page is an HTML page that you host. Microsoft Teams displays it inside the **Add Tab** dialog when a user chooses to add your tab. This page enables you to present options and gather information from the user, so they can specify and customize the content and experience you present in your tab app. For example, selecting existing app resources to display, such as files or task lists, or specifying the attributes of new app resources.
 
-!["Screenshot of the configuration UI for an Excel spreadsheet tab"](images/tab_configui.png)
+!["Screenshot of the configuration page for a simple example app, giving the user the option of which map type to select."](images/tab_configui.png)
 
 **TODO. ritaylor comment**  Excel not a great example (will explain why).  Let's use the basic Maps tab example we are working through here.  And maybe also a screenshot from VSTS or maybe ToDO list (more realistic).  Let's also highlight the iframed area within this dialog.
 
@@ -10,7 +10,7 @@ When the user chooses to add your tab to their team or chat, Microsoft Teams dis
 
 ## Prerequisites for your configuration UI
 
-For your configuration UI to display within Microsoft Teams, make sure it meets the [requirements for tab app UI](gettingstarted.md#prerequisites-for-your-tabs-app-ui).
+For your configuration UI to display within Microsoft Teams, make sure it meets the [requirements for tab app pages](gettingstarted.md#prerequisites-for-your-tabs-app-ui).
 
 ## Collecting user information 
 

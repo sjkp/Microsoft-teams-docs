@@ -14,7 +14,7 @@ Building a new tab app or adapting an existing web app to be a tab consists of t
 *  [Creating the content page:](createtabcontent.md) Once the user has configured the tab, Microsoft Teams displays the content for your tab app, based on their configuration choices. This is also an HTML page iframe.
 	* You can also provide a page for users to specify [what happens to content when they remove a tab](updateremovetab.md#removing-a-tab).
 
-## Prerequisites for your tabs app UI
+## Prerequisites for tabs app pages
 
 **TODO. ritaylor comment** Move this section to later topics on config and content UI
 

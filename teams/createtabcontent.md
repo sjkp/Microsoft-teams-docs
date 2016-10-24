@@ -6,7 +6,7 @@ When the user visits your tab, Microsoft Teams will load the URL you [provided e
 
 ## Prerequisites for content displayed in your tab
 
-For your content to display within a Microsoft Teams tab, make sure it meets the [requirements for tab app UI](gettingstarted.md#prerequisites-for-your-tabs-app-ui).
+For your content to display within a Microsoft Teams tab, make sure it meets the [requirements for tab app pages](gettingstarted.md#prerequisites-for-your-tabs-app-ui).
 
 In addition, make sure your content conforms to the [design recommendations](design.md) for Microsoft Teams tabs.
 

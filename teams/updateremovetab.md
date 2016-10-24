@@ -22,7 +22,7 @@ To include a tab removal page in your app, specify the `removeUrl` in the settin
 
 ### Prerequisites for your tab removal page 
  
-For your tab removal page to display within Microsoft Teams, it must meet the [requirements for tab app UI](gettingstarted.md#prerequisites-for-your-tabs-app-ui).
+For your tab removal page to display within Microsoft Teams, it must meet the [requirements for tab app page](gettingstarted.md#prerequisites-for-your-tabs-app-ui).
 
 ### Presenting the user with content options upon tab removal
 
