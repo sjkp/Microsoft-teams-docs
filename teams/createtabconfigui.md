@@ -6,7 +6,7 @@ The configuration page is an HTML page that you host. Microsoft Teams displays i
 
 **TODO. ritaylor comment**  Excel not a great example (will explain why).  Let's use the basic Maps tab example we are working through here.  And maybe also a screenshot from VSTS or maybe ToDO list (more realistic).  Let's also highlight the iframed area within this dialog.
 
-When the user chooses to add your tab to their team or chat, Microsoft Teams displays your configuration page, hosted within an IFrame in a dialog box. The configuration page communicates with Microsoft Teams through the [Microsoft Teams Tab library](https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js).
+When the user chooses to add your tab to their team or chat, Microsoft Teams displays your configuration page, hosted within an iframe in a dialog box. The configuration page communicates with Microsoft Teams through the [Microsoft Teams Tab library](https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js).
 
 ## Prerequisites for your configuration UI
 

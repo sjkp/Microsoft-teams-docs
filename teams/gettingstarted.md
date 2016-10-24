@@ -9,9 +9,9 @@ This section shows how to get started building a Microsoft Teams tab app, either
 Building a new tab app or adapting an existing web app to be a tab consists of the following general steps:
 
 *  [Creating an tab app package:](createtabpackage.md) This package contains the tab app manifest, which specifies attributes of the tab app, as well as the icons for your app within Microsoft Teams.
-*  [Creating the configuration page:](createtabconfigui.md) Microsoft Teams displays this when the user select to add your tab. The configuration page enables your app to present options and gather information from the user, so they can specify and customize the content and experience you present in your tab app. This is an HTML page which you host and Microsoft Teams displays within an IFrame. 
+*  [Creating the configuration page:](createtabconfigui.md) Microsoft Teams displays this when the user select to add your tab. The configuration page enables your app to present options and gather information from the user, so they can specify and customize the content and experience you present in your tab app. This is an HTML page which you host and Microsoft Teams displays within an iframe. 
 	*  Optionally, you can also [enable users to update a tab](updateremovetab.md#updating-an-existing-tab-instance) after they add it. 
-*  [Creating the content page:](createtabcontent.md) Once the user has configured the tab, Microsoft Teams displays the content for your tab app, based on their configuration choices. This is also an HTML page which you host and Microsoft Teams displays within an IFrame.
+*  [Creating the content page:](createtabcontent.md) Once the user has configured the tab, Microsoft Teams displays the content for your tab app, based on their configuration choices. This is also an HTML page iframe.
 	* You can also provide a page for users to specify [what happens to content when they remove a tab](updateremovetab.md#removing-a-tab).
 
 ## Prerequisites for your tabs app UI
@@ -20,7 +20,7 @@ Building a new tab app or adapting an existing web app to be a tab consists of t
 
 For the UI of your tab app--its configuration, content, and (optionally) tab removal pages--to be hosted within Microsoft Teams, they need to meet the following requirements. 
 
-* Make sure that the page can be hosted in an IFrame:
+* Make sure that the page can be hosted in an iframe:
 	
 	* Set the Content-security-policy header. Most modern browsers support this.
 		
