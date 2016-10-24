@@ -95,7 +95,7 @@ For more information on including the manifest in your app package, see [Create 
 
 	A list of valid domains from which the tab expects to communicate with Microsoft Teams. Domain listings can include wildcards.
 
-## Example schema
+## Example manifest
 
 ```JSON
 

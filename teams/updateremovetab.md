@@ -18,7 +18,7 @@ To support user updates, in your configuration page code call `microsoftTeams.se
 
 You can create a page to enable users to select what happens to content when a tab is removed from a team. For example, you might want to give them the option to download, archive, or delete the tab content. This removal page is optional.
 
-To include a tab removal page in your app, specify the `removeUrl` attribute in your tab manifest. For more information, see [Microsoft Teams tab package schema reference](tab_schema.md).
+To include a tab removal page in your app, specify the `removeUrl` in the settings you return when [configuring a tab](createtabconfigui.md).
 
 ### Prerequisites for your tab removal page 
  
@@ -43,7 +43,7 @@ If your tab removal page requires user context, see [Get user context, locale, o
 
 Microsoft Teams calls the remove event handler you registered when the user selects **Remove**. At this point, your app should take whatever action(s) the user selected; for example, deleting or archiving content. If you need to perform these actions asynchronously, store `removeEvent`. Microsoft Teams removes the tab after 30 seconds, regardless of your actions.
 
-Finally, call `removeEvent.notifySuccess()` or `removeEvent.notifyFailure()` to notify Microsoft Teams on the outcome of the removal. Currently, Microsoft Teams removes the tab regardless of the outcome.
+Finally, call `removeEvent.notifySuccess()` or `removeEvent.notifyFailure()` to notify Microsoft Teams on the outcome of the removal.
 
 
 

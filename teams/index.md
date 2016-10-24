@@ -2,9 +2,17 @@
 
 Use the Microsoft Teams SDK to extend Microsoft Teams and make your team even more collaborative and effective.
 
-## Custom tabs
+## Tabs
 
-Quickly and easily connect your web-based team tools and content to a team channel through custom tabs. Custom Tabs let a team access tools and content in context with a single mouse click. Instead of sending team members to a web browser where they rely on bookmarked web apps, bring those web apps into the Microsoft Teams experience using Tabs. It's easy to create a tab from an existing web app.  
+Tabs allow teams to collect together all the tools they need inside of Microsoft Teams.  Team members can add your tab to a channel, and can have conversations about it. It's easy to create a tab from your existing web app.
+
+Common tab examples are:
+* Dashboards and data visualization
+* Collaborative documents and note taking
+* Group task management
+* Shared design canvas
+
+**TODO. ritaylor comment** can we add an illustration here?
 
 Currently, custom tabs are supported in Microsoft Teams desktop and web applications.
 
