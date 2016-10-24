@@ -4,9 +4,10 @@ Use the Microsoft Teams SDK to extend Microsoft Teams and make your team even mo
 
 ## Tabs
 
-Tabs allow teams to collect together all the tools they need inside of Microsoft Teams.  Team members can add your tab to a channel, and can have conversations about it. It's easy to create a tab from your existing web app.
+Tab apps allow teams to collect together all the tools they need inside of Microsoft Teams.  Team members can add your tab to a channel, and can have conversations about it. It's easy to create a tab from your existing web app.
 
-Common tab examples are:
+Common tab app examples are:
+
 * Dashboards and data visualization
 * Collaborative documents and note taking
 * Group task management
@@ -14,7 +15,7 @@ Common tab examples are:
 
 **TODO. ritaylor comment** can we add an illustration here?
 
-Currently, custom tabs are supported in Microsoft Teams desktop and web applications.
+Currently, tab apps are supported in Microsoft Teams desktop and web applications.
 
 [Get started with tabs](gettingstarted.md)
 

@@ -1,6 +1,6 @@
-﻿# Create the configuration UI for your Microsoft Team tab app
+﻿# Create the configuration page for your Microsoft Teams tab
 
-The configuration UI is an HTML page that you host. Microsoft Teams displays it inside the 'Add Tab' dialog when a user chooses to add your tab.  This UI enables you to present options and gather information from the user, so they can specify and customize the content and experience you present in your tab app. For example, selecting existing app resources to display, such as files or task lists, or specifying the attributes of new app resources.
+The configuration page is an HTML page that you host. Microsoft Teams displays it inside the **Add Tab** dialog when a user chooses to add your tab. This page enables you to present options and gather information from the user, so they can specify and customize the content and experience you present in your tab app. For example, selecting existing app resources to display, such as files or task lists, or specifying the attributes of new app resources.
 
 !["Screenshot of the configuration UI for an Excel spreadsheet tab"](images/tab_configui.png)
 
@@ -18,7 +18,7 @@ Your configuration UI needs to perform the following steps:
 
 ### User context and authentication
 
-If your UI requires user context, see [Get user context, locale, or theme information](getusercontext.md). If it needs to authenticate the user, see [Authenticating your Microsoft Teams tab app](auth.md).
+If your page requires user context, see [Get user context, locale, or theme information](getusercontext.md). If it needs to authenticate the user, see [Authenticating your Microsoft Teams tab app](auth.md).
 
 ### Determine when the user has specified all required information
  
@@ -41,7 +41,7 @@ Use `microsoftTeams.settings.setSettings({contentUrl, suggestedTabName, websiteU
 
 Finally, call `saveEvent.notifySuccess()` or `saveEvent.notifyFailure()` to notify Microsoft Teams on the outcome of the configuration.
 
-## Configuration UI example
+## Configuration page example
 
 The excerpt below shows a simple example of code that might be included in a configuration page. In this case, the user is presented with two radio buttons, which represent a choice of two different resources. Selecting either radio button fires `onClick()`, which sets `microsoftTeams.settings.setValidityState(true)`, enabling the **Save** button.
 
@@ -81,5 +81,5 @@ function onClick() {
 
 ## Next Steps
 
-* [Create the content UI for your Microsoft Teams tab](createtabcontent.md)
+* [Create the content page for your Microsoft Teams tab](createtabcontent.md)
 

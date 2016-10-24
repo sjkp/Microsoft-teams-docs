@@ -23,12 +23,12 @@ Next, use placeholders in your configuration or content URLs. Microsoft Teams re
 * {upn}: The user name
 * {groupId}: The ID of an Office 365 group
 * {tid}: The company ID, i.e., tenant ID
-* {mkt}: Display theme, such as 'default' or 'dark'
+* {theme}: Display theme, such as 'default' or 'dark'
 	
 	**TODO reviewers:** Is {mkt} actually theme? or is that a mistake?
-* {locale}: The user locale, such as 'en-us'
+* {mkt}: The user locale, such as 'en-us'
 
-For example, suppose in your tab manifest you set the `configURL` attribute to:
+For example, suppose in your tab app manifest you set the `configURL` attribute to:
 
 `"https://tasks.office.com/config?auth_upn={upn}&auth_tenant={tid}&group={groupId}"`
 
