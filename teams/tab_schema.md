@@ -48,13 +48,15 @@ Properties of the `description` object:
 
 ### `short` (string, required)
 
-A short description of the extension used when space is limited.
+A short description of the extension used when space is limited. Maximum length is 80 characters.
 
 ### `full` (string, required)
 
-The full description of the extension.
+The full description of the extension. Maximum length is 256 characters.
 
 ## `icons` (object, required)
+
+Each icon image file must be a transparent PNG, with a white or light-colored background.
 
 Properties of the `icons` object:
 
@@ -68,7 +70,7 @@ An icon for the extension sized to 88x88.
 
 ## `accentColor` (string, required)
 
-A color to use in conjunction with the extension's icons.
+A color to use in conjunction with the extension's icons. The value must be a valid HTML color code starting with '#', for example `#4464ee`.
 
 ## `configUrl` (string, required)
 
@@ -86,7 +88,7 @@ A value indicating whether the extension is requesting access to identity inform
 
 ## `validDomains` (array)
 
-A list of valid domains from which the extension expects to load any content.
+A list of valid domains from which the extension expects to load any content. Domain listings can include wildcards, for example `*.example.com`. If your tab configuration or content UI needs to navigate to any other domain besides the one use for tab configuration, that domain must be specified here.
 
 The object is an array with all elements of the type `string`.
 
