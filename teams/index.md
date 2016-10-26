@@ -13,7 +13,7 @@ Common tab app examples are:
 * Group task management
 * Shared design canvas
 
-**TODO. ritaylor comment** can we add an illustration here?
+!["Example of a tab app showing data, alongside a conversation about the tab data"](images/tab_example.png)
 
 Currently, tab apps are supported in Microsoft Teams desktop and web applications.
 

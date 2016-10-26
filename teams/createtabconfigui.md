@@ -2,19 +2,67 @@
 
 The configuration page is an HTML page that you host. Microsoft Teams displays it inside the **Add Tab** dialog when a user chooses to add your tab. This page enables you to present options and gather information from the user so they can specify and customize the content and experience you present in your tab app. For example, selecting existing app resources to display, such as files or task lists, or specifying the attributes of new app resources.
 
-!["Screenshot of the configuration page for a simple example app, giving the user the option of which map type to select."](images/tab_configui.png)
-
-**TODO. ritaylor comment**  Excel not a great example (will explain why).  Let's use the basic Maps tab example we are working through here.  And maybe also a screenshot from VSTS or maybe ToDO list (more realistic).  Let's also highlight the iframed area within this dialog.
-
 When the user chooses to add your tab to their team, Microsoft Teams displays your configuration page, hosted within an iframe in a dialog box. The configuration page communicates with Microsoft Teams through the [Microsoft Teams Tab library](https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js).
 
-## Prerequisites for your configuration UI
+!["Screenshot of the configuration page for a simple example app, giving the user the option of which map type to select."](images/tab_configui.png)
 
-For your configuration UI to display within Microsoft Teams, make sure it meets the [requirements for tab app pages](gettingstarted.md#prerequisites-for-your-tabs-app-ui).
+## Configuration page example
+
+The excerpt below shows a simple example of code that might be included in a configuration page. In this case, the user is presented with two radio buttons, which represent a choice of two different resources. Selecting either radio button fires `onClick()`, which sets `microsoftTeams.settings.setValidityState(true)`, enabling the **Save** button.
+
+On save, the code determines which radio button was checked, and sets the various parameters of `microsoftTeams.settings.setSettings` accordingly. Finally, it sets `saveEvent.notifySuccess()` to specify that the content URL has successfully been determined.
+
+With this as a simple example, let's walk through the steps your configuration page needs to perform to load your tab app content.
+
+```HTML
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Map Tab config UI</title>
+</head>
+<body>
+<div id="container">
+<form>
+  <input type="radio" name="maptype" value="bing" onclick="onClick()"> Bing Maps<br>
+  <input type="radio" name="maptype" value="google" onclick="onClick()"> Google Maps
+</form> 
+</div>
+
+<SCRIPT src="https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">  
+
+microsoftTeams.initialize();
+microsoftTeams.settings.registerOnSaveHandler(function(saveEvent){
+ 	  
+    var radios = document.getElementsByName('maptype');
+  	if (radios[0].checked) {
+       microsoftTeams.settings.setSettings({contentUrl: "https://www.bing.com/maps/embed", suggestedTabName: "Bing Map", websiteUrl: "https://www.bing.com/maps", removeUrl: "https://localhost/maps/tabremove.htm"});
+  	}
+    else {
+       microsoftTeams.settings.setSettings({contentUrl: "https://www.google.com/maps/embed", suggestedTabName: "Google Map", websiteUrl: "https://www.google.com/maps", removeUrl: "https://localhost/maps/tabremove.htm"});
+    }
+    
+    saveEvent.notifySuccess();
+});
+ 
+function onClick() {
+    microsoftTeams.settings.setValidityState(true);
+}
+
+</SCRIPT>
+ 
+```
+
+## Prerequisites for your configuration page
+
+For your configuration page to display within Microsoft Teams, make sure it meets the [requirements for tab app pages](gettingstarted.md#prerequisites-for-your-tabs-app-ui).
 
 ## Collecting user information 
 
-Your configuration UI needs to perform the following steps:
+Your configuration page needs to perform the following steps:
 
 ### User context and authentication
 
@@ -28,14 +76,14 @@ By default, the **Save** button on the configuration dialog box is disabled. Whe
 
 Use `microsoftTeams.settings.setSettings({contentUrl, suggestedTabName, websiteUrl, removeUrl, customSettings})` to specify the URL of the content Microsoft Teams should host in the tab. Things to keep in mind:
 
-* This call may be made at any time the configuration UI is displayed, including before or after the user selects the **Save** button.
+* This call may be made at any time the configuration page is displayed, including before or after the user selects the **Save** button.
 * The `contentUrl` is a required field which specifies the URL of the content Microsoft Teams should host in the tab.
-* If `contentUrl` resides in a different domain from the configuration UI, make sure you have added that domain to the `validDomains` element in the tab manifest file. For more information, see [Microsoft Teams tab schema](tab_schema.md) and [Redirecting across domains within a Microsoft Teams tab](crossdomain.md).
+* If `contentUrl` resides in a different domain from the configuration page, make sure you have added that domain to the `validDomains` element in the tab manifest file. For more information, see [Microsoft Teams tab schema](tab_schema.md) and [Redirecting across domains within a Microsoft Teams tab](crossdomain.md).
 *  The other parameters further customize how your content appears in Microsoft Teams:
 	*  The optional `suggestedTabName` parameter sets the initial tab name. Users can rename the tab. The default value is the display name for the tab as specified in the manifest.
 	*  The optional `websiteUrl` parameter sets where the user is taken if they select **Go to website**. Typically, this is a link to the same content as displayed on the tab, but within your main web app with its regular chrome and navigation.
 	*  The optional `removeUrl` parameter sets the url to iframe when the user [removes a tab](updateremovetab.md#removing-a-tab).
-	* The optional `customSettings` parameter can be used to store additional context about the settings. This field is retrievable only on the configuration UI and is intended to help hydrate the previous values when [updating a tab](updateremovetab.md#updating-an-existing-tab-instance).
+	* The optional `customSettings` parameter can be used to store additional context about the settings. This field is retrievable only on the configuration page and is intended to help hydrate the previous values when [updating a tab](updateremovetab.md#updating-an-existing-tab-instance).
 
 ### Determine when the user has clicked the Save button
 
@@ -48,44 +96,8 @@ At this point, you'll have the opportunity to determine `contentUrl` and call `m
 
 Finally, in your save handler registered previously, call `saveEvent.notifySuccess()` or `saveEvent.notifyFailure()` to notify Microsoft Teams on the outcome of the configuration. If you have no save handler registered, the outcome will immediately and implicitly be success.
 
-## Configuration page example
-
-The excerpt below shows a simple example of code that might be included in a configuration page. In this case, the user is presented with two radio buttons, which represent a choice of two different resources. Selecting either radio button fires `onClick()`, which sets `microsoftTeams.settings.setValidityState(true)`, enabling the **Save** button.
-
-On save, the code determines which radio button was checked, and sets the various parameters of `microsoftTeams.settings.setSettings` accordingly. Finally, it sets `saveEvent.notifySuccess()` to specify that the content URL has successfully been determined.
-
-**TODO. ritaylor comment**  Let's just have the full Maps example HTML file here, and encourage reader to host and experiment with it themselves?  Also let's put it online somewhere (let's discuss) so easy to run.  Also, is it best for this example to come up front?  I.e. it is easier to walk through the topic if you are looking at this?
-
-```
-
-microsoftTeams.initialize();
-microsoftTeams.settings.registerOnSaveHandler(function(saveEvent) {
-
-  var radios = document.getElementsByName('resourcetype');
-  if (radios[0].checked) {
-    microsoftTeams.settings.setSettings({
-      contentUrl: "https://www.example.com/resource1/embed",
-      suggestedTabName: "Resource One",
-      websiteUrl: "https://www.example.com/resource1",
-      removeUrl: "https://www.example.com/resource1/delete"});
-  } else {
-     microsoftTeams.settings.setSettings({
-      contentUrl: "https://www.example.com/resource2/embed", 
-      suggestedTabName: "Resource Two",
-      websiteUrl: "https://www.example.com/resource2",
-      removeUrl: "https://www.example.com/resource2/delete"});
-  }
-
-  saveEvent.notifySuccess();
-});
- 
-function onClick() {
-  microsoftTeams.settings.setValidityState(true);
-}
-
-```
-
 ## Next Steps
 
 * [Create the content page for your Microsoft Teams tab](createtabcontent.md)
+* [Update or remove a tab](updateremovetab.md)
 

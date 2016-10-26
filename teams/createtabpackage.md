@@ -9,7 +9,43 @@ For your tab app to be available within Microsoft Teams, you need to create a ta
 
 	Each icon image file must be a transparent PNG, with a white or light-colored foreground.
 
-**TODO. ritaylor comment** Let's have the actual manifest example on this page. Also have a variant that points to the config UI online somewhere (let's discuss)
+## Example manifest
+
+Below is a sample manifest for a simple tab app. See the [tabs manifest schema reference](tab_schema.md) for information on individual elements.
+
+```JSON
+
+{
+    "$schema": "https://statics.teams.microsoft.com/sdk/v0.2/manifest/MicrosoftTeams.schema.json",
+    "manifestVersion": "0.2",
+    "id": "com.example.microsoftteamstabs.maps",
+    "version": "0.2",
+    "name": "Maps",
+    "developer": {
+        "name": "Example company",   
+        "websiteUrl": "http://www.example.com",
+        "privacyUrl": "http://www.example.com/privacy",
+        "termsOfUseUrl": "http://www.example.com/termsofuse"
+    },
+    "description" : {
+            "short": "Host a map as a tab.",
+            "full": "Host a map as a tab.  Give your tab a name, 
+					select Bing Maps or Google Maps, and click save."
+    },
+    "icons": {
+            "44": "maps44.png",
+            "88": "maps88.png"
+    },
+    "accentColor" : "#223344",
+    "configUrl": "https://exampletabs.azurewebsites.net/maps/tabconfig.htm",
+    "canUpdateConfig": true,
+    "needsIdentity": false,
+    "validDomains": [
+        "*.bing.com",
+        "*.google.com"
+    ]
+}
+```
 
 ## Creating a manifest for your tab app 
 
@@ -34,5 +70,6 @@ Now, when team members add a new tab to a channel in this team, they will see yo
 ## Next steps
 
 * [Create tab configuration page](createtabconfigui.md)
+* [Update or remove a tab](updateremovetab.md)
 * [Create the tab content page](createtabcontent.md)
 

@@ -2,7 +2,7 @@
 
 The tab package manifest file specifies attributes of your app, and points to required resources, such as the app icons to use in the Microsoft Teams UI and the location of your app configuration page. The manifest must adhere to the tab package schema, detailed below. 
 
-For more information on including the manifest in your app package, see [Create the package for your Microsoft Team tab app](createtabpackage.md).
+For more information on including the manifest in your app package, and an example manifest, see [Create the package for your Microsoft Team tab app](createtabpackage.md).
 
 The schema defines the following properties:
 
@@ -91,39 +91,3 @@ A value indicating whether the extension is requesting access to identity inform
 A list of valid domains from which the extension expects to load any content. Domain listings can include wildcards, for example `*.example.com`. If your tab configuration or content UI needs to navigate to any other domain besides the one use for tab configuration, that domain must be specified here.
 
 The object is an array with all elements of the type `string`.
-
-## Example manifest
-
-```JSON
-
-{
-    "$schema": "https://statics.teams.microsoft.com/sdk/v0.2/manifest/MicrosoftTeams.schema.json",
-    "manifestVersion": "0.2",
-    "id": "com.example.microsoftteamstabs.maps",
-    "version": "0.2",
-    "name": "Maps",
-    "developer": {
-        "name": "Example company",   
-        "websiteUrl": "http://www.example.com",
-        "privacyUrl": "http://www.example.com/privacy",
-        "termsOfUseUrl": "http://www.example.com/termsofuse"
-    },
-    "description" : {
-            "short": "Host a map as a tab.",
-            "full": "Host a map as a tab.  Give your tab a name, 
-					select Bing Maps or Google Maps, and click save."
-    },
-    "icons": {
-            "44": "maps44.png",
-            "88": "maps88.png"
-    },
-    "accentColor" : "#223344",
-    "configUrl": "https://exampletabs.azurewebsites.net/maps/tabconfig.htm",
-    "canUpdateConfig": true,
-    "needsIdentity": false,
-    "validDomains": [
-        "*.bing.com",
-        "*.google.com"
-    ]
-}
-```

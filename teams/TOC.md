@@ -2,7 +2,7 @@
 
 ## [Getting started with tabs](gettingstarted.md)
 ### [Create the tab package](createtabpackage.md)
-### [Create the configuration UI](createtabconfigui.md)
+### [Create the configuration page](createtabconfigui.md)
 ### [Create the tab content](createtabcontent.md)
 ### [Update or remove a tab](updateremovetab.md)
 ### [Get user context](getusercontext.md)
