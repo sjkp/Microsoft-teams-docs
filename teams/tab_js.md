@@ -2,6 +2,8 @@
 
 Reference documentation for the full list of functionality available in the SDK.
 
+>**Tip:** For developers using TypeScript, Microsoft Teams provides a [definition file](https://statics.teams.microsoft.com/sdk/v0.2/types/MicrosoftTeams.d.ts) to enable IntelliSense or similar support from your code editor as well as compile-type type checking as part of your build.
+
 ## `microsoftTeams`
 This is the root namespace for the JavaScript SDK.
 
