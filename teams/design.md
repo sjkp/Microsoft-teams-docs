@@ -2,7 +2,7 @@
 
 While it's relatively easy to adapt a web app to become a Microsoft Teams tab, it's worth taking some time before you start to consider which experiences and functionality in your app will work most effectively as a tab app. Paying attention to these design considerations up front, whether you're creating a new app or adapting an existing web app, will help ensure you build a tab app that users want to incorporate in their Microsoft Teams collaboration.
 
-First, understand that users work with Microsoft Team tabs in specific contexts> Either:
+First, understand that users work with Microsoft Team tabs in specific contexts. Either:
 
 * A channel; that is, a conversation around a specific topic or purpose within the larger Team, or
 * A 1:1 chat

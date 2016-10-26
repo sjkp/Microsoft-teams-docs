@@ -1,6 +1,7 @@
 ﻿# [Microsoft Teams SDK](index.md)
 
 ## [Getting started with tabs](gettingstarted.md)
+### [Prerequisites for tabs app pages](tabprerequisites.md)
 ### [Create the tab package](createtabpackage.md)
 ### [Create the configuration page](createtabconfigui.md)
 ### [Create the tab content](createtabcontent.md)

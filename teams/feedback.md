@@ -1,8 +1,6 @@
 ﻿
 # Submit your questions, bugs, feature requests, and contributions
 
-**TODO reviewers:** Many of the feeedback channels listed in this topic are still Skype-specific links> so I need to know whether to keep them as is or what the updated, MS Teams-specific links would be. Thanks.
-
 The Microsoft Team product team responds to the developer community across several channels. Please tell us about your:
 
 - **Technical questions:** We listen and respond on [stackoverflow](http://stackoverflow.com/questions/tagged/skypedeveloper). Tag your question with "skypedeveloper" so that our team and the Skype for Business developer community can respond with helpful answers.

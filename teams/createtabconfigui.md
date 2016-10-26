@@ -58,7 +58,7 @@ function onClick() {
 
 ## Prerequisites for your configuration page
 
-For your configuration page to display within Microsoft Teams, make sure it meets the [requirements for tab app pages](gettingstarted.md#prerequisites-for-your-tabs-app-ui).
+For your configuration page to display within Microsoft Teams, make sure it meets the [requirements for tab app pages](tabprerequisites.md).
 
 ## Collecting user information 
 

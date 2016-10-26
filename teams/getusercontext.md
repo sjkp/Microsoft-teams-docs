@@ -5,7 +5,7 @@ There may be cases where your app needs basic information about the user, team, 
 * You need to create or associate resources in your app with the specified user or team.
 * You want to initiate an authentication flow against Azure Active Directory or other identity provider, and you don't want to require the user to enter their username again. (For more information on authenticating within your Microsoft Teams tab, see [Authenticating your Microsoft Teams tab](auth.md).)
 
-> **Important:** While this user information is useful for a smooth user experience, it is not guaranteed secure and therefore should **not** be used as proof of identity. 
+> **Important:** While this user information provided by Microsoft Teams is useful for a smooth user experience, it is not guaranteed secure and therefore should **not** be used as proof of identity. 
 
 In addition, you can retrieve locale and theme information.
 
