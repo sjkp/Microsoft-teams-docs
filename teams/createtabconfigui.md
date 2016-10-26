@@ -15,7 +15,6 @@ On save, the code determines which radio button was checked, and sets the variou
 With this as a simple example, let's walk through the steps your configuration page needs to perform to load your tab app content.
 
 ```HTML
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -36,24 +35,28 @@ With this as a simple example, let's walk through the steps your configuration p
 
 microsoftTeams.initialize();
 microsoftTeams.settings.registerOnSaveHandler(function(saveEvent){
- 	  
-    var radios = document.getElementsByName('maptype');
-  	if (radios[0].checked) {
-       microsoftTeams.settings.setSettings({contentUrl: "https://www.bing.com/maps/embed", suggestedTabName: "Bing Map", websiteUrl: "https://www.bing.com/maps", removeUrl: "https://localhost/maps/tabremove.htm"});
-  	}
-    else {
-       microsoftTeams.settings.setSettings({contentUrl: "https://www.google.com/maps/embed", suggestedTabName: "Google Map", websiteUrl: "https://www.google.com/maps", removeUrl: "https://localhost/maps/tabremove.htm"});
+
+    var radios = document.getElementsByName("maptype");
+    if (radios[0].checked) {
+       microsoftTeams.settings.setSettings({
+         contentUrl: "https://www.bing.com/maps/embed",
+         suggestedTabName: "Bing Map",
+         websiteUrl: "https://www.bing.com/maps",
+         removeUrl: "https://localhost/maps/tabremove.htm"
+      });
+    } else {
+       microsoftTeams.settings.setSettings({
+         contentUrl: "https://www.google.com/maps/embed",
+         suggestedTabName: "Google Map",
+         websiteUrl: "https://www.google.com/maps",
+         removeUrl: "https://localhost/maps/tabremove.htm"
+      });
     }
     
     saveEvent.notifySuccess();
 });
- 
-function onClick() {
-    microsoftTeams.settings.setValidityState(true);
-}
 
 </SCRIPT>
- 
 ```
 
 ## Prerequisites for your configuration page
