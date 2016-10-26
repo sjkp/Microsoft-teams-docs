@@ -56,6 +56,10 @@ microsoftTeams.settings.registerOnSaveHandler(function(saveEvent){
     saveEvent.notifySuccess();
 });
 
+function onClick() {
+    microsoftTeams.settings.setValidityState(true);
+}
+
 </SCRIPT>
 ```
 
