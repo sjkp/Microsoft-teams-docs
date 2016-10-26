@@ -10,11 +10,9 @@ Building a new tab app or adapting an existing web app to be a tab consists of t
 
 *  [Creating an tab app package:](createtabpackage.md) This package contains the tab app manifest, which specifies attributes of the tab app, as well as the icons for your app within Microsoft Teams.
 *  [Creating the configuration page:](createtabconfigui.md) Microsoft Teams displays this when the user selects to add your tab. The configuration page enables your app to present options and gather information from the user so they can specify and customize the content and experience you present in your tab app. This is an HTML page which you host and Microsoft Teams displays within an iframe.
-	*  Optionally, you can also [enable users to update a tab](updateremovetab.md#updating-an-existing-tab-instance) after they add it. 
+	*  You can also [enable users to update a tab](updateremovetab.md#updating-an-existing-tab-instance) after they add it. 
 *  [Creating the content page:](createtabcontent.md) Once the user has configured the tab, Microsoft Teams displays the content for your tab app based on their configuration choices. This is also an HTML page iframe.
 	* You can also provide a page for users to specify [what happens to content when they remove a tab](updateremovetab.md#removing-a-tab).
-
-**TODO. dfederm comment** Based on config UI bullet and then this update note, it sounds like what we're suggesting is that they only support add but they can support update too if they want. While what we'd prefer is that all tabs allow both add and update but they can opt-out if they want. ie the default and what we suggest is to support update, but they optionally don't have to.
 
 ## Prerequisites for tabs app pages
 

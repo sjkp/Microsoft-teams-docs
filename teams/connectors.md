@@ -49,5 +49,5 @@ For full details on the available options on cards, see [Office 365 Connectors A
 
 We do not yet support registering your Office 365 Connector in the [Connectors Developer Dashboard Beta](https://dev.outlook.com/Connectors/ConnectButton).
 
-**TODO: reviewers** Is this correct? Can developers register their connectors, or do we not support that developer portal yet? (I know we don't support the 'Connect to Office 365' button, but what about the rest of it? Thanks!)
+
 

@@ -1,7 +1,5 @@
 ﻿# Creating bots for Microsoft Teams
 
-**TODO reviewers:** This topic is structured based on the [Getting Started with SKype Bots](https://docs.botframework.com/en-us/skype/getting-started/#navtitle) topic. Please review it carefully to make sure that the information correctly applies to Microsoft Team bots as well. Thanks!
-
 Build and connect intelligent bots to interact with Microsoft Teams users naturally through 1:1 chat.
 
 > **Note:** At this time, Microsoft Teams bots support 1:1 chat. They do not yet support channels or group chats.
@@ -14,8 +12,6 @@ See the [Microsoft Bot Framework Overview](https://docs.botframework.com/en-us/)
 
 1. Register the bot with the Microsoft Bot Framework, and make sure you add Microsoft Teams as a channel. When you first register a bot it will be in Preview, which means that it is only available to users in Microsoft Teams via side loading of the bot ID or via add button.
 2. Build a bot using the [C# SDK](https://docs.botframework.com/en-us/csharp/builder/sdkreference/), [Node.js SDK](https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html) or [Microsoft Bot Connector API](https://docs.botframework.com/en-us/restapi/connector/#navtitle).
-	
-	**TODO reviewers:** Do Team bots work with the Skype REST API?
 
 3. Test it using the [Bot Framework Emulator](https://docs.botframework.com/en-us/tools/bot-framework-emulator/)
 4. Deploy the bot to a cloud service, such as [Microsoft Azure](https://azure.microsoft.com/)
@@ -24,8 +20,6 @@ See the [Microsoft Bot Framework Overview](https://docs.botframework.com/en-us/)
 ## Publishing
 
 Publish your bot from the [Bot Dashboard](https://dev.botframework.com/bots) to request for it to be shown in the Microsoft bot directory. You can choose to automatically show in directories, or enable it later from the Bot Dashboard. Microsoft Teams will also review your bot for potential inclusion in the Teams app gallery.
-
-**TODO reviewers:** I removed references to a Microsoft(Skype) Teams Bot directory, since I'm assuming Teams doesn't have a bot directory yet, since search for bots isn't enabled yet. Is that correct?
 
 > **Note:** Currently, People search is not enabled to find bots written in the Bot Framework. Users may interact with your bot by side loading the bot app ID.
 
@@ -63,7 +57,7 @@ Bots in Microsoft Teams always appear online and do not have a mood message.
 
 Your bot can send rich text, emoticons, pictures and cards to a 1:1 chat. Users can send rich text and pictures to your bot. You can specify the type of content your bot can handle in the Microsoft Teams settings page for your bot.
 
-For more information on the format and attributes of these message types, see  the **[Messages](https://docs.botframework.com/en-us/skype/getting-started/#navtitle)** section of [Getting Started with Skype bots](https://docs.botframework.com/en-us/skype/getting-started/#messsages). Microsoft Teams supports all the message types listed in this topic, with the following limitations and exceptions:
+For more information on the format and attributes of these message types, see  the **[Messages](https://docs.botframework.com/en-us/skype/getting-started/#messsages)** section of [Getting Started with Skype bots](https://docs.botframework.com/en-us/skype/getting-started/). Microsoft Teams supports all the message types listed in this topic, with the following limitations and exceptions:
 
 * For messages, Microsoft Teams bots currently do not support Skype emoticons.
 * For messages, the channel ID value will be "msteams".

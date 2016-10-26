@@ -39,4 +39,9 @@ Currently we do not support audio/video or meetings scenarios for bots in Micros
 **Can I add an 'Connect to Office 365' button to my app?**
 
 Currently, we don't support this method of setting up and configuring an Office 365 Connector.
+
+**Can I register my connector in the Connectors Developer Dashboard Beta?**
+
+We do not yet support registering your Office 365 Connector in the [Connectors Developer Dashboard Beta](https://dev.outlook.com/Connectors/ConnectButton).
+
  

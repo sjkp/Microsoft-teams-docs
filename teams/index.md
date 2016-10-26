@@ -34,3 +34,25 @@ Office 365 Connectors are a great way to get useful information and content into
 Office 365 Connectors also provide a compelling extensibility solution for developers. Developers can build connectors through incoming webhooks to generate rich connector cards.
 
 [Get started with connectors](connectors.md)
+
+## Setting up your development environment
+
+To get started developing extensions for Microsoft Teams, you'll need an Office 365 account, and to be able to side-load your extensions.
+
+### Sign up for an Office 365 account
+
+To develop extensions for Microsoft Teams, you need to have an Office 365 business account. 
+
+This can be one of the following plans:
+
+* Office 365 Midsize Business
+* Office 365 Enterprise E1, E3, E4, or K1
+* Office 365 Education
+* Office 365 Developer 
+
+If you don't currently have an Office 365 for business account, you can sign up for [an Office 365 Developer subscription](https://aka.ms/devprogramsignup).
+
+### Enable side-loading your extensions
+
+**TODO**
+
