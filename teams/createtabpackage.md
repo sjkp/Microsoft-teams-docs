@@ -14,7 +14,6 @@ For your tab app to be available within Microsoft Teams, you need to create a ta
 Below is a sample manifest for a simple tab app. See the [tabs manifest schema reference](tab_schema.md) for information on individual elements.
 
 ```JSON
-
 {
     "$schema": "https://statics.teams.microsoft.com/sdk/v0.2/manifest/MicrosoftTeams.schema.json",
     "manifestVersion": "0.2",
