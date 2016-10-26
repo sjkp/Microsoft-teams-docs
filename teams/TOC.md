@@ -12,6 +12,7 @@
 ## [Orientation](orientation.md)
 ### [Design a great tab app](design.md)
 ### [Tabs manifest schema reference](tab_schema.md)
+### [Tabs JavaScript reference](tab_js.md)
 ## [Getting started with bots](bots.md)
 ## [Getting started with connectors](connectors.md)
 
