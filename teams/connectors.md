@@ -1,10 +1,9 @@
 ﻿# Getting started with Office 365 Connectors for Microsoft Teams
 
-Office 365 Connectors are a great way to get useful information and content into Microsoft Teams. Any user can connect their group to services like Trello, Bing News, Twitter, etc., and get notified of the team's activity in that service. From tracking a team's progress in Trello, to following important hashtags in Twitter, Office 365 Connectors make it easier for your team to stay in sync and get more done.
+Office 365 Connectors are a great way to get useful information and content into Microsoft Teams. Any user can connect their group to services like Trello, GitHub, Bing News, Twitter, etc., and get notified of the team's activity in that service. From tracking a team's progress in Trello, to following important hashtags in Twitter, Office 365 Connectors make it easier for your team to stay in sync and get more done.
 
-Office 365 Connectors also provide a compelling extensibility solution for developers. Developers can build connectors through incoming webhooks to generate rich connector cards.
-
->**Note:** Currently, Microsoft Teams does not support setting up and configuring an Office 365 Connector through adding a **Connect to Office 365** button to your app. 
+Office 365 Connectors also provide a way for developers to integrate with Microsoft Teams by building custom incoming webhooks Connectors to generate rich cards.
+>**Note:** Currently, Microsoft Teams does not support registering and building an Office 365 Connector and adding a **Connect to Office 365** button to your app. 
 
 ## Accessing Office 365 Connectors from Microsoft Teams
 
@@ -48,7 +47,7 @@ To see how to send more complex messages, see **Posting more complex cards** in 
 
 For full details on the available options on cards, see [Office 365 Connectors API Reference](https://dev.outlook.com/Connectors/Reference).
 
-To learn how you can register your Office 365 Connector so that it shows up in the Microsoft Teams connector catalog, see [Connectors Developer Dashboard Beta Guide](https://dev.outlook.com/Connectors/ConnectButton).
+We do not yet support registering your Office 365 Connector in the [Connectors Developer Dashboard Beta](https://dev.outlook.com/Connectors/ConnectButton).
 
 **TODO: reviewers** Is this correct? Can developers register their connectors, or do we not support that developer portal yet? (I know we don't support the 'Connect to Office 365' button, but what about the rest of it? Thanks!)
 
