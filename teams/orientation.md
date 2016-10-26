@@ -4,7 +4,8 @@ To get more familiar with the Microsoft Teams SDK, and incorporate your web-base
 
 * [Design a great Microsoft Teams tab app](design.md)
 * [Tab package schema reference](tab_schema.md)
-<!--* TODO: link to Tabs API reference, once built/published-->
+* [Tabs JavaScript reference](tab_js.md)
+
 
 
 
