@@ -10,7 +10,7 @@ You can enable users to update, or reconfigure, a tab they have already added to
 
 To enable your tab to be updated, set the `canUpdateConfig` attribute in your tab manifest to `true`. For more information, see [Microsoft Teams tab package schema reference](tab_schema.md).
 
-To support user updates, in your configuration page code call `microsoftTeams.settings.getSettings(<callback>)` after initialization. Once you receive the callback, you can inspect to see if there are existing settings or if this is a new tab. You can then enable your configuration page and continue loading your content in the tab. 
+To support user updates, in your configuration page code call `microsoftTeams.settings.getSettings(function(settings) { /* ... */ })` after initialization. Once your callback is invoked, you can inspect to see if there are existing settings or if this is a new tab. You can then enable your configuration page and continue loading your content in the tab. 
 
 > **Tip** When the user adds a tab, you can set 'customSettings' inside Settings and use this to help you re-instantiate your context if the tab is updated.
 
@@ -26,10 +26,10 @@ For your tab removal page to display within Microsoft Teams, it must meet the [r
 
 ### Presenting the user with content options upon tab removal
 
-Your code should call `microsoftTeams.settings.getSettings(<callback>)`. Once you receive the callback, you can use these settings to determine the tab content that is being removed.
+Your code should call `microsoftTeams.settings.getSettings(function(settings) { /* ... */ })`. Once your callback is invoked, you can use these settings to determine the tab content that is being removed.
 
 <!--
-Call microsoftTeams.settings.getSettings(<callback>).  Once you receive the callback, you can use these settings to determine the tab content that is being removed.
+Call microsoftTeams.settings.getSettings(function(settings) { /* ... */ }).  Once your callback is invoked, you can use these settings to determine the tab content that is being removed.
 	Note that when a tab is added, you can set 'customSettings' inside Settings and use this to help you re-hydrate your context when the tab is removed.  This is a string, but you can of course store multiple settings here by serializing or 'stringifying' an object.
 -->
 
