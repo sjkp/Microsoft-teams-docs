@@ -1,42 +1,22 @@
 ﻿# README
 
-<!--TODO: scrub for Skype branding and update to be applicable for Microsoft Teams-->
-
-Thank you for your interest in Skype for Business developer documentation!
+Thank you for your interest in Microsoft Teams developer documentation!
 
 ## Ways to contribute
 
-You can contribute to [Skype Web SDK developer documentation](https://msdn.microsoft.com/en-us/skype/websdk/skypewebsdk) and [Skype for Business App SDK developer documentation](https://msdn.microsoft.com/en-us/skype/appsdk/skypeappsdk) in a  few different ways:
+You can contribute to [Microsoft Teams developer documentation](https://msdn.microsoft.com/en-us/microsoft-teams/) in a  few different ways:
 
-* Contribute to articles via the [public Skype Web SDK developer docs repo](https://github.com/OfficeDev/skype-docs/tree/master/Skype/WebSDK) and [Skype App SDK developer docs repo](https://github.com/OfficeDev/skype-docs/tree/master/Skype/AppSDK)*
+* Contribute to articles via the [public Microsoft Teams SDK developer docs repo](https://github.com/OfficeDev/microsoft-teams-docs) 
 * Report documentation bugs via [GitHub Issues](https://github.com/OfficeDev/office-content/issues)
 * Add documentation requests to the [Office/SharePoint developer UserVoice](http://officespdev.uservoice.com)
 
->**Note:** We're only taking documentation contributions from authors within Microsoft presently. We will open the repository for the Skype Web SDK Conceptual content to non-microsoft contributors soon.
-
-## Repository organization
-
-The content in the Skype-docs repository is grouped  by topic. The README.md file at the root of the topic directory specifies the structure of the articles within the topic.
-
-##Articles in this repository
-###Skype Web SDK
-
-- [Skype Web SDK Conceptual Content](https://github.com/OfficeDev/skype-docs/blob/master/Skype/WebSDK/GeneralReference.md)
-
-###Skype App SDK
-
-- [Skype for Business App SDK preview](https://github.com/OfficeDev/skype-docs/tree/master/Skype/AppSDK/SkypeAppSDK.md)
-
-###Skype for Business Uris
-
-- [Skype for Business Uris](https://github.com/OfficeDev/skype-docs/tree/master/Skype/Skype-For-Business-Uris)
+>**Note:** We're only taking documentation contributions from authors within Microsoft presently. We will open the repository for the Microsoft Teams content to non-Microsoft contributors soon.
 
 ##Before we can accept your pull request
 
 ###Minor corrections
 
 Minor corrections or clarifications you submit for documentation and code examples in this repository do not require a Contribution License Agreement (CLA). Submissions are taken in the form of pull requests. We will do our best to review pull requests within ten business days.
-
 
 ###Larger submissions
 
@@ -54,7 +34,7 @@ You can download the Contribution License Agreement (CLA) [here](https://github.
 Once we receive and process your CLA, we will do our best to review your pull request(s) within ten business days.
 
 ## Guidance for contributors
-For more guidance on contributing to Office developer documentation, see [CONTRIBUTING.md](https://github.com/OfficeDev/skype-docs/blob/master/CONTRIBUTING.md) in this repo. 
+For more guidance on contributing to Office developer documentation, see [CONTRIBUTING.md](https://github.com/OfficeDev/microsoft-teams-docs/blob/master/CONTRIBUTING.md) in this repo. 
 
 
 ##Copyright
