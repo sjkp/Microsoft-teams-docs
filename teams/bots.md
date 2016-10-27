@@ -112,7 +112,7 @@ Buttons are shown stacked at the bottom of the card. Button text is always on a 
 
 The [hero card](https://docs.botframework.com/en-us/csharp/builder/sdkreference/activities.html#herocard) renders a title, subtitle, text, large image and buttons.
 
-TODO: insert hero-card image
+!["Example of a hero-card"](images/Bots_HeroCarExample.PNG)
 
 | Property | Type  | Description |                                                           
 |:-------|:-------|:------------|
@@ -127,7 +127,7 @@ TODO: insert hero-card image
 
 The [thumbnail card](https://docs.botframework.com/en-us/csharp/builder/sdkreference/activities.html#thumbnailcard) renders a title, subtitle, text, small thumbmail image and buttons.
 
-TODO: insert thumbnail-card image
+!["Example of a thumbnail-card"](images/Bots_ThumbnailExample.png)
 
 | Property | Type  | Description |                                                           
 |:-------|:-------|:------------|
@@ -149,7 +149,7 @@ Properties are the same as for the hero or thumbnail card.
 
 ### List card
 
-TODO: insert list-card image
+!["Example of a list-card"](images/Bots_ListExample.PNG)
 
 Properties are the same as for the hero or thumbnail card.
 
