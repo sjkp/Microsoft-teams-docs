@@ -61,7 +61,7 @@ Your bot can send rich text, pictures and cards to a 1:1 chat. Users can send ri
 |:-------|:-------|:------------|:-------|
 | Rich text | ✔ | ✔ | No emoticons |  
 | Pictures | ✔ | ✔ | PNG, JPEG or GIF up to 20Mb |
-| Cards | X | ✔ |  |
+| Cards | ✘ | ✔ |  |
 
 ### Welcome messages
 
