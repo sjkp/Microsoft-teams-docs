@@ -8,8 +8,6 @@ Office 365 Connectors also provide a way for developers to integrate with Micros
 
 >**Note:** Currently, Microsoft Teams does not support registering and building an Office 365 Connector and adding a **Connect to Office 365** button to your app. 
 
-[Learn how](setup.md).
-
 ## Accessing Office 365 Connectors from Microsoft Teams
 
 From within a Microsoft Teams channel, select **... (more options)** next to the channel name and then select **Connectors**.
