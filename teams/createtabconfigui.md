@@ -1,4 +1,4 @@
-﻿# Create the configuration page for your Microsoft Teams tab
+﻿# Create the configuration page for your Microsoft Teams (Preview) tab
 
 The configuration page is an HTML page that you host. Microsoft Teams displays it inside the **Add Tab** dialog when a user chooses to add your tab. This page enables you to present options and gather information from the user so they can specify and customize the content and experience you present in your tab app. For example, selecting existing app resources to display, such as files or task lists, or specifying the attributes of new app resources.
 

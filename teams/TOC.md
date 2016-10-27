@@ -1,4 +1,4 @@
-﻿# [Microsoft Teams SDK](index.md)
+﻿# [Microsoft Teams (Preview) SDK](index.md)
 
 ## [Getting started with tabs](gettingstarted.md)
 ### [Prerequisites for tabs app pages](tabprerequisites.md)

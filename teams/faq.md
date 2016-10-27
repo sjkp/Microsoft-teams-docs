@@ -4,7 +4,7 @@ Below are some of the most frequently asked questions concerning Microsoft Teams
 
 ## Tabs
 
-**Can I use tab apps in a mobile Microsoft Teams app?**
+**Can I use tab apps in a mobile Microsoft Teams (Preview) app?**
 
 Currently, tabs are only supported in Microsoft Teams desktop and web applications.
 
@@ -14,7 +14,7 @@ Currently, custom tabs are only supported in channels and 1:1 chats.
 
 ## Bots
 
-**Can I build a bot that works in Microsoft Teams channels?**
+**Can I build a bot that works in Microsoft Teams (Preview) channels?**
 
 No, at this time bots are only supported in 1:1 chats. 
 

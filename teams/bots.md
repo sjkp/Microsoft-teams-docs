@@ -1,4 +1,4 @@
-﻿# Creating bots for Microsoft Teams
+﻿# Creating bots for Microsoft Teams (Preview)
 
 Build and connect intelligent bots to interact with Microsoft Teams users naturally through 1:1 chat.
 

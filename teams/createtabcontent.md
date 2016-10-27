@@ -1,8 +1,8 @@
-﻿# Create the content for your Microsoft Teams tab
+﻿# Create the content for your Microsoft Teams (Preview) tab
 
 When the user visits your tab, Microsoft Teams will load the URL you [provided earlier](createtabconfigui.md) inside an iframe.
 
-!["Tab with iframed content highlighted."](images/tab_contentui2.png)
+!["Tab with iframed content highlighted."](images/tab_contentui.png)
 
 ## Prerequisites for content displayed in your tab
 

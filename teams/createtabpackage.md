@@ -1,4 +1,4 @@
-﻿# Create the package for your Microsoft Teams tab app
+﻿# Create the package for your Microsoft Teams (Preview) tab app
 
 For your tab app to be available within Microsoft Teams, you need to create a tab package and upload it to a team. The tab package is a zip file containing:
 

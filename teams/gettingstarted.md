@@ -1,4 +1,4 @@
-﻿# Getting started developing a Microsoft Teams tab app
+﻿# Getting started developing a Microsoft Teams (Preview) tab app
 
 This section shows how to get started building a Microsoft Teams tab app, either from scratch or adapting an existing web app.
 

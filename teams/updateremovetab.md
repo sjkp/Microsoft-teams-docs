@@ -1,4 +1,4 @@
-﻿# Update or remove a Microsoft Teams tab
+﻿# Update or remove a Microsoft Teams (Preview) tab
 
 When you create your Microsoft tab app, you can decide whether you want users to be able to update a tab once it's been added to a team, and if you want users to be able to choose what happens to tab content if a tab is removed.
 

@@ -1,7 +1,7 @@
 ﻿
 # Submit your questions, bugs, feature requests, and contributions
 
-The Microsoft Team product team responds to the developer community across several channels. Please tell us about your:
+The Microsoft Team (Preview) product team responds to the developer community across several channels. Please tell us about your:
 
 - **Technical questions:** We listen and respond on [stackoverflow](http://stackoverflow.com/questions/tagged/skypedeveloper). Tag your question with "skypedeveloper" so that our team and the Skype for Business developer community can respond with helpful answers.
 

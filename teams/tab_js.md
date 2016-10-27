@@ -1,4 +1,4 @@
-﻿# Microsoft Teams JavaScript SDK reference
+﻿# Microsoft Teams (Preview) JavaScript SDK reference
 
 Reference documentation for the full list of functionality available in the SDK.
 

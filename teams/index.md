@@ -1,4 +1,4 @@
-﻿# Microsoft Teams development
+﻿# Microsoft Teams (Preview) development
 
 Use the Microsoft Teams SDK to extend Microsoft Teams and make your team even more collaborative and effective.
 
@@ -13,7 +13,7 @@ Common tab app examples are:
 * Group task management
 * Shared design canvas
 
-!["Example of a tab app showing data, alongside a conversation about the tab data"](images/tab_example2.png)
+!["Example of a tab app showing data, alongside a conversation about the tab data"](images/tab_example.png)
 
 Currently, tab apps are supported in Microsoft Teams desktop and web applications.
 

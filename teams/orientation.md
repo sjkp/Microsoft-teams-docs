@@ -1,4 +1,4 @@
-﻿# Microsoft Teams SDK - Orientation
+﻿# Microsoft Teams (Preview) SDK - Orientation
 
 To get more familiar with the Microsoft Teams SDK, and incorporate your web-based team tools and content into the Microsoft Teams environment, read the following topics:
 

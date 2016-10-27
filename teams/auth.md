@@ -1,4 +1,4 @@
-﻿# Authenticating your Microsoft Teams tab app
+﻿# Authenticating your Microsoft Teams (Preview) tab app
 
 Your tab app can use Azure Azure Active Directory (Azure AD) or any identity provider. Microsoft Teams provides a mechanism to enable secure user authentication when necessary.
 

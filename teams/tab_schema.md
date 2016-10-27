@@ -1,4 +1,4 @@
-﻿# Microsoft Teams tab package schema reference
+﻿# Microsoft Teams (Preview) tab package schema reference
 
 The tab package manifest file specifies attributes of your app, and points to required resources, such as the app icons to use in the Microsoft Teams UI and the location of your app configuration page. The manifest must adhere to the tab package schema, detailed below. 
 
