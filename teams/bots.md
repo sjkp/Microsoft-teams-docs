@@ -37,7 +37,12 @@ There are two ways to test your bot in Microsoft Teams:
 
 *	Side-load your bot from within Microsoft Teams:
 	* On the [Bot Dashboard](https://dev.botframework.com/bots) page for your bot, under **Details**, copy the **Microsoft App ID** for your bot.
+	
+	!["Getting the AppID for the bot"](images/Bots_AppID_BotFramework.PNG)
+	
 	* From within Microsoft Teams, on the **Chat** pane, select the **Add chat** icon. For **To:**, paste your bot's Microsoft app ID.
+	
+	!["Getting the AppID for the bot"](images/Bots_Sideloading.PNG)
 		
 		The app ID should resolve to your bot name.
 	* Select your bot and send a message to initiate a conversation.
