@@ -55,23 +55,104 @@ Bots in Microsoft Teams always appear online and do not have a mood message.
 
 ## Messages
 
-Your bot can send rich text, emoticons, pictures and cards to a 1:1 chat. Users can send rich text and pictures to your bot. You can specify the type of content your bot can handle in the Microsoft Teams settings page for your bot.
+Your bot can send rich text, pictures and cards to a 1:1 chat. Users can send rich text and pictures to your bot. You can specify the type of content your bot can handle in the Microsoft Teams settings page for your bot.
 
-For more information on the format and attributes of these message types, see  the **[Messages](https://docs.botframework.com/en-us/skype/getting-started/#messsages)** section of [Getting Started with Skype bots](https://docs.botframework.com/en-us/skype/getting-started/). Microsoft Teams supports all the message types listed in this topic, with the following limitations and exceptions:
-
-* For messages, Microsoft Teams bots currently do not support Skype emoticons.
-* For messages, the channel ID value will be "msteams".
-* For card types, Microsoft Teams bots currently do not support the receipt card type.
-* Microsoft Teams bots currently do not support calling or group chats.
-
-<!--
 | Format | From user to bot  | From bot to user |  Notes |                                                           
 |:-------|:-------|:------------|:-------|
-| Rich text | ✔ | ✔ | Including emoticons |  
+| Rich text | ✔ | ✔ | No emoticons |  
 | Pictures | ✔ | ✔ | PNG, JPEG or GIF up to 20Mb |
-| Video | Coming soon | ✔ | MP4, AAC+h264 up to 15Mb (approx. 1 minute), plus JPEG thumbnail |
-| Cards | ✔ | ✔ |  |
--->
+| Cards | ✘ | ✔ |  |
+
+### Welcome messages
+
+To send a welcome message to a user listen for the [conversationUpdate](https://docs.botframework.com/en-us/csharp/builder/sdkreference/activities.html) activity.
+
+### Pictures
+
+Pictures are sent by adding attachments to a message.
+
+Pictures can be PNG, JPEG or GIF up to 20Mb.
+
+## Cards and buttons
+
+Microsoft Teams supports the following cards which may have several properties and attachments. You can find information on how to use cards in the [.NET SDK](https://docs.botframework.com/en-us/csharp/builder/sdkreference/activities.html#richcards) and [Node.js SDK](https://docs.botframework.com/en-us/node/builder/guides/examples/#demo-skype-calling) docs.
+
+* Hero card
+* Thumbnail card
+* Carousel card (with hero or thumbnail cards)
+* List card
+
+> **Note:** Microsoft Teams cards currently only support openUrl and imBack actions.
+
+### Images
+
+Images are scaled up or down in size while maintaining the aspect ratio to cover the image area, and then cropped from center to achieve the image aspect ratio for the card.
+
+Images should be HTTPS, up to 1024x1024, up to 1MB in size, and PNG or JPEG.
+
+| Property | Type  | Description |                                                           
+|:-------|:-------|:------------|
+| url | URL | HTTPS URL to the image |
+| alt | String | Accessible description of the image |
+
+### Buttons
+
+Buttons are shown stacked at the bottom of the card. Button text is always on a single line and will be trimmed if too long. If more buttons than can be supported by the card are included they will not be shown.
+
+### Actions
+
+| Property | Type  | Description |                                                           
+|:-------|:-------|:------------|
+| type | String | Required field. One of openURL (opens the given URL) or imBack (posts a message in the chat to the bot that sent the card) |
+| title | String | Text description that appears on the button |
+| value | String |  For openURL is a URL, and for imBack is a user defined string |
+
+### Hero card
+
+The [hero card](https://docs.botframework.com/en-us/csharp/builder/sdkreference/activities.html#herocard) renders a title, subtitle, text, large image and buttons.
+
+!["Example of a hero-card"](images/Bots_HeroCarExample.PNG)
+
+| Property | Type  | Description |                                                           
+|:-------|:-------|:------------|
+| title | Rich text | Title of the card. Maximum 2 lines |
+| subtitle | Rich text | Subtitle of the card. Maximum 2 lines |
+| text | Rich text | Text appears just below the subtitle |
+| images: [] | Array of images | Image displayed at top of card. Aspect ratio 16:9 |
+| buttons: [] | Array of action objects | Set of actions applicable to the current card. Maximum 6. |
+| tap | Action object | This action will be activated when the user taps on the card itself |
+
+### Thumbnail card
+
+The [thumbnail card](https://docs.botframework.com/en-us/csharp/builder/sdkreference/activities.html#thumbnailcard) renders a title, subtitle, text, small thumbmail image and buttons.
+
+!["Example of a thumbnail-card"](images/Bots_ThumbnailExample.png)
+
+| Property | Type  | Description |                                                           
+|:-------|:-------|:------------|
+| title | Rich text | Title of the card. Maximum 2 lines |
+| subtitle | Rich text | Subtitle of the card. Maximum 2 lines |
+| text | Rich text | Text appears just below the subtitle |
+| images: [] | Array of images | Image displayed at top of card. Aspect ratio 1:1 (square) |
+| buttons: [] | Array of action objects | Set of actions applicable to the current card. Maximum 6. |
+| tap | Action object | This action will be activated when the user taps on the card itself |
+
+
+### Carousel card
+
+The [carousel card](https://docs.botframework.com/en-us/csharp/builder/sdkreference/activities.html) can be used to show a carousel of images and text, with associated action buttons.
+
+!["Example of a list-card"](images/Bots_CarouselExample.png)
+
+Properties are the same as for the hero or thumbnail card.
+
+### List card
+
+The list card can be used to show a vertically stacked list of cards.
+
+!["Example of a list-card"](images/Bots_ListExample.PNG)
+
+Properties are the same as for the hero or thumbnail card.
 
 ## Bot settings
 
