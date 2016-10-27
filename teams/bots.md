@@ -149,6 +149,8 @@ Properties are the same as for the hero or thumbnail card.
 
 ### List card
 
+The list can be used to show a vertically stacked list of cards.
+
 !["Example of a list-card"](images/Bots_ListExample.PNG)
 
 Properties are the same as for the hero or thumbnail card.
