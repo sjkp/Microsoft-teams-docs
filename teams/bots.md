@@ -142,7 +142,7 @@ The [thumbnail card](https://docs.botframework.com/en-us/csharp/builder/sdkrefer
 
 The [carousel card](https://docs.botframework.com/en-us/csharp/builder/sdkreference/activities.html) can be used to show a carousel of images and text, with associated action buttons.
 
-TODO: insert carousel-card image
+!["Example of a list-card"](images/Bots_CarouselExample.png)
 
 Properties are the same as for the hero or thumbnail card.
 
