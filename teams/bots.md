@@ -79,7 +79,7 @@ Microsoft Teams supports the following cards which may have several properties a
 
 * Hero card
 * Thumbnail card
-* Carousel card (with hero or thumbnail images)
+* Carousel card (with hero or thumbnail cards)
 * List card
 
 > **Note:** Microsoft Teams cards currently only support openUrl and imBack actions.
@@ -142,7 +142,7 @@ The [thumbnail card](https://docs.botframework.com/en-us/csharp/builder/sdkrefer
 
 The [carousel card](https://docs.botframework.com/en-us/csharp/builder/sdkreference/activities.html) can be used to show a carousel of images and text, with associated action buttons.
 
-TODO: insert carouse-card image
+TODO: insert carousel-card image
 
 Properties are the same as for the hero or thumbnail card.
 
