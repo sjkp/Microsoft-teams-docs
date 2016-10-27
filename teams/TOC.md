@@ -1,7 +1,6 @@
 ﻿# [Microsoft Teams (Preview) SDK](index.md)
-
-## [Getting started with tabs](gettingstarted.md)
-### [Setting up for development](setup.md)
+## [Setting up for development](setup.md)
+## [Tabs](gettingstarted.md)
 ### [Prerequisites for tabs app pages](tabprerequisites.md)
 ### [Create the tab package](createtabpackage.md)
 ### [Create the configuration page](createtabconfigui.md)
@@ -10,14 +9,13 @@
 ### [Get user context](getusercontext.md)
 ### [Authenticating within a tab](auth.md)
 ### [Redirecting across domains](crossdomain.md)
-
 ## [Orientation](orientation.md)
 ### [Design a great tab app](design.md)
 ### [Tabs manifest schema reference](tab_schema.md)
 ### [Tabs JavaScript reference](tab_js.md)
-## [Getting started with bots](bots.md)
-## [Getting started with connectors](connectors.md)
+## [Bots](bots.md)
+## [Office 365 Connectors](connectors.md)
 
 ## [Samples](samples.md)
 ## [FAQ](faq.md)
-## [Submit your questions, bugs, feature requests, and contributions](feedback.md)
+## [Submit feedback](feedback.md)
