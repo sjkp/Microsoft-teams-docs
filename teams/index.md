@@ -2,7 +2,7 @@
 
 Use the Microsoft Teams SDK to extend Microsoft Teams and make your team even more collaborative and effective.
 
-To get started developing extensions for Microsoft Teams, you'll need an Office 365 account, and to turn on the Teams service for your organization. [Learn how](setup.md).
+> **Don't have Microsoft Teams? Get a free one-year trial** To get started developing for Microsoft Teams, you'll need an Office 365 account, and to turn on Teams for your organization. [Here's how](setup.md).
 
 ## Tabs
 

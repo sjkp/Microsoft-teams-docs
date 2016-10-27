@@ -1,8 +1,8 @@
 ﻿# Setting up Microsoft Teams (Preview) for development
 
-To get started developing extensions for Microsoft Teams, you'll need an Office 365 account, and to turn on the Teams service for your Office 365 organization. To develop bots, you'll also need to turn on bots and enable side-loading of bots for testing.
+Microsoft Teams is a service within Office 365. To get started developing extensions for Microsoft Teams, you'll need an Office 365 account, and to turn on the Teams service for your Office 365 organization. To develop bots, you'll also need to turn on bots and enable side-loading of bots for testing.
 
-## Sign up for an Office 365 account
+## Sign up for an Office 365 trial, or use an existing account
 
 To develop extensions for Microsoft Teams, you need to have an Office 365 business account. 
 
@@ -13,7 +13,7 @@ This can be one of the following plans:
 * Office 365 Education
 * Office 365 Developer 
 
-If you don't currently have an Office 365 for business account, you can sign up for [an Office 365 Developer subscription](https://aka.ms/devprogramsignup).
+If you don't currently have an Office 365 for business account, you can sign up for [an Office 365 Developer subscription](https://aka.ms/devprogramsignup) for no charge for one year.
 
 ## Turn on Microsoft Teams for your organization
 
