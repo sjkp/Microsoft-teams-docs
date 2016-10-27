@@ -82,7 +82,7 @@ Microsoft Teams supports the following cards which may have several properties a
 * Carousel card (with hero or thumbnail images)
 * List card
 
-> **Note:** Microsoft Teams cards do not currently support postBack actions
+> **Note:** Microsoft Teams cards currently only support openUrl and imBack actions.
 
 ### Images
 
@@ -148,7 +148,7 @@ Properties are the same as for the hero or thumbnail card.
 
 ### List card
 
-The list can be used to show a vertically stacked list of cards.
+The list card can be used to show a vertically stacked list of cards.
 
 !["Example of a list-card"](images/Bots_ListExample.PNG)
 
