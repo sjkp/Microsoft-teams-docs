@@ -2,6 +2,8 @@
 
 This section shows how to get started building a Microsoft Teams tab app, either from scratch or adapting an existing web app.
 
+To get started developing extensions for Microsoft Teams, you'll need an Office 365 account, and to turn on the Teams service for your organization. [Learn how](setup.md).
+
 >**Note:** Currently, developing new Microsoft Teams tabs is supported for channels in Microsoft Teams desktop and web applications. It is not yet supported in Microsoft Teams mobile apps or for private chats.
 
 ## Overview of building a Microsoft Teams tab app
