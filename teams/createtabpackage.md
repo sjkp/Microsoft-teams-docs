@@ -58,18 +58,22 @@ Once you've created your app manifest and image files, compress them into a zip 
 
 Upload this zip file to a team to make your app available as a tab.
 
-1. Create a new team for testing, if necessary.  Click 'Create team' at the bottom of the left-hand panel.
+1. Create a new team for testing, if necessary.  Click **Create team** at the bottom of the left-hand panel.
 2. Select the team from the left-hand panel, select **... (more options)** and then select **View Team**.
+	
+	![](images/tab_view_team.png)
 3. Select the **Developer (Preview)** tab, and then select **Upload**.
 4. Navigate to your zip file and select it.
+	
+	![](images/tab_sideload.png)
 
-**TODO. screenshot of .../View Team.  Screenshot of side-load UX**
 
 Now, when team members add a new tab to a channel in this team, they will see your app in the gallery of available tabs.
 
 > **Note** To re-upload an updated package, click on 'Replace' icon at the end of the tab's table row.  Don't click 'Upload' again: Microsoft Teams will say the tab already exists.
 
-**TODO. Screenshot of tab gallery, highlighting Maps tab**
+![](images/tab_gallery.png)
+
 
 ## Next steps
 

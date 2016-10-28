@@ -2,9 +2,7 @@
 
 When the user visits your tab, Microsoft Teams will load the `contentUrl` that you [provided earlier](createtabconfigui.md) inside an iframe.
 
-!["Tab with iframed content highlighted."](images/tab_contentui.png)
-
-**TODO: make this a Bing Map, to fit with the example we've been following**
+!["Tab with iframed content highlighted."](images/tab_content.png)
 
 ## Prerequisites for content displayed in your tab
 
