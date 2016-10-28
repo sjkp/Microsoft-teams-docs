@@ -2,7 +2,7 @@
 
 Enable your app to make teams even more collaborative and effective with the Microsoft Teams platform. 
 
-> **Don't have Microsoft Teams? Get a free one-year trial.** To get started developing for Microsoft Teams, you'll need an Office 365 account, and to turn on Teams for your organization. [Here's how](setup.md).
+> **Don't have Microsoft Teams? Get a free one-year trial.** To get started developing for Microsoft Teams, you'll need an Office 365 account, and to turn on Microsoft Teams for your organization. [Here's how](setup.md).
 
 ## Tabs
 
@@ -23,7 +23,7 @@ Currently, tab apps are supported in Microsoft Teams desktop and web application
 
 ## Bots
 
-Build and connect intelligent bots to interact with Microsoft Teams users naturally through 1:1 chat. Bots that can answer natural language and perform lightweight tasks such as querying bug information or kicking off a build.​ Any bot created using the [Microsoft Bot Framework](https://dev.botframework.com/) are automatically configured and ready to work in Microsoft Teams.
+Build and connect intelligent bots to interact with Microsoft Teams users naturally through 1:1 chat. Bots can answer natural language questions and perform lightweight tasks such as querying bug information or kicking off a build.​ Any bot created using the [Microsoft Bot Framework](https://dev.botframework.com/) are automatically configured and ready to work in Microsoft Teams.
 
 !["Example of a bot assisting a user"](images/bot_example.png)
 

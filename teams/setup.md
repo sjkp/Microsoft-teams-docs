@@ -1,15 +1,15 @@
 ﻿# Setting up Microsoft Teams (Preview) for development
 
-Microsoft Teams is a service within Office 365. To get started developing extensions for Microsoft Teams, you'll need an Office 365 account, and to turn on the Teams service for your Office 365 organization. To develop bots, you'll also need to turn on bots and enable side-loading of bots for testing.
+Microsoft Teams is a service within Office 365. To get started developing extensions for Microsoft Teams, you'll need an Office 365 account, and to turn on the Microsoft Teams service for your Office 365 organization. To develop bots, you'll also need to turn on bots and enable side-loading of bots for testing.
 
 ## Sign up for an Office 365 trial, or use an existing account
 
-To develop extensions for Microsoft Teams, you need to have an Office 365 business account. 
+To develop extensions for Microsoft Teams, you need to have an [Office 365 business account](https://products.office.com/en-us/business/compare-more-office-365-for-business-plans). 
 
 This can be one of the following plans:
 
 * Office 365 Midsize Business
-* Office 365 Enterprise E1, E3, E4, or K1
+* Office 365 Enterprise E1, E3, or E5
 * Office 365 Education
 * Office 365 Developer 
 
@@ -17,7 +17,7 @@ If you don't currently have an Office 365 for business account, you can sign up 
 
 ## Turn on Microsoft Teams for your organization
 
-During the preview period, for Microsoft Teams to be available in Office 365 for your organization, someone with administrative rights in your organization must turn on the Teams service. If you are working with an Office 365 Developer subscription, then by default you are an administrator of that organization.
+During the preview period, for Microsoft Teams to be available in Office 365 for your organization, someone with administrative rights in your organization must turn on the Microsoft Teams service. If you are working with an Office 365 Developer subscription, then by default you are an administrator of that organization.
 
 Administrators need to use the Office 365 Admin Portal to enable Microsoft Teams for your organization.
 
@@ -28,7 +28,7 @@ Administrators need to use the Office 365 Admin Portal to enable Microsoft Teams
  
 	!["Screenshot of the services listed under settings, with the Teams service selected"](images/setup_select_teams.png)
 
-5. On the **Teams** settings screen, toggle Teams **On** and then select **Save**.
+5. On the **Teams** settings screen, toggle Microsoft Teams **On** and then select **Save**.
  
 	!["Screenshot of the services listed under settings, with the Teams service selected"](images/setup_enable_teams.png)
 
@@ -49,5 +49,5 @@ For more information on bots, including how to side load them for testing purpos
 
 ## Next steps
 
-* [Microsoft Teams (Preview) development](index.md)
+* [Microsoft Teams developer preview](index.md)
 	
