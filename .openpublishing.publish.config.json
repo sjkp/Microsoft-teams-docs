@@ -15,7 +15,7 @@
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "template_folder": "_themes.MSDN.Modern"
+      "build_entry_point": "op"
     }
   ],
   "notification_subscribers": [
