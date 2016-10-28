@@ -37,14 +37,14 @@ microsoftTeams.settings.registerOnSaveHandler(function(saveEvent){
          contentUrl: "https://www.bing.com/maps/embed",
          suggestedTabName: "Bing Map",
          websiteUrl: "https://www.bing.com/maps",
-         removeUrl: "https://localhost/maps/tabremove.htm"
+         removeUrl: ""
       });
     } else {
        microsoftTeams.settings.setSettings({
          contentUrl: "https://www.google.com/maps/embed",
          suggestedTabName: "Google Map",
          websiteUrl: "https://www.google.com/maps",
-         removeUrl: "https://localhost/maps/tabremove.htm"
+         removeUrl: ""
       });
     }
     
@@ -59,6 +59,8 @@ function onClick() {
 </body>
 </html>
 ```
+
+**TODO fix up reference to removeUrl to final hosted location**
 
 ## Prerequisites for your configuration page
 
