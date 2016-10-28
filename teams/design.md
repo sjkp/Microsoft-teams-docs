@@ -29,6 +29,8 @@ Your tab experience should feel integrated into Microsoft Teams. If you are adap
 
 Consider how to enable access permissions for your tab. Microsoft Teams is based on [Office Modern Groups](https://support.office.com/en-us/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2), so consider supporting permissions for them. At a minimum, you should make it easy to request access, so that each new user seeing the tab can do so. Or consider making the content generally available without requesting additional permissions.
 
+## Next step
 
+[Create the package for your Microsoft Team tab app](createtabpackage.md)
 
 

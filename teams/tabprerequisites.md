@@ -2,6 +2,8 @@
 
 For the UI of your tab app--its configuration, content, and (optionally) tab removal pages--to be displayed within Microsoft Teams, they need to meet the following requirements. 
 
+* Host the page on a secure https:// endpoint.  Microsoft Teams will not display insecure http:// content.
+
 * Make sure that the page can be hosted in an iframe:
 	
 	* Set header `Content-Security-Policy: child-src *.teams.microsoft.com *.skype.com`. Most modern browsers support this.

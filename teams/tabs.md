@@ -20,4 +20,4 @@ Building a new tab app, or adapting an existing web app to be a tab, consists of
 
 ## Next step
 
-[Create the package for your Microsoft Team tab app](createtabpackage.md)
+[Design a great Microsoft Teams tab app](design.md)
