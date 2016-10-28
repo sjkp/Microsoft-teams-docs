@@ -3,15 +3,11 @@
 For your tab app to be available within Microsoft Teams, you need to create a tab package and upload it to a team. The tab package is a zip file containing:
 
 - A manifest file named `manifest.json`, which specifies attributes of your app and points to required resources such as app icons and the location of your app configuration page.
-- Image files, to be used as icons for your app within Microsoft Teams:
-	- A small icon file, 44 by 44 pixels.
-	- A larger icon file, 88 by 88 pixels.
+- Image files, to be used as icons for your app.  These must be transparent PNGs, with white or light-colored foreground in both small (44 by 44 pixels) and large (88 by 88 pixels) sizes.  (The accompanying background or 'accent color' is specified in the manifest.)
 
-	Each icon image file must be a transparent PNG, with a white or light-colored foreground.
+## Creating a manifest for your tab app 
 
-## Example manifest
-
-Below is a sample manifest for a simple tab app. See the [tabs manifest schema reference](tab_schema.md) for information on individual elements.
+Below is a sample manifest for a simple tab app.
 
 ```JSON
 {
@@ -36,7 +32,7 @@ Below is a sample manifest for a simple tab app. See the [tabs manifest schema r
             "88": "maps88.png"
     },
     "accentColor" : "#223344",
-    "configUrl": "https://exampletabs.azurewebsites.net/maps/tabconfig.htm",
+    "configUrl": "",
     "canUpdateConfig": true,
     "needsIdentity": false,
     "validDomains": [
@@ -45,8 +41,7 @@ Below is a sample manifest for a simple tab app. See the [tabs manifest schema r
     ]
 }
 ```
-
-## Creating a manifest for your tab app 
+**TODO. need to update configUrl with final hosted location of config UI**
 
 The manifest you create for your app must adhere to the manifest schema. For more information, see [Microsoft Teams tab manifest schema](tab_schema.md).
 
@@ -57,14 +52,24 @@ The manifest you create for your app must adhere to the manifest schema. For mor
 
 ## Uploading your tab package to Microsoft Teams
 
-Once you've created your app manifest and image files, compress them into a zip file.  Upload this zip file to a team to make your app available as a tab.
+Once you've created your app manifest and image files, compress them into a zip file.
 
-1. Create a new team for testing, if necessary. 
+**TODO. reference tab package final hosted location**
+
+Upload this zip file to a team to make your app available as a tab.
+
+1. Create a new team for testing, if necessary.  Click 'Create team' at the bottom of the left-hand panel.
 2. Select the team from the left-hand panel, select **... (more options)** and then select **View Team**.
-3. Select the **Developer** tab, and then select **Upload**.
+3. Select the **Developer (Preview)** tab, and then select **Upload**.
 4. Navigate to your zip file and select it.
 
+**TODO. screenshot of .../View Team.  Screenshot of side-load UX**
+
 Now, when team members add a new tab to a channel in this team, they will see your app in the gallery of available tabs.
+
+> **Note** To re-upload an updated package, click on 'Replace' icon at the end of the tab's table row.  Don't click 'Upload' again: Microsoft Teams will say the tab already exists.
+
+**TODO. Screenshot of tab gallery, highlighting Maps tab**
 
 ## Next steps
 
