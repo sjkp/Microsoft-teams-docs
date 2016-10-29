@@ -2,7 +2,7 @@
 
 Build and connect intelligent bots to interact with Microsoft Teams users naturally through 1:1 chat.
 
-> **Don't have Microsoft Teams? Get a one-year trial at no charge** To get started developing for Microsoft Teams, you'll need an Office 365 account, and to turn on Teams and bots for your organization. [Here's how](setup.md).
+> **Don't have Microsoft Teams? Get a one-year trial subscription of Office 365 Developer at no charge** To get started developing for Microsoft Teams, you'll need an Office 365 account, and to turn on Teams and bots for your organization. [Here's how](setup.md).
 
 > **Note:** At this time, Microsoft Teams bots support 1:1 chat. They do not yet support channels or group chats.
 
