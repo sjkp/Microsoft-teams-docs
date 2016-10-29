@@ -90,8 +90,8 @@ Use `microsoftTeams.settings.setSettings({contentUrl, suggestedTabName, websiteU
 *  The other parameters further customize how your content appears in Microsoft Teams:
 	* The optional `suggestedTabName` parameter sets the initial tab name. Users can rename the tab. The default value is the display name for the tab as specified in the manifest.
 	* The optional `websiteUrl` parameter sets where the user is taken if they select **Go to website**. Typically, this is a link to the same content as displayed on the tab, but within your main web app with its regular chrome and navigation.
-	* The optional `removeUrl` parameter sets the url to iframe when the user [removes a tab](updateremovetab.md#removing-a-tab).
-	* The optional `customSettings` parameter can be used to store additional context about the settings. This field is retrievable only on the configuration page and is intended to help hydrate the previous values when [updating a tab](updateremovetab.md#updating-an-existing-tab-instance).
+	* The optional `removeUrl` parameter sets the url to iframe when the user [removes a tab](updateremove.md#removing-a-tab).
+	* The optional `customSettings` parameter can be used to store additional context about the settings. This field is retrievable only on the configuration page and is intended to help hydrate the previous values when [updating a tab](updateremove.md#updating-an-existing-tab-instance).
 
 ### React when the user clicks the Save button
 
