@@ -28,7 +28,7 @@ Use placeholders in your configuration or content URLs. Microsoft Teams replaces
 
 For example, suppose in your tab app manifest you set the `configURL` attribute to:
 
-`"https://tasks.office.com/config?auth_upn={upn}&auth_tenant={tid}&group={groupId}"`
+`"https://www.contoso.com/config?name={upn}&tenant={tid}&group={groupId}"`
 
 And the signed-in user has the following attributes:
 
@@ -38,7 +38,7 @@ And the signed-in user has the following attributes:
 
 When they select your tab, they will be navigated to:
 
-`https://tasks.office.com/config?auth_upn=user@example.com&auth_tenant=e2653c-etc&group=test`
+`https://www.contoso.com/config?name=user@example.com&tenant=e2653c-etc&group=test`
 
 
 ## Getting user information through using the Microsoft Teams Tab library

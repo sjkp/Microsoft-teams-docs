@@ -75,9 +75,6 @@ Now, when team members add a new tab to a channel in this team, they will see yo
 ![](images/tab_gallery.png)
 
 
-## Next steps
+## Next step
 
 * [Create tab configuration page](createtabconfigui.md)
-* [Update or remove a tab](updateremovetab.md)
-* [Create the tab content page](createtabcontent.md)
-

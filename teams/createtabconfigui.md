@@ -1,8 +1,8 @@
 ﻿# Create the configuration page for your Microsoft Teams (Preview) tab
 
-The configuration page is an HTML page that you host. Microsoft Teams displays it inside the **Add Tab** dialog when a user chooses to add your tab. This page enables you to present options and gather information from the user so they can specify the content, and customize the experience, which you present in your tab. For example, you may allow the user to select existing app resources (such as files or task lists), or create new such resources, for display in the tab.
+The configuration page is an HTML page that you host. Microsoft Teams displays it within and iframe inside the **Add Tab** dialog when a user chooses to add your tab. In this page, you  present options and gather information from the user about what they want in your tab. For example, you may let the user select existing app resources (such as files or task lists) or  even create new such resources just for this tab.
 
-When the user chooses to add your tab to their team, Microsoft Teams displays your configuration page, hosted within an iframe in a dialog box. The configuration page communicates with Microsoft Teams through the [Microsoft Teams Tab library](https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js).
+You must include the Microsoft Teams Tab library (https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js) in your configuration page so that it can communicate with Microsoft Teams.
 
 !["Screenshot of the configuration page for a simple example app, giving the user the option of which map type to select."](images/tab_configui.png)
 
@@ -104,8 +104,6 @@ At this point, you'll have the opportunity to determine `contentUrl` and call `m
 
 Finally, in your save handler registered previously, call `saveEvent.notifySuccess()` or `saveEvent.notifyFailure()` to notify Microsoft Teams on the outcome of the configuration. If you have no save handler registered, the outcome will immediately and implicitly be success.
 
-## Next Steps
+## Next Step
 
 * [Create the content page for your Microsoft Teams tab](createtabcontent.md)
-* [Update or remove a tab](updateremovetab.md)
-
