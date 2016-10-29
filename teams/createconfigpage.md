@@ -1,4 +1,4 @@
-﻿# Create the configuration page for your Microsoft Teams (Preview) tab
+﻿# Create the configuration page for your Microsoft Teams (Preview) tab app
 
 The configuration page is an HTML page that you host. Microsoft Teams displays it within and iframe inside the **Add Tab** dialog when a user chooses to add your tab. In this page, you  present options and gather information from the user about what they want in your tab. For example, you may let the user select existing app resources (such as files or task lists) or  even create new such resources just for this tab.
 
@@ -64,7 +64,7 @@ function onClick() {
 
 ## Prerequisites for your configuration page
 
-For your configuration page to display within Microsoft Teams, make sure it meets the [requirements for tab app pages](tabprerequisites.md).
+For your configuration page to display within Microsoft Teams, make sure it meets the [requirements for tab app pages](prerequisites.md).
 
 >In summary: you must host your page on a secure https:// endpoint, ensure your page permits itself to be iframed, include the Microsoft Teams tab library, and call microsoftTeams.initialize();
 
@@ -106,4 +106,4 @@ Finally, in your save handler registered previously, call `saveEvent.notifySucce
 
 ## Next Step
 
-* [Create the content page for your Microsoft Teams tab](createtabcontent.md)
+* [Create the content page for your Microsoft Teams tab](createcontentpage.md)
