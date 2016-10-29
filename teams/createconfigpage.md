@@ -74,7 +74,7 @@ For your configuration page to display within Microsoft Teams, make sure it meet
 
 Your configuration page needs to perform the following steps:
 
-### User context and authentication
+### Obtain user context and authenticate
 
 If your page requires user context, see [Get user context, locale, or theme information](getusercontext.md). If it needs to authenticate the user, see [Authenticating your Microsoft Teams tab app](auth.md).
 

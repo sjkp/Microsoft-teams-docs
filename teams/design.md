@@ -2,11 +2,11 @@
 
 While it's relatively easy to adapt a web app to become a Microsoft Teams tab app, you should consider which experiences and functionality in your app will work most effectively.
 
->**Note:** Currently, developing tab apps is supported for channels in the Microsoft Teams desktop and web applications. It is not yet supported in the Microsoft Teams mobile apps or for private chats.
-
 ## Select relevant app functionality
 
 Teams add tabs to channels. A channel is a specific topic or purpose that the team has. Find the concept(s) in your app that best fit this context.  Users will be more likely want to add these as a tab. For example, the Planner tab for a channel contains a single plan.  The Power BI tab maps to a specific report.
+
+>**Note:** Currently, developing tab apps is supported for channels in the Microsoft Teams desktop and web applications. It is not yet supported in the Microsoft Teams mobile apps or for private chats.
 
 ## Scope and focus the user experience
 
@@ -22,6 +22,6 @@ Consider how to enable access permissions for your tab. Microsoft Teams is based
 
 ## Next step
 
-[Create the package for your Microsoft Team tab app](createtabpackage.md)
+[Create the package for your Microsoft Team tab app](createpackage.md)
 
 

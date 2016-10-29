@@ -4,7 +4,7 @@ You can enable users to update a tab after it's been added and to choose what ha
 
 ## Updating an existing tab instance
 
-You can enable users to update, or reconfigure, a tab by setting the `canUpdateConfig` attribute in your tab manifest to `true`. For more information, see [Microsoft Teams tab package schema reference](tab_schema.md). When you do so, Microsoft Teams adds a **Settings** option to the right-click menu for your tab.  When the user selects this option, Microsoft Teams will load the configuration page within an iframe inside an **Update Tab** dialog - similarly to the **Add Tab** dialog.
+You can enable users to update, or reconfigure, a tab by setting the `canUpdateConfig` attribute in your tab manifest to `true`. For more information, see [Microsoft Teams tab package schema reference](schema.md). When you do so, Microsoft Teams adds a **Settings** option to the right-click menu for your tab.  When the user selects this option, Microsoft Teams will load the configuration page within an iframe inside an **Update Tab** dialog - similarly to the **Add Tab** dialog.
 
 !["Screenshot of a tab with the right-click menu open to show the Settings menu option."](images/tab_settings.png)
 
@@ -16,17 +16,17 @@ In your configuration page code, call `microsoftTeams.settings.getSettings(funct
 
 You can enable users to select what happens to content when a tab is removed, by using a removal options page. For example, you might want to give them the option to download, archive, or delete the tab content.
 
-The removal options page is an HTML page that you host. When a user chooses to remove your tab, Microsoft Teams will load the `removeUrl` that you provided when [configuring a tab](createtabconfigpage.md) within an iframe inside the **Remove tab** dialog.
+The removal options page is an HTML page that you host. When a user chooses to remove your tab, Microsoft Teams will load the `removeUrl` that you provided when [configuring a tab](createconfigpage.md) within an iframe inside the **Remove tab** dialog.
 
 You must include the [Microsoft Teams Tab library](jslibrary.md) in your removal options page so that it can communicate with Microsoft Teams.
 
 >**Note:** Supporting removal options can significantly improve the user experience, especially if you expect users to frequently add and remove your tabs.  However, there is no guarantee that your page will always be loaded when a tab is removed.  For example, it won't happen if the user deletes the entire team or channel in which your tab sits.
 
-**TODO include maps remove UI example screenshots and code here, just like for config UI.  Use latest maps tab example (in OneNote docs) to do so**
+**TODO include maps remove UI example screenshots and code here, just like for config UI**
 
 ### Prerequisites for your tab removal page 
  
-For your tab removal page to display within Microsoft Teams, it must meet the [requirements for tab app page](tabprerequisites.md).
+For your tab removal page to display within Microsoft Teams, it must meet the [requirements for tab app page](prerequisites.md).
 
 ### Presenting the user with content options upon tab removal
 

@@ -22,7 +22,7 @@ For the UI of your tab app - its configuration, content, and (optionally) tab re
 
 ## Next steps
 
-* [Create the tab package](createtabpackage.md)
-* [Create the configuration page](createtabconfigui.md)
-* [Create the tab content](createtabcontent.md)
-* [Update or remove a tab](updateremovetab.md)
+* [Create the tab package](createpackage.md)
+* [Create the configuration page](createconfigpage.md)
+* [Create the tab content](createcontentpage.md)
+* [Update or remove a tab](updateremove.md)

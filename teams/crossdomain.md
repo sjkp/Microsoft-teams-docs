@@ -4,5 +4,5 @@ There are cases where your tab app might need to redirect the configuration or c
 
 Instead, you should request that Microsoft Teams perform the cross-domain redirects itself:
 
-* Make sure the URL falls within the domain(s) you've included in the `validDomains` list in your [tab app manifest](createpackage.md). For more information, see [Microsoft Teams tab package schema reference](tab_schema.md).
+* Make sure the URL falls within the domain(s) you've included in the `validDomains` list in your [tab app manifest](createpackage.md). For more information, see [Microsoft Teams tab package schema reference](schema.md).
 * Call `microsoftTeams.navigateCrossDomain(yourNewUrl)` on the [Microsoft Teams Tab library](jslibrary.md) to request the iframe containing your page is redirected to the specified URL.

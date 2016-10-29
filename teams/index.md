@@ -8,17 +8,17 @@
 
 Tabs are unique to Microsoft Teams.  They allow team members to access and act upon information from services directly within the Microsoft Teams experience. Examples of tabs include dashboards and data visualization, documents and notes, group task management and shared design canvases. Users can add tabs in either a chat or channel, and can have conversations about them. It's easy for you to create a tab app from your existing web app. 
 
-!["Example of a tab showing data, alongside a conversation about the tab data"](images/tab_example.png)
-
 [Get started with tabs](tabs.md)
+
+!["Example of a tab showing data, alongside a conversation about the tab data"](images/tab_example.png)
 
 ## Bots
 
 Build and connect intelligent bots to interact with Microsoft Teams users naturally through 1:1 chat. Bots can answer natural language questions and perform lightweight tasks such as querying bug information or kicking off a build.​ Any bot you've created using the [Microsoft Bot Framework](https://dev.botframework.com/) can easily be made to work in Microsoft Teams.
 
-!["Example of a bot assisting a user"](images/bot_example.png)
-
 [Get started with bots](bots.md)
+
+!["Example of a bot assisting a user"](images/bot_example.png)
 
 ## Connectors
 
@@ -26,9 +26,9 @@ Office 365 Connectors are a great way to get useful information and content into
 
 You can build your own connectors through incoming webhooks to generate rich connector cards.
 
-!["Gallery of connectors"](images/connector_example.png)
-
 [Get started with connectors](connectors.md)
+
+!["Gallery of connectors"](images/connector_example.png)
 
 ## Submit your questions, bugs, feature requests, and contributions
 
