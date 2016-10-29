@@ -2,17 +2,9 @@
 
 You can build a Microsoft Teams tab app from scratch or by adapting your existing web app.
 
-<<<<<<< 45f87e44568756c9e2f6d0bdafd21d90dfdd02f2
-<<<<<<< 037abd7b01789e8b38042c55d04fdb770835179d
-> **Don't have Microsoft Teams? Get a one-year trial subscription of Office 365 Developer at no charge** To get started developing for Microsoft Teams, you'll need an Office 365 account, and to turn on Teams for your organization. [Here's how](setup.md).
-=======
-> **Don't have Microsoft Teams? Get a one-year trial at no charge** To get started developing for Microsoft Teams, you'll need an Office 365 account, and to turn on Microsoft Teams for your organization. [Here's how](setup.md).
->>>>>>> More review
+>**Don't have Microsoft Teams? Get a one-year trial subscription of Office 365 Developer at no charge** To get started developing for Microsoft Teams, you'll need an Office 365 account, and to turn on Teams for your organization. [Here's how](setup.md).
 
 >**Note:** Currently, developing new Microsoft Teams tabs is supported for channels in Microsoft Teams desktop and web applications. It is not yet supported in Microsoft Teams mobile apps or for private chats.
-=======
-> **Don't have Microsoft Teams? Get a free one-year Office 365 developer subscription.** To get started developing for Microsoft Teams, you'll need an Office 365 account, and to turn on Microsoft Teams for your organization. [Here's how](setup.md).
->>>>>>> Saturday lunch checkpoint
 
 ## Overview of building a Microsoft Teams tab app
 
