@@ -49,7 +49,6 @@ The manifest you create for your tab app must adhere to the schema. For more inf
 > 
 > `"$schema": "https://statics.teams.microsoft.com/sdk/v0.2/manifest/MicrosoftTeams.schema.json",`
 
-
 ## Uploading your tab package to Microsoft Teams
 
 Once you've created your manifest and image files, compress them into a zip file.

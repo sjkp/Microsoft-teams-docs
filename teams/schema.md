@@ -1,8 +1,10 @@
-﻿# Microsoft Teams (Preview) tab package schema reference
+﻿# Microsoft Teams (Preview) tab manifest schema reference
 
-The tab package manifest file specifies attributes of your app, and points to required resources, such as the app icons to use in the Microsoft Teams UI and the location of your app configuration page. The manifest must adhere to the tab package schema, detailed below. 
+Your [manifest](createpackage.md) must conform to the schema hosted at: `https://statics.teams.microsoft.com/sdk/v0.2/manifest/MicrosoftTeams.schema.json` .
 
-For more information on including the manifest in your app package, and an example manifest, see [Create the package for your Microsoft Team tab app](createtabpackage.md).
+> **Tip** Specify the schema at the beginning of your manifest to enable IntelliSense or similar support from your code editor:
+> 
+> `"$schema": "https://statics.teams.microsoft.com/sdk/v0.2/manifest/MicrosoftTeams.schema.json",`
 
 The schema defines the following properties:
 

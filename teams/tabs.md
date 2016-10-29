@@ -4,8 +4,6 @@ You can build a Microsoft Teams tab app from scratch or by adapting your existin
 
 >**Don't have Microsoft Teams? Get a one-year trial subscription of Office 365 Developer at no charge** To get started developing for Microsoft Teams, you'll need an Office 365 account, and to turn on Teams for your organization. [Here's how](setup.md).
 
->**Note:** Currently, developing new Microsoft Teams tabs is supported for channels in Microsoft Teams desktop and web applications. It is not yet supported in Microsoft Teams mobile apps or for private chats.
-
 ## Overview of building a Microsoft Teams tab app
 
 Folow these steps to build a tab app:
@@ -17,7 +15,7 @@ Folow these steps to build a tab app:
 *  [Create the content page:](createcontentpage.md) Microsoft Teams displays this content page when the user visits your tab. This is also an HTML page which you host and Microsoft Teams display within an iframe.
 	* You can also provide a page for users to specify [what happens to content when they remove a tab](updateremove.md#removing-a-tab).
 
->**Note:** Currently, developing tab apps is supported for channels in the Microsoft Teams desktop and web applications. It is not yet supported in the Microsoft Teams mobile apps or for private chats.
+>**Note:** We are looking for developers to build great tab apps for inclusion in Microsoft Teams tab app gallery.  Submit your tab app proposal [here](https://aka.ms/microsoftteamsdeveloperpreviewinterestform) and review the [publisher agreement](https://aka.ms/microsoftteamstabsdeveloperagreement) that will apply if you are accepted.
 
 ## Next step
 

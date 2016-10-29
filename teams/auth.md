@@ -2,7 +2,7 @@
 
 Tab apps run in iframes.  Azure Azure Active Directory (Azure AD), and other identity providers that you may use, do not usually allow their sign in and consent pages to be hosted within an iframe.
 
-> **Note:** you can [obtain user context information](getusercontext.md) to simplify the sign in experience and to help build authentication requests and URLs.
+>**Note:** you can [obtain user context information](getusercontext.md) to simplify the sign in experience and to help build authentication requests and URLs.
 
 ## Silent authentication using Azure AD
 
@@ -14,7 +14,7 @@ This will likely only be true if your tenant admin has configured your app in Az
 
 ## Authentication using a pop-up window
 
-If your app cannot silently authenticate the user against Azure AD, or if your app uses a identity provider other than Azure AD, it will need to explicitly authenticate the user in a pop up window.  You must use the Microsoft Teams Tab Library to do this, so that it works successfully in both the web and desktop apps for Microsoft Teams.  
+If your app cannot silently authenticate the user against Azure AD, or if your app uses a identity provider other than Azure AD, it will need to explicitly authenticate the user in a pop up window.  You must use the [Microsoft Teams Tab Library](jslibrary.md) to do this, so that it works successfully in both the web and desktop apps for Microsoft Teams.  
 
 1. Add UI to your configuration or content page to enable the user to sign in when necessary.
 2. When the user selects to sign in, call `microsoftTeams.authentication.authenticate({url: <auth URL>, width: <width>, height: <height>, successCallback: <successCallback>, failureCallback: <failureCallback>})`.

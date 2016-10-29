@@ -1,8 +1,10 @@
 ﻿# Create the content for your Microsoft Teams (Preview) tab
 
-When the user visits your tab, Microsoft Teams will load the `contentUrl` that you [provided earlier](createconfigpage.md) inside an iframe.
+The content page is an HTML page that you host.  When the user visits your tab, Microsoft Teams will load the `contentUrl` that you [provided earlier](createconfigpage.md) within an iframe inside the main tab canvas area.
 
-You must include the Microsoft Teams Tab library (https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js) in your content page so that it can communicate with Microsoft Teams.
+In this page, you present the main function of your tab app, following the [design recommendations](design.md).
+
+You must include the [Microsoft Teams Tab library](jslibrary.md) in your configuration page so that it can communicate with Microsoft Teams.
 
 >**Note:** The very simple 'maps' example in this documentation uses existing Bing and Google maps as content pages for illustration, which of course do not include this library.  See the [samples](samples.md) for a full example tab app that does so.  
 
@@ -14,11 +16,9 @@ For your content to display within a Microsoft Teams tab, make sure it meets the
 
 >In summary: you must host your page on a secure https:// endpoint, ensure your page permits itself to be iframed, include the Microsoft Teams tab library, and call microsoftTeams.initialize();
 
-In addition, make sure your content conforms to the [design recommendations](design.md) for Microsoft Teams tabs.
-
 ## Samples
 
-Check out our [code samples](samples.md) on GitHub.
+Check out our [sample tab apps](samples.md) on GitHub.
 
 ## Next steps
 

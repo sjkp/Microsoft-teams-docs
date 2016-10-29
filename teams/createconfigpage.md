@@ -1,18 +1,20 @@
 ﻿# Create the configuration page for your Microsoft Teams (Preview) tab app
 
-The configuration page is an HTML page that you host. Microsoft Teams displays it within and iframe inside the **Add Tab** dialog when a user chooses to add your tab. In this page, you  present options and gather information from the user about what they want in your tab. For example, you may let the user select existing app resources (such as files or task lists) or  even create new such resources just for this tab.
+The configuration page is an HTML page that you host. When a user chooses to add your tab, Microsoft Teams will load the 'configUrl' that you [provided in your manifest](createpackage.md) within an iframe inside the **Add Tab** dialog.
 
-You must include the Microsoft Teams Tab library (https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js) in your configuration page so that it can communicate with Microsoft Teams.
+In this page, you present options and gather information from the user about what they want in your tab. For example, you may let the user select existing app resources (such as files or task lists) or even create new such resources just for this tab.
+
+You must include the [Microsoft Teams Tab library](jslibrary.md) in your configuration page so that it can communicate with Microsoft Teams.
 
 !["Screenshot of the configuration page for a simple example app, giving the user the option of which map type to select."](images/tab_configui.png)
 
 ## Configuration page example
 
-The excerpt below shows a simple example of code that might be included in a configuration page.
+The excerpt below shows an example configuration page.
 
- In this case, the user is presented with two radio buttons, which represent a choice of two different resources. Selecting either radio button fires `onClick()`, which sets `microsoftTeams.settings.setValidityState(true)`, enabling the **Save** button.
+In this case, the user is presented with two radio buttons, which represent a choice of two different resources. Selecting either radio button fires `onClick()`, which sets `microsoftTeams.settings.setValidityState(true)`, enabling the **Save** button.
 
-On save, the code determines which radio button was checked, and sets the various parameters of `microsoftTeams.settings.setSettings` accordingly. Finally, it sets `saveEvent.notifySuccess()` to specify that the content URL has successfully been determined.
+On save, the code determines which radio button was checked, and sets the various parameters of `microsoftTeams.settings.setSettings` accordingly. Finally, it calls `saveEvent.notifySuccess()` to specify that the content URL has successfully been determined.
 
 With this as a simple example, let's walk through the steps your configuration page needs to perform to load your tab app content.
 
@@ -82,23 +84,23 @@ By default, the **Save** button on the configuration dialog box is disabled. Whe
 
 ### Determine the content to display in the tab
 
-Use `microsoftTeams.settings.setSettings({contentUrl, suggestedTabName, websiteUrl, removeUrl, customSettings})` to specify the URL of the content Microsoft Teams should host in the tab. Things to keep in mind:
+Use `microsoftTeams.settings.setSettings({contentUrl, suggestedTabName, websiteUrl, removeUrl, customSettings})` to specify the URL of the [content page](createcontentpage.md) Microsoft Teams should host in the tab. Things to keep in mind:
 
-* This call may be made at any time the configuration page is displayed, including before or after the user selects the **Save** button.
+* This call may be made at any time the configuration page is displayed, including before or after the user selects the **Save** button (see below).
 * The `contentUrl` is a required field which specifies the URL of the content Microsoft Teams should host in the tab.
-* If `contentUrl` resides in a different domain from the configuration page, make sure you have added that domain to the `validDomains` element in the tab manifest file. For more information, see [Microsoft Teams tab schema](tab_schema.md) and [Redirecting across domains within a Microsoft Teams tab](crossdomain.md).
-*  The other parameters further customize how your content appears in Microsoft Teams:
-	* The optional `suggestedTabName` parameter sets the initial tab name. Users can rename the tab. The default value is the display name for the tab as specified in the manifest.
-	* The optional `websiteUrl` parameter sets where the user is taken if they select **Go to website**. Typically, this is a link to the same content as displayed on the tab, but within your main web app with its regular chrome and navigation.
-	* The optional `removeUrl` parameter sets the url to iframe when the user [removes a tab](updateremove.md#removing-a-tab).
-	* The optional `customSettings` parameter can be used to store additional context about the settings. This field is retrievable only on the configuration page and is intended to help hydrate the previous values when [updating a tab](updateremove.md#updating-an-existing-tab-instance).
+* If `contentUrl` resides in a different domain from the configuration page, make sure you have added that domain to the `validDomains` element in the tab manifest file. For more information, see [Microsoft Teams tab schema](schema.md) and [Redirecting across domains within a Microsoft Teams tab](crossdomain.md).
+*  The other parameters further customize how your tab works in Microsoft Teams:
+	* The optional `suggestedTabName` parameter sets the initial tab name. Users can rename the tab. The default value is the display name for the tab app as specified in the manifest.
+	* The optional `websiteUrl` parameter sets where the user is taken if they click the **Go to website** button. Typically, this is a link to the same content as displayed on the tab, but within your main web app with its regular chrome and navigation.
+	* The optional `removeUrl` parameter sets the URL for your [removal options page](updateremove.md#removing-a-tab).
+	* The optional `customSettings` parameter can be used to store additional information that helps your tab app regain context when [updating or removing a tab](updateremove.md).
 
 ### React when the user clicks the Save button
 
-Often you may not be able to determine the `contentUrl` above.  For example, you may first need create a new resource (a document or a task), and you only want to do this once the user selects **Save**. To be notified when the user selects **Save**, you must call
+Often you may not be able to determine the `contentUrl` immediately.  For example, you may first need create a new resource (a document or a task), and you only want to do this once the user selects **Save**. To be notified when the user selects **Save**, you must call
 `microsoftTeams.settings.registerOnSaveHandler(function(saveEvent) { /* ... */ })`. Once this is done, when the user selects **Save**, Microsoft Teams calls the save event handler you registered.
 
-At this point, you'll have the opportunity to determine `contentUrl` and call `microsoftTeams.settings.setSettings` if you haven't already and commit to creating any resources required for this tab. You'll often be able to return the `contentUrl` and other settings immediately if, for example, the user has selected a resource that already exists such as an existing file or task list. However, you may need to return the settings asynchronously if, for example, the user has requested a new resource which will take time for you to create. If you need to do so, store `saveEvent` for later. If you do not notify the outcome within 30 seconds, Microsoft Teams terminates the operation and displays an error.
+You can return the settings asynchronously if, for example, the user has requested a new resource which will take time for you to create. To do this, store `saveEvent` for later. If you do not notify the outcome within 30 seconds, Microsoft Teams terminates the operation and displays an error.
 
 ### Return success or failure result
 

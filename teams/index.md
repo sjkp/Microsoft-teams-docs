@@ -30,6 +30,10 @@ You can build your own connectors through incoming webhooks to generate rich con
 
 [Get started with connectors](connectors.md)
 
+## Submit your questions, bugs, feature requests, and contributions
+
+We listen to the developer community across a [several channels](feedback.md).
+
 
 	
 	

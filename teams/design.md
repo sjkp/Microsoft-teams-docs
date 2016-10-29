@@ -1,6 +1,8 @@
 ﻿# Design a great Microsoft Teams (Preview) tab app
 
-While it's relatively easy to adapt a web app to become a Microsoft Teams tab app, it's worth considering which experiences and functionality in your app will work most effectively. 
+While it's relatively easy to adapt a web app to become a Microsoft Teams tab app, you should consider which experiences and functionality in your app will work most effectively.
+
+>**Note:** Currently, developing tab apps is supported for channels in the Microsoft Teams desktop and web applications. It is not yet supported in the Microsoft Teams mobile apps or for private chats.
 
 ## Select relevant app functionality
 

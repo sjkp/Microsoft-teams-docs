@@ -12,7 +12,7 @@ For the UI of your tab app - its configuration, content, and (optionally) tab re
 
 	* Alternately, set header `X-Frame-Options: ALLOW-FROM *.teams.microsoft.com`. This header is deprecated but still respected by most browsers.
 
-* Include the [Microsoft Teams Tab library](https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js) in your page as a script source.
+* Include the [Microsoft Teams Tab library](jslibrary.md) in your page as a script source.
 
 	`<script src="https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js" />`
 
