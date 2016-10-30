@@ -6,6 +6,8 @@ In this page, you present options and gather information from the user about wha
 
 You must include the [Microsoft Teams Tab library](jslibrary.md) in your configuration page so that it can communicate with Microsoft Teams.
 
+>**Note:** the example here is solely to illustrate the concept.  Your configuration page should have a clean UI that fits with the look and feel of the Microsoft Teams dialog in which it sits.
+
 !["Screenshot of the configuration page for a simple example app, giving the user the option of which map type to select."](images/tab_configui.png)
 
 ## Configuration page example

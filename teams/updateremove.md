@@ -16,11 +16,13 @@ In your configuration page code, call `microsoftTeams.settings.getSettings(funct
 
 You can enable users to select what happens to content when a tab is removed, by using a removal options page. For example, you might want to give them the option to download, archive, or delete the tab content.
 
+>**Note:** Supporting removal options can significantly improve the user experience, especially if you expect users to frequently add and remove your tabs.  However, there is no guarantee that your page will always be loaded when a tab is removed.  For example, it won't happen if the user deletes the entire team or channel in which your tab sits.
+
 The removal options page is an HTML page that you host. When a user chooses to remove your tab, Microsoft Teams will load the `removeUrl` that you provided when [configuring a tab](createconfigpage.md) within an iframe inside the **Remove tab** dialog.
 
 You must include the [Microsoft Teams Tab library](jslibrary.md) in your removal options page so that it can communicate with Microsoft Teams.
 
->**Note:** Supporting removal options can significantly improve the user experience, especially if you expect users to frequently add and remove your tabs.  However, there is no guarantee that your page will always be loaded when a tab is removed.  For example, it won't happen if the user deletes the entire team or channel in which your tab sits.
+>**Note:** the example here is solely to illustrate the concept.  Your removal options page should have a clean UI that fits with the look and feel of the Microsoft Teams dialog in which it sits.
 
 **TODO include maps remove UI example screenshots and code here, just like for config UI**
 
