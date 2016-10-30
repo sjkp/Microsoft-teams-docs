@@ -24,7 +24,56 @@ You must include the [Microsoft Teams Tab library](jslibrary.md) in your removal
 
 >**Note:** the example here is solely to illustrate the concept.  Your removal options page should have a clean UI that fits with the look and feel of the Microsoft Teams dialog in which it sits.
 
-**TODO include maps remove UI example screenshots and code here, just like for config UI**
+!["Screenshot of the removal page for a simple example app, giving the user the option of whether to delete the map when the tab is removed."](images/tab_removal.png)
+
+## Removal page example
+
+The excerpt below shows an example tab removal page.
+
+In this case, the user is presented with two radio buttons, which represent whether or not to delete the map and its data upon tab removal. Selecting either radio button fires `onClick()`, which sets `microsoftTeams.settings.setValidityState(true)`.
+
+On remove, the code determines if the first radio button was checked, and if so, runs code (not shown) to remove the map and all its data from the underlying service. Finally, it calls `removeEvent.notifySuccess()` to specify that the removal process has successfully completed.
+
+With this as a simple example, let's walk through the steps your removal page needs to perform to present the user with options, and process the content upon tab removal.
+
+```HTML
+<html>
+<head>
+<title>Map Tab remove UI</title>
+</head>
+<body>
+<div id="container">
+<form>
+  <input type="radio" name="removetype" value="delete" onclick="onClick()">
+	Delete this map and all data the team added to it? <br>
+  <input type="radio" name="removetype" value="keep" onclick="onClick()">
+	Keep this map available for use at 
+	<a href='https://maps.bing.com' target='_blank'>https://maps.bing.com</a>
+</form> 
+</div>
+
+<script src="https://teamspacewusprodms.blob.core.windows.net/tabframework/0.2/MicrosoftTeams.js">
+</script>
+ 
+<script type="text/javascript">  
+
+microsoftTeams.initialize();
+microsoftTeams.settings.registerOnRemoveHandler(function(removeEvent){
+ 	  
+    var radios = document.getElementsByName('removetype');
+  	if (radios[0].checked) {
+      // Delete the map and all its data from the underlying service.
+	  }
+    
+    removeEvent.notifySuccess();
+});
+ 
+function onClick() {
+    microsoftTeams.settings.setValidityState(true);
+}
+
+</script>```
+
 
 ### Prerequisites for your tab removal page 
  
