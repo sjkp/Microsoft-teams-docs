@@ -74,8 +74,9 @@ Your bot can send rich text, pictures and cards to a 1:1 chat. Users can send ri
 You can set the optional [TextFormat](https://docs.botframework.com/en-us/csharp/builder/sdkreference/activities.html) property to control how your message's text content will be rendered.
 
 Microsoft Teams supports the following formatting options
+
 | TextFormat Value | Description |
-| :----------------------| :------------------|
+|:----------------------|:------------------|
 | plain | The text should be treated as raw text and no formatting applied at all |
 | markdown | The text should be treated as markdown formatting and rendered on the channel as appropriate |
 | xml | The text is simple XML markup (subset of HTML - see link above |
