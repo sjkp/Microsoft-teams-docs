@@ -32,7 +32,7 @@ Below is a sample manifest for a simple tab app.
             "88": "maps88.png"
     },
     "accentColor" : "#223344",
-    "configUrl": "",
+    "configUrl": "https://teams-get-started-sample.azurewebsites.net/tabconfig.html",
     "canUpdateConfig": true,
     "needsIdentity": false,
     "validDomains": [
@@ -41,11 +41,9 @@ Below is a sample manifest for a simple tab app.
     ]
 }
 ```
-**TODO. need to update configUrl with final hosted location of config UI**
-
 The manifest you create for your tab app must adhere to the schema. For more information, see the [Microsoft Teams manifest schema](schema.md).
 
-> **Tip** Specify the schema at the beginning of your manifest to enable IntelliSense or similar support from your code editor:
+> **Tip:** Specify the schema at the beginning of your manifest to enable IntelliSense or similar support from your code editor:
 > 
 > `"$schema": "https://statics.teams.microsoft.com/sdk/v0.2/manifest/MicrosoftTeams.schema.json",`
 
@@ -53,7 +51,7 @@ The manifest you create for your tab app must adhere to the schema. For more inf
 
 Once you've created your manifest and image files, compress them into a zip file.
 
-**TODO. reference example tab package final hosted location**
+> **Tip:** [Download the example zip file](https://github.com/OfficeDev/microsoft-teams-sample-get-started/blob/master/manifest/MapsTab.zip) that contains the example manifest shown here, and use it with the following instructions. 
 
 Upload this zip file to a team to make your app available as a tab.
 
@@ -70,10 +68,9 @@ Upload this zip file to a team to make your app available as a tab.
 
 Now, when team members add a new tab to a channel in this team, they will see your tab in the gallery.
 
-> **Note:** By default, all team members can add tabs.  But team admins can restrict this privilege to themselves if they so wish, via an option in the team settings.
-
 ![](images/tab_gallery.png)
 
+> **Note:** By default, all team members can add tabs.  But team admins can restrict this privilege to themselves if they so wish, via an option in the team settings.
 
 ## Next step
 
