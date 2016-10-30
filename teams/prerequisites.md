@@ -1,6 +1,6 @@
 ﻿# Prerequisites for Microsoft Teams (Preview) tabs app pages
 
-For the UI of your tab app--its configuration, content, and (optionally) tab removal pages--to be displayed within Microsoft Teams, they need to meet the following requirements. 
+For the UI of your tab app - its configuration, content, and (optionally) tab removal pages - to be displayed within Microsoft Teams, they need to meet the following requirements. 
 
 * Host the page on a secure https:// endpoint.  Microsoft Teams will not display insecure http:// content.
 
@@ -12,7 +12,7 @@ For the UI of your tab app--its configuration, content, and (optionally) tab rem
 
 	* Alternately, set header `X-Frame-Options: ALLOW-FROM *.teams.microsoft.com`. This header is deprecated but still respected by most browsers.
 
-* Include the [Microsoft Teams Tab library](https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js) in your page as a script source.
+* Include the [Microsoft Teams Tab library](jslibrary.md) in your page as a script source.
 
 	`<script src="https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js" />`
 
@@ -22,7 +22,7 @@ For the UI of your tab app--its configuration, content, and (optionally) tab rem
 
 ## Next steps
 
-* [Create the tab package](createtabpackage.md)
-* [Create the configuration page](createtabconfigui.md)
-* [Create the tab content](createtabcontent.md)
-* [Update or remove a tab](updateremovetab.md)
+* [Create the tab package](createpackage.md)
+* [Create the configuration page](createconfigpage.md)
+* [Create the tab content](createcontentpage.md)
+* [Update or remove a tab](updateremove.md)

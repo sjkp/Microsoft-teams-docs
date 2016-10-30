@@ -1,8 +1,8 @@
-﻿# Microsoft Teams (Preview) JavaScript SDK reference
+﻿# Microsoft Teams (Preview) JavaScript Library API reference
 
-Reference documentation for the full list of functionality available in the SDK.
+Your [configuration](createconfigpage.md), [content](createcontentpage.md) and [removal options](updateremove.md#removing-a-tab) pages must include the library hosted at: `https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js`.
 
->**Tip:** For developers using TypeScript, Microsoft Teams provides a [definition file](https://statics.teams.microsoft.com/sdk/v0.2/types/MicrosoftTeams.d.ts) to enable IntelliSense or similar support from your code editor as well as compile-type type checking as part of your build.
+>**Tip:** For developers using TypeScript, Microsoft Teams provides a definition file at `https://statics.teams.microsoft.com/sdk/v0.2/types/MicrosoftTeams.d.ts`.  Use this to enable IntelliSense or similar support from your code editor as well as compile-type type checking as part of your build.
 
 ## `microsoftTeams`
 This is the root namespace for the JavaScript SDK.

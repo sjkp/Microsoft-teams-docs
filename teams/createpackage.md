@@ -2,8 +2,8 @@
 
 For your tab app to be available within Microsoft Teams, you need to create a tab package and upload it to a team. The tab package is a zip file containing:
 
-- A manifest file named `manifest.json`, which specifies attributes of your app and points to required resources such as app icons and the location of your app configuration page.
-- Image files, to be used as icons for your app.  These must be transparent PNGs, with white or light-colored foreground in both small (44 by 44 pixels) and large (88 by 88 pixels) sizes.  (The accompanying background or 'accent color' is specified in the manifest.)
+- A manifest file named `manifest.json`, which specifies attributes of your tab app and points to required resources such the location of its configuration page.
+- Image files, to be used as icons for your tab app.  These must be transparent PNGs, with white or light-colored foreground in both small (44 by 44 pixels) and large (88 by 88 pixels) sizes.  (The accompanying background or 'accent color' is specified in the manifest.)
 
 ## Creating a manifest for your tab app 
 
@@ -43,18 +43,17 @@ Below is a sample manifest for a simple tab app.
 ```
 **TODO. need to update configUrl with final hosted location of config UI**
 
-The manifest you create for your app must adhere to the manifest schema. For more information, see [Microsoft Teams tab manifest schema](tab_schema.md).
+The manifest you create for your tab app must adhere to the schema. For more information, see the [Microsoft Teams manifest schema](schema.md).
 
 > **Tip** Specify the schema at the beginning of your manifest to enable IntelliSense or similar support from your code editor:
 > 
 > `"$schema": "https://statics.teams.microsoft.com/sdk/v0.2/manifest/MicrosoftTeams.schema.json",`
 
-
 ## Uploading your tab package to Microsoft Teams
 
-Once you've created your app manifest and image files, compress them into a zip file.
+Once you've created your manifest and image files, compress them into a zip file.
 
-**TODO. reference tab package final hosted location**
+**TODO. reference example tab package final hosted location**
 
 Upload this zip file to a team to make your app available as a tab.
 
@@ -67,17 +66,15 @@ Upload this zip file to a team to make your app available as a tab.
 	
 	![](images/tab_sideload.png)
 
+> **Note:** To re-upload an updated package, click on 'Replace' icon at the end of the tab's table row.  Don't click 'Upload' again: Microsoft Teams will say the tab already exists.
 
-Now, when team members add a new tab to a channel in this team, they will see your app in the gallery of available tabs.
+Now, when team members add a new tab to a channel in this team, they will see your tab in the gallery.
 
-> **Note** To re-upload an updated package, click on 'Replace' icon at the end of the tab's table row.  Don't click 'Upload' again: Microsoft Teams will say the tab already exists.
+> **Note:** By default, all team members can add tabs.  But team admins can restrict this privilege to themselves if they so wish, via an option in the team settings.
 
 ![](images/tab_gallery.png)
 
 
-## Next steps
+## Next step
 
-* [Create tab configuration page](createtabconfigui.md)
-* [Update or remove a tab](updateremovetab.md)
-* [Create the tab content page](createtabcontent.md)
-
+* [Create the configuration page](createconfigpage.md)

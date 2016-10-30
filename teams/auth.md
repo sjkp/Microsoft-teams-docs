@@ -1,22 +1,20 @@
-﻿# Authenticating your Microsoft Teams (Preview) tab app
+﻿# Authenticating a user in your Microsoft Teams (Preview) tab app
 
-Your tab app can use Azure Azure Active Directory (Azure AD) or any identity provider. Microsoft Teams provides a mechanism to enable secure user authentication when necessary.
+Tab apps run in iframes.  Azure Azure Active Directory (Azure AD), and other identity providers that you may use, do not usually allow their sign in and consent pages to be hosted within an iframe.
 
-## Silent authentication using Azure AD and user context
+>**Note:** you can [obtain user context information](getusercontext.md) to simplify the sign in experience and to help build authentication requests and URLs.
 
-If your app uses Azure AD as its identity provider, you can retrieve user context information and use it to determine if you can authenticate the user silently. Retrieve the username and tenant ID, as described in [Get user context, locale, or theme information for use in your Microsoft Teams tab](getusercontext.md). If these, along with any existing Azure AD session cookies, are sufficient for you to silently authenticate the user, you can log the user into your service without having to prompt them. 
+## Silent authentication using Azure AD
 
-If not--for example, if your app requires two-factor authentication, or user consent--you'll need to have the user explicitly authenticate using the flow described below.
+If your app uses Azure AD as its identity provider, you may be able to authenticate the user silently within the iframe.  To do this, you must be sure that the existing Azure AD session cookies (from the user having already signed in to Microsoft Teams) will be sufficient.  For example, if you are using a redirect flow, you must be sure that when you redirect to Azure AD, it will redirect straight back with the tokens you need, and will not attempt to display anything to the user.
 
-> **Important:** While this user information provided by Microsoft Teams is useful for a smooth user experience, it is not guaranteed secure and therefore should **not** be used as proof of identity. 
+This will likely only be true if your tenant admin has configured your app in Azure AD so that it does **not** require:
+* any additional authentication beyond that needed for Microsoft Teams: for example, does need additional two-factor authentication
+* any consent by the user.
 
 ## Authentication using a pop-up window
 
-If your app cannot silently authenticate the user against Azure AD, or if your app uses a identity provider other than Azure AD, the user will need to explicitly authenticate using their credentials. 
-
-Hosting an authentication flow within an iframe is not considered secure, and most identity providers do not allow it. Instead, initiate an authentication flow for your tab by calling into the [Microsoft Teams Tab library](https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js). Microsoft Teams then generates a pop-up window in which the user can sign in.
-
-To launch the pop-up window and authenticate the user, follow these steps:
+If your app cannot silently authenticate the user against Azure AD, or if your app uses a identity provider other than Azure AD, it will need to explicitly authenticate the user in a pop up window.  You must use the [Microsoft Teams Tab Library](jslibrary.md) to do this, so that it works successfully in both the web and desktop apps for Microsoft Teams.  
 
 1. Add UI to your configuration or content page to enable the user to sign in when necessary.
 2. When the user selects to sign in, call `microsoftTeams.authentication.authenticate({url: <auth URL>, width: <width>, height: <height>, successCallback: <successCallback>, failureCallback: <failureCallback>})`.
