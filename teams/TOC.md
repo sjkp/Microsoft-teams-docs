@@ -15,5 +15,4 @@
 ### [Tab sample apps](samples.md)
 ## [Bots](bots.md)
 ## [Office 365 Connectors](connectors.md)
-## [FAQ](faq.md)
 ## [Submit feedback](feedback.md)
