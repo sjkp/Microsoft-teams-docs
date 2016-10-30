@@ -79,7 +79,7 @@ Microsoft Teams supports the following formatting options
 |:----------------------|:------------------|
 | plain | The text should be treated as raw text and no formatting applied at all |
 | markdown | The text should be treated as markdown formatting and rendered on the channel as appropriate |
-| xml | The text is simple XML markup (subset of HTML - see link above |
+| xml | The text is simple XML markup (subset of HTML - see link above) |
 
 ### Welcome messages
 
