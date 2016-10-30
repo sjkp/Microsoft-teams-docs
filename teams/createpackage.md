@@ -53,7 +53,7 @@ Once you've created your manifest and image files, compress them into a zip file
 
 > **Tip:** [Download the example zip file](https://github.com/OfficeDev/microsoft-teams-sample-get-started/blob/master/manifest/MapsTab.zip) that contains the example manifest shown here, and use it with the following instructions. 
 
-Upload this zip file to a team to make your app available as a tab.
+Upload your zip file to a team to make your app available as a tab.
 
 1. Create a new team for testing, if necessary.  Click **Create team** at the bottom of the left-hand panel.
 2. Select the team from the left-hand panel, select **... (more options)** and then select **View Team**.
@@ -64,9 +64,14 @@ Upload this zip file to a team to make your app available as a tab.
 	
 	![](images/tab_sideload.png)
 
-> **Note:** To re-upload an updated package, click on 'Replace' icon at the end of the tab's table row.  Don't click 'Upload' again: Microsoft Teams will say the tab already exists.
+> **Note:** To re-upload an updated package, click the 'Replace' icon at the end of the tab's table row.  Don't click 'Upload' again: Microsoft Teams will say the tab already exists.
 
-Now, when team members add a new tab to a channel in this team, they will see your tab in the gallery.
+Now, when team members add a new tab to a channel in this team, they will be able to add your tab via the tab gallery.
+
+1. Go to any channel in the team.  Click the '+' to the right of the existing tabs.
+2. Select your tab from the gallery that appears.
+3. Accept the consent prompt.
+4. Configure your tab via its [configuration page](createconfigpage.md) and click Save. 
 
 ![](images/tab_gallery.png)
 

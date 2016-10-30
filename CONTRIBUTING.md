@@ -1,4 +1,4 @@
-﻿# Contribute to Microsoft Teams SDK Documentation
+﻿# Contribute to Microsoft Teams developer documentation
 
 
 Thank you for your interest in Microsoft Teams developer documentation!
@@ -16,8 +16,10 @@ Thank you for your interest in Microsoft Teams developer documentation!
 You can contribute to [Microsoft Teams developer documentation](https://msdn.microsoft.com/en-us/microsoft-teams/) in a  few different ways:
 
 * Contribute to articles via the [public Microsoft Teams SDK developer docs repo](https://github.com/OfficeDev/microsoft-teams-docs) 
-* Report documentation bugs via [GitHub Issues](https://github.com/OfficeDev/office-content/issues)
-* Add documentation requests to the [Office/SharePoint developer UserVoice](http://officespdev.uservoice.com)
+* Report documentation bugs via [GitHub Issues](https://github.com/OfficeDev/microsoft-teams-docs/issues)
+* Add documentation requests to the [Microsoft Teams developer UserVoice]()
+
+**TODO fix up to final uservoice location
 
 ##Before we can accept your pull request
 

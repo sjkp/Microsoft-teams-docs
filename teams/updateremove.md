@@ -18,7 +18,7 @@ You can enable users to select what happens to content when a tab is removed, by
 
 >**Note:** Supporting removal options can significantly improve the user experience, especially if you expect users to frequently add and remove your tabs.  However, there is no guarantee that your page will always be loaded when a tab is removed.  For example, it won't happen if the user deletes the entire team or channel in which your tab sits.
 
-The removal options page is an HTML page that you host. When a user chooses to remove your tab, Microsoft Teams will load the `removeUrl` that you provided when [configuring a tab](createconfigpage.md) within an iframe inside the **Remove tab** dialog.
+The removal options page is an HTML page that you host. When a user chooses to remove your tab, Microsoft Teams will load the `removeUrl` (that you provided when [configuring a tab](createconfigpage.md)) within an iframe inside the **Remove tab** dialog.
 
 You must include the [Microsoft Teams Tab library](jslibrary.md) in your removal options page so that it can communicate with Microsoft Teams.
 

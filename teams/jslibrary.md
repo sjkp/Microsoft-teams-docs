@@ -3,6 +3,7 @@
 Your [configuration](createconfigpage.md), [content](createcontentpage.md) and [removal options](updateremove.md#removing-a-tab) pages must include the library hosted at: `https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js`.
 
 >**Tip:** For developers using TypeScript, Microsoft Teams provides a definition file at `https://statics.teams.microsoft.com/sdk/v0.2/types/MicrosoftTeams.d.ts`.  Use this to enable IntelliSense or similar support from your code editor as well as compile-type type checking as part of your build.
+>**Note:** This source for this library is available at `https://github.com/OfficeDev/microsoft-teams-library-js`.
 
 ## `microsoftTeams`
 This is the root namespace for the JavaScript SDK.
