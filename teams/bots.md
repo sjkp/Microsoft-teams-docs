@@ -81,7 +81,7 @@ Microsoft Teams supports the following formatting options
 | markdown | The text should be treated as markdown formatting and rendered on the channel as appropriate |
 | xml | The text is simple XML markup (subset of HTML - see link above) |
 
-On hero and thumbnail cards, message format is only supported on the text property. Formatting is not supported on the title and subtitle properties at this time.
+> **Note:** On hero and thumbnail cards, message format is only supported on the text property. Formatting is not supported on the title and subtitle properties at this time.
 
 ### Welcome messages
 
