@@ -51,7 +51,7 @@ The manifest you create for your tab app must adhere to the schema. For more inf
 
 Once you've created your manifest and image files, compress them into a zip file.
 
-> **Tip:** [Download the example zip file](https://github.com/OfficeDev/microsoft-teams-sample-get-started/blob/master/manifest/MapsTab.zip) that contains the example manifest shown here, and use it with the following instructions. 
+> **Tip:** [Download the example zip file](https://github.com/OfficeDev/microsoft-teams-sample-get-started/blob/master/package/MapsTab.zip) that contains the example manifest shown here, and use it with the following instructions. 
 
 Upload your zip file to a team to make your app available as a tab.
 
