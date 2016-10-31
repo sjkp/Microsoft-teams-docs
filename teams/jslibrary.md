@@ -1,4 +1,4 @@
-﻿# Microsoft Teams (Preview) JavaScript Library API reference
+﻿# Microsoft Teams (preview) JavaScript Library API reference
 
 Your [configuration](createconfigpage.md), [content](createcontentpage.md) and [removal options](updateremove.md#removing-a-tab) pages must include the library hosted at: `https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js`.
 

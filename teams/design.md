@@ -1,4 +1,4 @@
-﻿# Design a great Microsoft Teams (Preview) tab app
+﻿# Design a great Microsoft Teams (preview) tab app
 
 While it's relatively easy to adapt a web app to become a Microsoft Teams tab app, you should consider which experiences and functionality in your app will work most effectively.
 

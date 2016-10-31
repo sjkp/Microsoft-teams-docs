@@ -1,4 +1,4 @@
-﻿# Create the configuration page for your Microsoft Teams (Preview) tab app
+﻿# Create the configuration page for your Microsoft Teams (preview) tab app
 
 The configuration page is an HTML page that you host. When a user chooses to add your tab, Microsoft Teams will load the 'configUrl' (that you [provided in your manifest](createpackage.md)) within an iframe inside the **Add Tab** dialog.
 

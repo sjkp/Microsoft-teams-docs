@@ -1,4 +1,4 @@
-﻿# Prerequisites for Microsoft Teams (Preview) tabs app pages
+﻿# Prerequisites for Microsoft Teams (preview) tabs app pages
 
 For the UI of your tab app - its configuration, content, and (optionally) tab removal pages - to be displayed within Microsoft Teams, they need to meet the following requirements. 
 

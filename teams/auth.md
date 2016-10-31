@@ -1,4 +1,4 @@
-﻿# Authenticating a user in your Microsoft Teams (Preview) tab app
+﻿# Authenticating a user in your Microsoft Teams (preview) tab app
 
 Tab apps run in iframes.  Azure Azure Active Directory (Azure AD), and other identity providers that you may use, do not usually allow their sign in and consent pages to be hosted within an iframe.
 

@@ -1,4 +1,4 @@
-﻿# Getting started with Office 365 Connectors for Microsoft Teams (Preview)
+﻿# Getting started with Office 365 Connectors for Microsoft Teams (preview)
 
 Office 365 Connectors are a great way to get useful information and content into Microsoft Teams. Any user can connect their group to services like Trello, GitHub, Bing News, Twitter, etc., and get notified of the team's activity in that service. From tracking a team's progress in Trello, to following important hashtags in Twitter, Office 365 Connectors make it easier for your team to stay in sync and get more done.
 

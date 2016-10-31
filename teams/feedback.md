@@ -1,7 +1,7 @@
 ﻿
 # Submit your questions, bugs, feature requests, and contributions
 
-The Microsoft Team (Preview) product team responds to the developer community across several channels. Please tell us about your:
+The Microsoft Team (preview) product team responds to the developer community across several channels. Please tell us about your:
 
 - **Technical questions:** We listen and respond on [stackoverflow](http://stackoverflow.com/questions/tagged/microsoft-teams). Tag your question with "microsoft-teams" so that our team and the Microsoft Teams developer community can respond.
 

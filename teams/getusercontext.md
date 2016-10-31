@@ -1,4 +1,4 @@
-﻿# Get user context, locale, or theme information for use in your Microsoft Team (Preview) tab
+﻿# Get user context, locale, or theme information for use in your Microsoft Team (preview) tab
 
 Your tab app may need basic information about the user, team, or company. This can be especially useful when:
 
