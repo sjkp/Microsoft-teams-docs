@@ -1,4 +1,4 @@
-﻿# Creating bots for Microsoft Teams (Preview)
+﻿# Creating bots for Microsoft Teams (preview)
 
 Build and connect intelligent bots to interact with Microsoft Teams users naturally through 1:1 chat.
 
@@ -12,7 +12,7 @@ All bots created using the Microsoft Bot Framework are automatically configured 
 
 See the [Microsoft Bot Framework Overview](https://docs.botframework.com/en-us/) to learn how to:
 
-1. Register the bot with the Microsoft Bot Framework, and make sure you add Microsoft Teams as a channel. When you first register a bot it will be in Preview, which means that it is only available to users in Microsoft Teams via side loading of the bot ID or via add button.
+1. Register the bot with the Microsoft Bot Framework, and make sure you add Microsoft Teams as a channel. When you first register a bot it will be in preview, which means that it is only available to users in Microsoft Teams via side loading of the bot ID or via add button.
 2. Build a bot using the [C# SDK](https://docs.botframework.com/en-us/csharp/builder/sdkreference/), [Node.js SDK](https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html) or [Microsoft Bot Connector API](https://docs.botframework.com/en-us/restapi/connector/#navtitle).
 
 3. Test it using the [Bot Framework Emulator](https://docs.botframework.com/en-us/tools/bot-framework-emulator/)

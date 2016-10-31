@@ -1,6 +1,6 @@
 ﻿# Microsoft Teams developer preview
 
- Microsoft Teams is a chat-based workspace in Office 365 that integrates with apps and services that teams use to get work done together.  This Developer Preview makes it easy for you to integrate your own service, whether you develop custom apps for your enterprise or SaaS applications for teams around the world.
+ Microsoft Teams is a chat-based workspace in Office 365 that integrates with apps and services that teams use to get work done together.  This developer preview makes it easy for you to integrate your own service, whether you develop custom apps for your enterprise or SaaS applications for teams around the world.
 
 > **Don't have Microsoft Teams? Get a free one-year Office 365 developer subscription.** To get started developing for Microsoft Teams, you'll need an Office 365 account, and to turn on Microsoft Teams for your organization. [Here's how](setup.md).
 

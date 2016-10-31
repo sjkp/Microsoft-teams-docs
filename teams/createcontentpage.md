@@ -1,4 +1,4 @@
-﻿# Create the content for your Microsoft Teams (Preview) tab
+﻿# Create the content for your Microsoft Teams (preview) tab
 
 The content page is an HTML page that you host.  When the user visits your tab, Microsoft Teams will load the `contentUrl` (that you [provided earlier](createconfigpage.md)) within an iframe inside the main tab canvas area.
 
