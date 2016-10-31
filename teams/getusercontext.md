@@ -1,9 +1,9 @@
 ﻿# Get user context, locale, or theme information for use in your Microsoft Team (preview) tab
 
-Your tab app may need basic information about the user, team, or company. This can be especially useful when:
+Your tab may need basic information about the user, team, or company. This can be especially useful when:
 
 * You need to create or associate resources in your app with the specified user or team.
-* You want to initiate an authentication flow against Azure Active Directory or other identity provider, and you don't want to require the user to enter their username again. (For more information on authenticating within your Microsoft Teams tab, see [Authenticating your Microsoft Teams tab](auth.md).)
+* You want to initiate an authentication flow against Azure Active Directory or other identity provider, and you don't want to require the user to enter their username again. (For more information on authenticating within your Microsoft Teams tab, see [Authenticating in your Microsoft Teams tab pages](auth.md).)
 
 >**Important:** While this user information can help provide a smooth user experience, you should **not** use it as proof of identity. For example, an attacker could you load your page in a 'bad browser' and provide it with any information they want.
 
@@ -26,7 +26,7 @@ Use placeholders in your configuration or content URLs. Microsoft Teams replaces
 * {theme}: Display theme, such as 'default' or 'dark'
 * {locale}: The user locale, such as 'en-us'
 
-For example, suppose in your tab app manifest you set the `configURL` attribute to:
+For example, suppose in your tab manifest you set the `configURL` attribute to:
 
 `"https://www.contoso.com/config?name={upn}&tenant={tid}&group={groupId}"`
 

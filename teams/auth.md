@@ -1,4 +1,8 @@
+<<<<<<< f3f46a11c816a4be4aea69a12a770018ac5464c2
 # Authenticating a user in your Microsoft Teams (preview) tab
+=======
+﻿# Authenticating a user in your Microsoft Teams (Preview) tab pages
+>>>>>>> Fix wording of tabs and apps
 
 The tab [configuration](createconfigpage.md) and [content](createcontentpage.md) pages run in iframes.  Azure Azure Active Directory (Azure AD), and other identity providers that you may use, do not usually allow their sign in and consent pages to be hosted within an iframe.
 
