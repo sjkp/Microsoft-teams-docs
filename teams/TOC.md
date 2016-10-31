@@ -13,6 +13,7 @@
 ### [Tab manifest schema reference](schema.md)
 ### [Tab JavaScript library API reference](jslibrary.md)
 ### [Tab sample apps](samples.md)
+### [Troubleshooting](troubleshooting.md)
 ## [Bots](bots.md)
 ## [Office 365 Connectors](connectors.md)
 ## [Submit feedback](feedback.md)
