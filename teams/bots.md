@@ -70,6 +70,19 @@ Your bot can send rich text, pictures and cards to a 1:1 chat. Users can send ri
 | Pictures | ✔ | ✔ | PNG, JPEG or GIF up to 20Mb |
 | Cards | ✘ | ✔ |  |
 
+### Message format
+You can set the optional [TextFormat](https://docs.botframework.com/en-us/csharp/builder/sdkreference/activities.html) property to control how your message's text content will be rendered.
+
+Microsoft Teams supports the following formatting options
+
+| TextFormat Value | Description |
+|:----------------------|:------------------|
+| plain | The text should be treated as raw text with no formatting applied at all |
+| markdown | The text should be treated as markdown formatting and rendered on the channel as appropriate |
+| xml | The text is simple XML markup (subset of HTML - see link above) |
+
+> **Note:** On hero and thumbnail cards, message format is only supported on the text property. Formatting is not supported on the title and subtitle properties at this time.
+
 ### Welcome messages
 
 To send a welcome message to a user listen for the [conversationUpdate](https://docs.botframework.com/en-us/csharp/builder/sdkreference/activities.html) activity.
@@ -89,7 +102,7 @@ Microsoft Teams supports the following cards which may have several properties a
 * Carousel card (with hero or thumbnail cards)
 * List card
 
-> **Note:** Microsoft Teams cards currently only support openUrl and imBack actions.
+> **Note:** Microsoft Teams cards currently only support openUrl and imBack actions. Receipt cards are not supported at this time.
 
 ### Images
 
@@ -145,21 +158,23 @@ The [thumbnail card](https://docs.botframework.com/en-us/csharp/builder/sdkrefer
 | tap | Action object | This action will be activated when the user taps on the card itself |
 
 
-### Carousel card
+### Carousel layout
 
-The [carousel card](https://docs.botframework.com/en-us/csharp/builder/sdkreference/activities.html) can be used to show a carousel of images and text, with associated action buttons.
+The [carousel layout](https://docs.botframework.com/en-us/csharp/builder/sdkreference/activities.html) can be used to show a carousel of cards, with associated action buttons.
 
-!["Example of a list-card"](images/Bots_CarouselExample.png)
+!["Example of a carousel of cards"](images/Bots_CarouselExample.png)
+
+Properties are the same as for the hero or thumbnail card.
+
+### List layout
+
+The list layout can be used to show a vertically stacked list of cards.
+
+!["Example of a list of cards"](images/Bots_ListExample.PNG)
 
 Properties are the same as for the hero or thumbnail card.
 
-### List card
-
-The list card can be used to show a vertically stacked list of cards.
-
-!["Example of a list-card"](images/Bots_ListExample.PNG)
-
-Properties are the same as for the hero or thumbnail card.
+> **Note:** Some combinations of list cards may not be supported yet on iOS and Android.
 
 ## Bot settings
 
