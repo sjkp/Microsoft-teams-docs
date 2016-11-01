@@ -24,6 +24,9 @@ Administrators need to use the Office 365 Admin Portal to enable Microsoft Teams
 1. [Sign in to Office 365](https://login.microsoftonline.com) with your work or school account.
 2. Select **Admin** to go to the Office 365 Admin Center.
 3. From **Settings**, select  **Services & add-ins**.
+
+	!["Screenshot of the settings tab, with Services and add-ins selected"](images/setup_services.png)
+
 4. From the list of services and add-ins, select **Teams**.
  
 	!["Screenshot of the services listed under settings, with the Teams service selected"](images/setup_select_teams.png)
