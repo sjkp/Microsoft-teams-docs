@@ -186,6 +186,7 @@ To stop your bot receiving messages and remove it from directories go to your Bo
 
 To delete your bot completely go to your Bot Dashboard and edit the Microsoft Teams channel. Select the **Delete** button at the bottom.
 
+>**Note:** We are looking for developers to build great bots for inclusion in Microsoft Teams app gallery.  Submit your proposal [here](https://aka.ms/microsoftteamsdeveloperpreviewinterestform).
 
 
 

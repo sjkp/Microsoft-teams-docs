@@ -77,7 +77,7 @@ function onClick() {
 
 ### Prerequisites for your tab removal page 
  
-For your tab removal page to display within Microsoft Teams, it must meet the [requirements for tab app page](prerequisites.md).
+For your tab removal page to display within Microsoft Teams, it must meet the [requirements for a tab page](prerequisites.md).
 
 ### Presenting the user with content options upon tab removal
 
@@ -87,10 +87,12 @@ Your code should call `microsoftTeams.settings.getSettings(function(settings) { 
 
 Upon page load, enable the **Remove** button immediately by calling `microsoftTeams.settings.setValidityState(true)`. So that you can do so, make sure that all the options in your tab removal page have a default selection.  Microsoft Teams will enable the **Remove** button after five seconds, even if your tab hasn't called `setValidityState`. 
 
-If your tab removal page requires user context, see [Get user context, locale, or theme information](getusercontext.md). If your app needs to authenticate the user, see [Authenticating your Microsoft Teams tab app](auth.md).
+If your tab removal page requires user context, see [Get user context, locale, or theme information](getusercontext.md). If your app needs to authenticate the user, see [Authenticating in your Microsoft Teams tab pages](auth.md).
 
 ### Processing the content prior to tab removal
 
 Similar to the save handler, you can register a remove handler by calling `microsoftTeams.settings.registerOnRemoveHandler(function(removeEvent){})` for when the user selects **Remove**. At this point, your app should take whatever action(s) the user selected; for example, deleting or archiving content. If you need to perform these actions asynchronously, store `removeEvent`. Microsoft Teams removes the tab after 30 seconds, regardless of your actions.
 
 Finally, call `removeEvent.notifySuccess()` or `removeEvent.notifyFailure()` to notify Microsoft Teams on the outcome of the removal.
+
+>**Note:** Currently, Microsoft Teams immediately removes the tab in both the success and failure cases.  In future, the failure case may be handled differently. 

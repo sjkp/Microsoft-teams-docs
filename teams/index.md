@@ -6,7 +6,7 @@
 
 ## Tabs
 
-Tabs allow team members to access your service on a dedicated canvas within a channel. This lets teams work directly with the tools and data you provide, in the channel’s context, and to have conversations about them. Examples of tabs include dashboards and data visualization, documents and notes, group task management and shared design canvases. Users can add tabs in either a chat or channel, and can have conversations about them. It's easy for you to create a tab app from your existing web app. 
+Tabs allow team members to access your service on a dedicated canvas within a channel. This lets teams work directly with the tools and data you provide, in the channel’s context, and to have conversations about them. Examples of tabs include dashboards and data visualization, documents and notes, group task management and shared design canvases. Users can add tabs in either a chat or channel, and can have conversations about them. It's easy for you to create a tab from your existing web app. 
 
 [Get started with tabs](tabs.md)
 

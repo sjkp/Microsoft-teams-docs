@@ -52,5 +52,4 @@ For full details on the available options on cards, see [Office 365 Connectors A
 
 We do not yet support registering your Office 365 Connector in the [Connectors Developer Dashboard Beta](https://dev.outlook.com/Connectors/ConnectButton).
 
-
-
+>**Note:** We are looking for developers to build great Connectors for inclusion in Microsoft Teams app gallery.  Submit your proposal [here](https://aka.ms/microsoftteamsdeveloperpreviewinterestform).

@@ -1,13 +1,13 @@
-﻿# Create the package for your Microsoft Teams (preview) tab app
+﻿# Create the package for your Microsoft Teams (preview) tab
 
-For your tab app to be available within Microsoft Teams, you need to create a tab package and upload it to a team. The tab package is a zip file containing:
+For your tab to be available within Microsoft Teams, you need to create a tab package and upload it to a team. The tab package is a zip file containing:
 
-- A manifest file named `manifest.json`, which specifies attributes of your tab app and points to required resources such the location of its configuration page.
-- Image files, to be used as icons for your tab app.  These must be transparent PNGs, with white or light-colored foreground in both small (44 by 44 pixels) and large (88 by 88 pixels) sizes.  (The accompanying background or 'accent color' is specified in the manifest.)
+- A manifest file named `manifest.json`, which specifies attributes of your tab and points to required resources such the location of its configuration page.
+- Image files, to be used as icons for your tab.  These must be transparent PNGs, with white or light-colored foreground in both small (44 by 44 pixels) and large (88 by 88 pixels) sizes.  (The accompanying background or 'accent color' is specified in the manifest.)
 
-## Creating a manifest for your tab app 
+## Creating a manifest for your tab 
 
-Below is a sample manifest for a simple tab app.
+Below is a sample manifest for a simple tab.
 
 ```JSON
 {
@@ -24,8 +24,7 @@ Below is a sample manifest for a simple tab app.
     },
     "description" : {
             "short": "Host a map as a tab.",
-            "full": "Host a map as a tab.  Give your tab a name, 
-					select Bing Maps or Google Maps, and click save."
+            "full": "Host a map as a tab.  Give your tab a name, select Bing Maps or Google Maps, and click save."
     },
     "icons": {
             "44": "maps44.png",
@@ -41,7 +40,7 @@ Below is a sample manifest for a simple tab app.
     ]
 }
 ```
-The manifest you create for your tab app must adhere to the schema. For more information, see the [Microsoft Teams manifest schema](schema.md).
+The manifest you create for your tab must adhere to the schema. For more information, see the [Microsoft Teams manifest schema](schema.md).
 
 > **Tip:** Specify the schema at the beginning of your manifest to enable IntelliSense or similar support from your code editor:
 > 
