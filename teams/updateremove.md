@@ -94,3 +94,5 @@ If your tab removal page requires user context, see [Get user context, locale, o
 Similar to the save handler, you can register a remove handler by calling `microsoftTeams.settings.registerOnRemoveHandler(function(removeEvent){})` for when the user selects **Remove**. At this point, your app should take whatever action(s) the user selected; for example, deleting or archiving content. If you need to perform these actions asynchronously, store `removeEvent`. Microsoft Teams removes the tab after 30 seconds, regardless of your actions.
 
 Finally, call `removeEvent.notifySuccess()` or `removeEvent.notifyFailure()` to notify Microsoft Teams on the outcome of the removal.
+
+>**Note:** Currently, Microsoft Teams immediately removes the tab in both the success and failure cases.  In future, the failure case may be handled differently. 
