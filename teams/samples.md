@@ -1,8 +1,4 @@
-<<<<<<< f3f46a11c816a4be4aea69a12a770018ac5464c2
-﻿# Sample applications for the Microsoft Teams (preview) SDK
-=======
-﻿# Sample applications for the Microsoft Teams Developer Platform (Preview)
->>>>>>> Fix wording of tabs and apps
+# Sample applications for the Microsoft Teams Developer Platform (preview)
 
 There are Microsoft Teams samples in our GitHub repositories for you to clone or download:
 

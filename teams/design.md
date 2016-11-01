@@ -1,8 +1,4 @@
-<<<<<<< f3f46a11c816a4be4aea69a12a770018ac5464c2
-﻿# Design a great Microsoft Teams (preview) tab app
-=======
-﻿# Design a great Microsoft Teams (Preview) tab
->>>>>>> Fix wording of tabs and apps
+﻿# Design a great Microsoft Teams (preview) tab
 
 While it's relatively easy to adapt a web app to become a Microsoft Teams tab, you should consider which experiences and functionality in your app will work most effectively.
 
