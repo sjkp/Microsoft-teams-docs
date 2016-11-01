@@ -1,6 +1,5 @@
-﻿# Contribute to Microsoft Teams SDK Documentation
+﻿# Contribute to Microsoft Teams developer documentation
 
-<!--TODO: scrub this for Skype branding and update links for this repo-->
 
 Thank you for your interest in Microsoft Teams developer documentation!
 
@@ -14,11 +13,11 @@ Thank you for your interest in Microsoft Teams developer documentation!
 
 ## Ways to contribute
 
-You can contribute to [Skype Web SDK developer documentation](https://msdn.microsoft.com/en-us/library/office/dn708619(v=office.16).aspx) in a few different ways:
+You can contribute to [Microsoft Teams developer documentation](https://msdn.microsoft.com/en-us/microsoft-teams/) in a  few different ways:
 
-* Contribute to articles via the [public Skype developer docs repo](https://github.com/OfficeDev/skype-docs)
-* Report documentation bugs via [GitHub Issues](https://github.com/OfficeDev/skype-docs/issues)
-* Add documentation requests to the [Office/SharePoint developer UserVoice](http://officespdev.uservoice.com)
+* Contribute to articles via the [public Microsoft Teams SDK developer docs repo](https://github.com/OfficeDev/microsoft-teams-docs) 
+* Report documentation bugs via [GitHub Issues](https://github.com/OfficeDev/microsoft-teams-docs/issues)
+* Add documentation requests to the [Microsoft Teams developer UserVoice](https://teamsfeedback.uservoice.com/forums/555103-public-preview/category/182881-developer-platform)
 
 ##Before we can accept your pull request
 
@@ -36,19 +35,15 @@ If you submit new or significant changes to documentation and code examples, you
 
 As a community member, **you must sign the Contribution License Agreement (CLA) before you can contribute large submissions to this project**, but you only need complete and submit the documentation once. Please carefully review the document; you may also need to have your employer sign the document.
 
-Signing the Contribution License Agreement (CLA) does not grant you rights to commit to the main repository, but it does mean that the Skype Developer and Office Developer Content Publishing teams will be able to review and consider your contributions and you will get credit if we do.
+Signing the Contribution License Agreement (CLA) does not grant you rights to commit to the main repository, but it does mean that the Microsoft Teams Developer and Office Developer Content Publishing teams will be able to review and consider your contributions and you will get credit if we do.
 
 You can download the Contribution License Agreement (CLA) [here](https://github.com/OfficeDev/office-content/raw/master/Contribution%20License%20Agreement.pdf). Please fill out the form and email it to [officedev@microsoft.com](mailto:officedev@microsoft.com).
 
 Once we receive and process your CLA, we will do our best to review your pull request(s) within ten business days.
 
-## Repository organization
-
-The content in the skype-docs repository is grouped  by topic. The README.md file at the root of the topic directory specifies the structure of the articles within the topic.
-
 ## Use GitHub, Git, and this repository
 
-**Note:** Most of the information in this section can be found in [GitHub Help] [] articles.  If you are familiar with Git and GitHub, skip to the "Contribut and edit content" section for the particulars of the code/content flow of this repository.
+**Note:** Most of the information in this section can be found in [GitHub Help] [] articles.  If you are familiar with Git and GitHub, skip to the "Contribute and edit content" section for the particulars of the code/content flow of this repository.
 
 ### Setting up your fork of the repository
 
@@ -57,12 +52,12 @@ The content in the skype-docs repository is grouped  by topic. The README.md fil
 3.	Now that machine is set up with Git, you need a fork of this repository. Go to the top of the page and click the **Fork** button. You now have your own fork of this repository.
 4.	The last step involves copying your fork to your local machine. To do this go open GitBash. On the command prompt enter:
 
-		git clone https://github.com/{your user name}/skype-docs.git
+		git clone https://github.com/{your user name}/microsoft-teams-docs.git
 
    Next create a reference to the root repository by entering these commands:
 
-		cd skype-docs
-		git remote add upstream https://github.com/OfficeDev/skype-docs.git
+		cd microsoft-teams-docs
+		git remote add upstream https://github.com/OfficeDev/microsoft-teams-docs.git
 		git fetch upstream
 
 Congratulations you have now set up your repository.  The above steps will not need to be repeated again.
@@ -91,11 +86,11 @@ Each branch should be limited to a single concept/article both to streamline wor
 
 #### Add new content or edit existing content
 
-You can now navigate to the repository on your local machine using Windows Explorer. The repository files are in `C:\Users\<yourusername>\skype-docs`.
+You can now navigate to the repository on your local machine using Windows Explorer. The repository files are in `C:\Users\<yourusername>\microsoft-teams-docs`.
 
 If you are editing files, open them in an editor of your choice and start modifying them.  If you want to create a new file, use the editor of your choice and save the new file in the appropriate location in your local copy of the repository.  While working, make sure to save your work frequently.
 
-The files in `C:\Users\<yourusername>\skype-docs` are a working copy of the new branch that you created in your local repository. Changing anything in this folder does not affect the local repository until you commit a change. To commit a change to the local repository, type the following commands in GitBash:
+The files in `C:\Users\<yourusername>\microsoft-teams-docs` are a working copy of the new branch that you created in your local repository. Changing anything in this folder does not affect the local repository until you commit a change. To commit a change to the local repository, type the following commands in GitBash:
 
 	git add .
     
@@ -114,20 +109,20 @@ When you are done with your work and are ready to have it merged into the centra
 1.	In GitBash type `git push origin <new branch name>` in the command prompt.  In your local repository, `origin` refers to your GitHub repository that you cloned the local repository from. This command pushes the current state of your new branch, including all commits made in the previous steps, to your GitHub fork.
 2.	On the GitHub site, navigate in your fork to the new branch.
 3.	Click the **Pull Request** button at the top of the page.
-4.	Ensure that the Base branch is `OfficeDev/skype-docs@master` and the Head branch is `<your username>/skype-docs@<branch name>`
+4.	Ensure that the Base branch is `OfficeDev/microsoft-teams-docs@master` and the Head branch is `<your username>/microsoft-teams-docs@<branch name>`
 5.	Click the **Update Commit Range** button.
 6.	Give your pull request a Title, and describe all the changes being made.  If your bug fixes a UserVoice item or GitHub issue make sure to reference them in the description.
 7.	Submit the Pull Request.
 
-One of the site administrators will now process your pull request.  Your pull request will surface on the OfficeDev/skype-docs site under Issues.  When the Pull Request is accepted, the issue will be resolved.
+One of the site administrators will now process your pull request.  Your pull request will surface on the OfficeDev/microsoft-teams-docs site under Issues.  When the Pull Request is accepted, the issue will be resolved.
 
 #### Create a new branch after merge
 
 After a branch has been successfully merged (i.e. your pull request has been accepted), do not continue working in the local branch that was successfully merged upstream. This can lead to merge conflicts if you submit another pull request. Instead, if you want to do another update, create a new local branch from the successfully merged upstream branch.
 
-For example, suppose your local branch X was successfully merged into the OfficeDev/skype-docs master branch and you want to make further updates to the content that was merged. Create a new local branch, X2, from the OfficeDev/Office-Content master branch. To do this, open GitBash and execute the following commands:
+For example, suppose your local branch X was successfully merged into the OfficeDev/microsoft-teams-docs master branch and you want to make further updates to the content that was merged. Create a new local branch, X2, from the OfficeDev/Office-Content master branch. To do this, open GitBash and execute the following commands:
 
-	cd skype-docs
+	cd microsoft-teams-docs
 	git pull upstream master:X2
 	git push origin X2
 
@@ -135,7 +130,7 @@ You now have local copies (in a new local branch) of the work that you submitted
 
 	git checkout X2
 
-...and verifying the content. (The `checkout` command updates the files in `C:\Users\<yourusername>\skype-docs` to the current state of the X2 branch.) Once you have checked out the new branch, you can make updates to the content and commit them as usual. However, to avoid working in the merged branch (X) by mistake, it is best to delete it (see the following "Delete a Branch" section).
+...and verifying the content. (The `checkout` command updates the files in `C:\Users\<yourusername>\microsoft-teams-docs` to the current state of the X2 branch.) Once you have checked out the new branch, you can make updates to the content and commit them as usual. However, to avoid working in the merged branch (X) by mistake, it is best to delete it (see the following "Delete a Branch" section).
 
 #### Delete a branch
 
