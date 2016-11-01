@@ -1,4 +1,4 @@
-# Getting started developing a Microsoft Teams (Preview) tab
+# Getting started with tabs for Microsoft Teams (preview)
 
 You can build a Microsoft Teams tab from scratch or by adapting your existing web app.
 

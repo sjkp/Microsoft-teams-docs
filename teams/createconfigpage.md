@@ -106,6 +106,8 @@ You can return the settings asynchronously if, for example, the user has request
 
 Finally, in your save handler registered previously, call `saveEvent.notifySuccess()` or `saveEvent.notifyFailure()` to notify Microsoft Teams on the outcome of the configuration. If you have no save handler registered, the outcome will immediately and implicitly be success.
 
+> Hitting problems?  See the [troubleshooting guide](troubleshooting.md).
+
 ## Next Step
 
 * [Create the content page for your Microsoft Teams tab](createcontentpage.md)

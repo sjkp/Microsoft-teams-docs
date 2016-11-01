@@ -18,6 +18,8 @@ For the UI of your tab - its configuration, content, and (optionally) tab remova
 
 * Once your page has successfully loaded, call `microsoftTeams.initialize()` to display your page. Microsoft Teams will not display your page unless you do so.
 
+> Hitting problems?  See the [troubleshooting guide](troubleshooting.md).
+
 >**Tip:** For developers using TypeScript, Microsoft Teams provides a [definition file](https://statics.teams.microsoft.com/sdk/v0.2/types/MicrosoftTeams.d.ts) to enable IntelliSense or similar support from your code editor as well as compile-type type checking as part of your build.
 
 ## Next steps

@@ -14,7 +14,7 @@ You must include the [Microsoft Teams Tab library](jslibrary.md) in your configu
 
 For your content to display within a Microsoft Teams tab, make sure it meets the [requirements for tab pages](prerequisites.md).
 
->In summary: you must host your page on a secure https:// endpoint, ensure your page permits itself to be iframed, include the Microsoft Teams tab library, and call microsoftTeams.initialize();
+>In summary: you must host your page on a secure https:// endpoint, ensure your page permits itself to be iframed, include the Microsoft Teams tab library, and call `microsoftTeams.initialize()`;
 
 ## Samples
 

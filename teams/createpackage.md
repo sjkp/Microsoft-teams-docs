@@ -65,6 +65,8 @@ Upload your zip file to a team to make your app available as a tab.
 
 > **Note:** To re-upload an updated package, click the 'Replace' icon at the end of the tab's table row.  Don't click 'Upload' again: Microsoft Teams will say the tab already exists.
 
+> Hitting other problems?  See the [troubleshooting guide](troubleshooting.md).
+
 Now, when team members add a new tab to a channel in this team, they will be able to add your tab via the tab gallery.
 
 1. Go to any channel in the team.  Click the '+' to the right of the existing tabs.
