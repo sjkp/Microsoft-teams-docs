@@ -38,11 +38,7 @@ With this as a simple example, let's walk through the steps your removal page ne
 
 ```HTML
 <html>
-<head>
-<title>Map Tab remove UI</title>
-</head>
 <body>
-<div id="container">
 <form>
   <input type="radio" name="removetype" value="delete" onclick="onClick()">
 	Delete this map and all data the team added to it? <br>
@@ -50,7 +46,6 @@ With this as a simple example, let's walk through the steps your removal page ne
 	Keep this map available for use at 
 	<a href='https://maps.bing.com' target='_blank'>https://maps.bing.com</a>
 </form> 
-</div>
 
 <script src="https://teamspacewusprodms.blob.core.windows.net/tabframework/0.2/MicrosoftTeams.js">
 </script>
@@ -72,8 +67,10 @@ function onClick() {
     microsoftTeams.settings.setValidityState(true);
 }
 
-</script>```
-
+</script>
+</body>
+</html>
+```
 
 ### Prerequisites for your tab removal page 
  
