@@ -87,7 +87,7 @@ Microsoft Teams supports the following formatting options
 
 To send a welcome message to a user listen for the [conversationUpdate](https://docs.botframework.com/en-us/csharp/builder/sdkreference/activities.html) activity.
 
-### Pictures
+### Picture messages
 
 Pictures are sent by adding attachments to a message.
 
@@ -104,11 +104,13 @@ Microsoft Teams supports the following cards which may have several properties a
 
 > **Note:** Microsoft Teams cards currently only support openUrl and imBack actions. Receipt cards are not supported at this time.
 
-### Images
+### Inline card images
+
+Your card can contain inline images by including a link to the image content hosted on a public CDN.
 
 Images are scaled up or down in size while maintaining the aspect ratio to cover the image area, and then cropped from center to achieve the image aspect ratio for the card.
 
-Images should be HTTPS, up to 1024x1024, up to 1MB in size, and PNG or JPEG.
+Images must be at most 1024x1024 and 1MB in size, and in either PNG or JPEG format.
 
 | Property | Type  | Description |                                                           
 |:-------|:-------|:------------|
@@ -117,7 +119,7 @@ Images should be HTTPS, up to 1024x1024, up to 1MB in size, and PNG or JPEG.
 
 ### Buttons
 
-Buttons are shown stacked at the bottom of the card. Button text is always on a single line and will be trimmed if too long. If more buttons than can be supported by the card are included they will not be shown.
+Buttons are shown stacked at the bottom of the card. Button text is always on a single line and will be truncated if the text exceeds the button width. Any additional buttons beyond the maximum number supported by the card will not be shown.
 
 ### Actions
 
