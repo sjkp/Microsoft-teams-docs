@@ -1,4 +1,4 @@
-﻿# Design a great Microsoft Teams (preview) tab
+# Design a great Microsoft Teams (preview) tab
 
 While it's relatively easy to adapt a web app to become a Microsoft Teams tab, you should consider which experiences and functionality in your app will work most effectively.
 
@@ -10,7 +10,7 @@ Teams add tabs to channels. A channel is a specific topic or purpose that the te
 
 ## Scope and focus the user experience
 
-Once configured, your tab should drill down to the relevant context and not let the user navigate outside of it within the tab. For example, the Power BI tab doesn't enable the user navigate to other Power BI reports in situ.  However, like many tabs based on an existing web app, it does enable the 'Go To Website' button that launches the report in the main Power BI website.
+Once configured, your tab should drill down to the relevant context and not let the user navigate outside of it within the tab. For example, the Power BI tab doesn't enable the user navigate to other Power BI reports in situ.  However, like many tabs based on an existing web app, it does enable the **Go To Website** button that launches the report in the main Power BI website.
 
 ## Integrate with the Microsoft Teams user experience
 
