@@ -4,16 +4,16 @@ Microsoft Teams is a service within Office 365. To get started developing extens
 
 ## Sign up for an Office 365 trial, or use an existing account
 
-To develop extensions for Microsoft Teams, you need to have an [Office 365 business account](https://products.office.com/en-us/business/compare-more-office-365-for-business-plans). 
+To develop extensions for Microsoft Teams, you need to be an [Office 365 commercial customer with one of the following plans](https://products.office.com/en-us/business/compare-more-office-365-for-business-plans). 
 
-This can be one of the following plans:
+* Business Essentials
+* Business Premium
+* Enterprise E1, E3, and E5
+* Developer
 
-* Office 365 Midsize Business
-* Office 365 Enterprise E1, E3, or E5
-* Office 365 Education
-* Office 365 Developer 
+Microsoft Teams will also be available to customers who purchased E4 prior to its retirement.
 
-If you don't currently have an Office 365 for business account, you can sign up for [an Office 365 Developer subscription](https://aka.ms/devprogramsignup) for no charge for one year.
+If you don't currently have an Office 365 account, you can sign up for [an Office 365 Developer subscription](https://aka.ms/devprogramsignup) for no charge for one year.
 
 ## Turn on Microsoft Teams for your organization
 

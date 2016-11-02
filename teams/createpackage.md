@@ -1,4 +1,4 @@
-# Create the package for your Microsoft Teams (preview) tab
+﻿# Create the package for your Microsoft Teams (preview) tab
 
 For your tab to be available within Microsoft Teams, you need to create a tab package and upload it to a team. The tab package is a zip file containing:
 
@@ -57,10 +57,10 @@ Upload your zip file to a team to make your app available as a tab.
 1. Create a new team for testing, if necessary.  Click **Create team** at the bottom of the left-hand panel.
 2. Select the team from the left-hand panel, select **... (more options)** and then select **View Team**.
 	
-	!["Screenshot of the more options menu, with the View Teams option selected.](images/tab_view_team.png)
+	![Screenshot of the more options menu, with the View Teams option selected.](images/tab_view_team.png)
 3. Select the **Developer (Preview)** tab, and then select **Upload**.
 
-	!["Screenshot of the Developer pane, with tabs in development listed."](images/tab_sideload.png)
+	![Screenshot of the Developer pane, with tabs in development listed.](images/tab_sideload.png)
 
 4. Navigate to your zip file and select it.
 
@@ -75,7 +75,7 @@ Now, when team members add a new tab to a channel in this team, they will be abl
 3. Accept the consent prompt.
 4. Configure your tab via its [configuration page](createconfigpage.md) and click **Save**. 
 
-!["The Add a tab dialog box, featuring a gallery of available tabs."](images/tab_gallery.png)
+![The Add a tab dialog box, featuring a gallery of available tabs.](images/tab_gallery.png)
 
 > **Note:** By default, all team members can add tabs.  But team admins can restrict this privilege to themselves if they so wish, via an option in the team settings.
 
