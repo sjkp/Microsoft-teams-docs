@@ -8,7 +8,7 @@ You must include the [Microsoft Teams Tab library](jslibrary.md) in your configu
 
 >**Note:** The very simple 'maps' example in this documentation uses existing Bing and Google maps as content pages for illustration, which of course do not include this library.  See the [samples](samples.md) for a full example tab that does so.  
 
-!["Tab with iframed content highlighted."](images/tab_content.png)
+![Tab with iframed content highlighted.](images/tab_content.png)
 
 ## Prerequisites for content displayed in your tab
 
