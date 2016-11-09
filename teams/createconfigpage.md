@@ -39,14 +39,14 @@ microsoftTeams.settings.registerOnSaveHandler(function(saveEvent){
     if (radios[0].checked) {
        microsoftTeams.settings.setSettings({
          contentUrl: "https://www.bing.com/maps/embed",
-         suggestedTabName: "Bing Map",
+         suggestedDisplayName: "Bing Map",
          websiteUrl: "https://www.bing.com/maps",
          removeUrl: "https://teams-get-started-sample.azurewebsites.net/tabremove.html"
       });
     } else {
        microsoftTeams.settings.setSettings({
          contentUrl: "https://www.google.com/maps/embed",
-         suggestedTabName: "Google Map",
+         suggestedDisplayName: "Google Map",
          websiteUrl: "https://www.google.com/maps",
          removeUrl: "https://teams-get-started-sample.azurewebsites.net/tabremove.html"
       });
@@ -93,7 +93,7 @@ Use `microsoftTeams.settings.setSettings({contentUrl, suggestedTabName, websiteU
 	* The optional `suggestedTabName` parameter sets the initial tab name. Users can rename the tab. The default value is the name specified in the manifest.
 	* The optional `websiteUrl` parameter sets where the user is taken if they click the **Go to website** button. Typically, this is a link to the same content as displayed on the tab, but within your main web app with its regular chrome and navigation.
 	* The optional `removeUrl` parameter sets the URL for your [removal options page](updateremove.md#removing-a-tab).
-	* The optional `customSettings` parameter can be used to store additional information that helps your tab page regain context when [updating or removing a tab](updateremove.md).
+	* The optional `customSettings` string parameter can be used to store additional information that helps your tab page regain context when [updating or removing a tab](updateremove.md).
 
 ### React when the user clicks the Save button
 
