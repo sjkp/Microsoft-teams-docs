@@ -8,7 +8,7 @@ You can contribute to [Microsoft Teams developer documentation](https://msdn.mic
 
 * Contribute to articles via the [public Microsoft Teams SDK developer docs repo](https://github.com/OfficeDev/microsoft-teams-docs) 
 * Report documentation bugs via [GitHub Issues](https://github.com/OfficeDev/office-content/issues)
-* Add documentation requests to the [Office/SharePoint developer UserVoice](http://officespdev.uservoice.com)
+* Add documentation requests to the [Microsoft Teams UserVoice](https://aka.ms/microsoftteamsplatformsuggestions)
 
 >**Note:** We're only taking documentation contributions from authors within Microsoft presently. We will open the repository for the Microsoft Teams content to non-Microsoft contributors soon.
 

@@ -17,7 +17,7 @@ You can contribute to [Microsoft Teams developer documentation](https://msdn.mic
 
 * Contribute to articles via the [public Microsoft Teams SDK developer docs repo](https://github.com/OfficeDev/microsoft-teams-docs) 
 * Report documentation bugs via [GitHub Issues](https://github.com/OfficeDev/microsoft-teams-docs/issues)
-* Add documentation requests to the [Microsoft Teams developer UserVoice](https://teamsfeedback.uservoice.com/forums/555103-public-preview/category/182881-developer-platform)
+* Add documentation requests to the [Microsoft Teams developer UserVoice](https://aka.ms/microsoftteamsplatformsuggestions)
 
 ##Before we can accept your pull request
 
