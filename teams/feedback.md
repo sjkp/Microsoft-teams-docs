@@ -11,7 +11,7 @@ The Microsoft Team (preview) product team responds to the developer community ac
 
 - **Sample application bugs:** If you find a bug in one of our samples, open an issue on GitHub. Be sure to describe the steps to reproduce the bug.
 
-- **Feature requests:** If our API doesn't empower you to what you need, please make your features suggestions on the [Microsoft Teams feedback portal](https://teamsfeedback.uservoice.com/forums/555103-public-preview/category/182881-developer-platform).
+- **Feature requests:** If our API doesn't empower you to what you need, please make your features suggestions on the [Microsoft Teams feedback portal](https://microsoftteams.uservoice.com/forums/555103-public-preview/category/182881-developer-platform).
 
 - **Contributions:** We accept pull requests against the Microsoft Teams JS library, documentation and samples. If you'd like to contribute, please see the contributor's guide in each repo.
   * https://github.com/OfficeDev/microsoft-teams-library-js
